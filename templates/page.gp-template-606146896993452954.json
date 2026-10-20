@@ -19,8 +19,7 @@
         "ggO9gtVFw_5_text": "<strong>Email: </strong>ufficio@oasiormonale.com",
         "ggaYdnqlIsq_label": "<p><u>Privacy Policy</u></p>",
         "ggelFBQtbe1_text": "Oasi Ormonale è il primo protocollo in Italia specializzato nel benessere ormonale, creato da donne, per donne.",
-        "ggnSQZNmzGL_text": "*This Website is not a part of Facebook or Facebook Inc. Additionally, this site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK Inc.<br><br>Questo sito non fa parte del sito Facebook o Facebook Inc. Inoltre, questo sito NON è approvato da Facebook in alcun modo. FACEBOOK è un marchio registrato di FACEBOOK, Inc.",
-        "section_preload": "true"
+        "ggnSQZNmzGL_text": "*This Website is not a part of Facebook or Facebook Inc. Additionally, this site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK Inc.<br><br>Questo sito non fa parte del sito Facebook o Facebook Inc. Inoltre, questo sito NON è approvato da Facebook in alcun modo. FACEBOOK è un marchio registrato di FACEBOOK, Inc."
       },
       "type": "gp-section-606146897060561818"
     },
@@ -65,6 +64,5 @@
   "order": [
     "gp_section_606146897060627354",
     "gp_section_606146897060561818"
-  ],
-  "layout": "theme.gempages.blank"
+  ]
 }
