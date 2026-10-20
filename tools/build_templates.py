@@ -424,7 +424,7 @@ def build_chi_siamo():
         "body": rich(t.get("82108867", "ggY66W3N5SE_text")),
         "button_label": "Scopri Oasi Ormonale", "button_url": PROTOCOLLO,
     })
-    p.write("templates/page.gp-template-586581486656815819.json")
+    p.write("templates/page.oasi-chi-siamo.json")
 
 
 def build_lavora():
@@ -540,7 +540,7 @@ def build_lavora():
         "body": rich(t.get("09370866", "ggMfXtUfp5w_text")),
         "button_label": "Scopri le posizioni aperte", "button_url": ANCHOR,
     })
-    p.write("templates/page.gp-template-586694286104331137.json")
+    p.write("templates/page.oasi-lavora-con-noi.json")
 
 
 def build_groups():

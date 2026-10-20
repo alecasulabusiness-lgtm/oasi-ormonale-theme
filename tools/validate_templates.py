@@ -11,8 +11,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 TEMPLATES = [
     "templates/index.json",
-    "templates/page.gp-template-586581486656815819.json",
-    "templates/page.gp-template-586694286104331137.json",
+    "templates/page.oasi-chi-siamo.json",
+    "templates/page.oasi-lavora-con-noi.json",
     "sections/header-group.json",
     "sections/footer-group.json",
 ]

@@ -1,0 +1,313 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "oasi-page-hero",
+      "settings": {
+        "eyebrow": "Lavora con noi",
+        "heading": "Un progetto ambizioso ha bisogno di talenti ambiziosi.",
+        "text": "<p>Per questo in Oasi Ormonale, ne cerchiamo di nuovi ogni giorno.</p>",
+        "image": "shopify://shop_images/gempages_571219258252461280-721e9c4b-2b6e-401c-88d6-8450585d71bb.jpg"
+      }
+    },
+    "intro": {
+      "type": "oasi-split",
+      "settings": {
+        "tone": "light",
+        "image": "shopify://shop_images/gempages_571219258252461280-e39bc9bf-a206-4d1b-8eb4-ab58c9c9c4e9.jpg",
+        "image_side": "left",
+        "eyebrow": "La missione",
+        "body": "<p><em>Oasi Ormonale sta cambiando il modo in cui le donne italiane si approcciano al benessere ormonale.</em></p><p><em><strong>L’impatto che vogliamo avere? Diventare il punto di riferimento per il benessere <u>in Italia e non solo</u>.</strong></em></p><p>Per farlo, le persone che vogliono mettersi in gioco e contribuire a questa missione, per noi vengono prima di tutto.</p>",
+        "button_label": "Scopri le posizioni aperte",
+        "button_url": "/pages/lavora-con-noi#posizioni-aperte"
+      }
+    },
+    "positions": {
+      "type": "oasi-cards",
+      "settings": {
+        "tone": "light",
+        "card_style": "palette",
+        "show_numbers": true,
+        "show_shapes": true,
+        "anchor": "posizioni-aperte",
+        "heading": "Posizioni aperte",
+        "intro": "Per professioniste del Benessere Ormonale:",
+        "padding_top": 96,
+        "padding_bottom": 56
+      },
+      "blocks": {
+        "positions_1": {
+          "type": "card",
+          "settings": {
+            "tag": "Team",
+            "title": "Medico",
+            "text": "<p>Farai valutazioni cliniche di base e supporterai il team nel monitoraggio della salute generale delle pazienti.</p>",
+            "button_label": "Candidati ora",
+            "button_url": "https://oasiormonale.typeform.com/medici"
+          }
+        },
+        "positions_2": {
+          "type": "card",
+          "settings": {
+            "tag": "Team",
+            "title": "Nutrizione",
+            "text": "<p>Ti occuperai di creare protocolli nutrizionali personalizzati, integrando i dati clinici e ormonali con la storia personale di ogni donna.</p>",
+            "button_label": "Candidati ora",
+            "button_url": "https://oasiormonale.typeform.com/to/ixHaHSYX"
+          }
+        },
+        "positions_3": {
+          "type": "card",
+          "settings": {
+            "tag": "Team",
+            "title": "Fitness trainer",
+            "text": "<p>Ti occuperai di creare protocolli di allenamento personalizzati, integrando i dati clinici e ormonali con la storia personale di ogni donna.</p>",
+            "button_label": "Candidati ora",
+            "button_url": "https://oasiormonale.typeform.com/to/gp3Pbk6b"
+          }
+        },
+        "positions_4": {
+          "type": "card",
+          "settings": {
+            "tag": "Team",
+            "title": "Endocrinologhe",
+            "text": "<p>Gestirai i casi di squilibrio ormonale complesso e fornirai linee guida specifiche da integrare nel protocollo.</p>",
+            "button_label": "Candidati ora",
+            "button_url": "https://oasiormonale.typeform.com/medici"
+          }
+        }
+      },
+      "block_order": [
+        "positions_1",
+        "positions_2",
+        "positions_3",
+        "positions_4"
+      ]
+    },
+    "positions_marketing": {
+      "type": "oasi-cards",
+      "settings": {
+        "tone": "light",
+        "card_style": "palette",
+        "show_numbers": true,
+        "show_shapes": true,
+        "heading": "Team marketing e comunicazione",
+        "padding_top": 24,
+        "padding_bottom": 112
+      },
+      "blocks": {
+        "positions_marketing_1": {
+          "type": "card",
+          "settings": {
+            "tag": "Vendite",
+            "title": "Consulente commerciale",
+            "text": "<p>Il tuo ruolo NON è vendere a tutti i costi. Il tuo ruolo è costruire un ponte di fiducia, ascoltare e guidare ogni donna verso la scelta più sensata per lei. Con la sicurezza di ciò che rappresenta Oasi Ormonale.</p>",
+            "button_label": "Candidati ora",
+            "button_url": "https://oasiormonale.typeform.com/to/EN8ghdhI"
+          }
+        },
+        "positions_marketing_2": {
+          "type": "card",
+          "settings": {
+            "tag": "Marketing",
+            "title": "Copywriter direct response",
+            "text": "<p>Sei orientato alla scrittura persuasiva e sai trasformare la complessità del benessere ormonale in messaggi chiari e coinvolgenti. Conosci la psicologia femminile e sai come convertire senza far leva sui sensi di colpa o emozioni negative.</p>",
+            "button_label": "Candidati ora",
+            "button_url": "https://oasiormonale.typeform.com/to/g19z7KgH"
+          }
+        },
+        "positions_marketing_3": {
+          "type": "card",
+          "settings": {
+            "tag": "Comunicazione",
+            "title": "Social media manager",
+            "text": "<p>Gestisci la nostra presenza digitale con professionalità e senza snaturare il nostro brand. Racconterai la nostra missione, proteggerai la community e ci aiuterai a combattere la disinformazione dei social media.</p>",
+            "button_label": "Candidati ora"
+          }
+        },
+        "positions_marketing_4": {
+          "type": "card",
+          "settings": {
+            "tag": "Marketing",
+            "title": "Media buyer",
+            "text": "<p>Gestisci budget pubblicitari con responsabilità e sei orientato al risultato. Ogni campagna per noi, è un canale per raggiungere una donna che ha bisogno di risposte serie, dopo anni di tentativi falliti.</p>",
+            "button_label": "Candidati ora",
+            "button_url": "https://oasiormonale.typeform.com/to/cS695Y16"
+          }
+        }
+      },
+      "block_order": [
+        "positions_marketing_1",
+        "positions_marketing_2",
+        "positions_marketing_3",
+        "positions_marketing_4"
+      ]
+    },
+    "culture": {
+      "type": "oasi-split",
+      "settings": {
+        "tone": "dark",
+        "image": "shopify://shop_images/gempages_571219258252461280-b79f3189-e895-45b1-b37d-4c2a9378c58b.jpg",
+        "image_side": "right",
+        "heading": "La nostra cultura",
+        "body": "<p>In Oasi Ormonale, non contano le ore che passi davanti al pc a lavorare.<br>Non ci interessa chi, vuole solo scaldare la sedia in attesa delle 18.</p><p>In Oasi Ormonale, guardiamo ad una cosa e una soltanto: il risultato che generi.<br>L’impatto che crei, i numeri che migliori.<br>Abbiamo standard alti, e li rispettiamo per primi.</p>",
+        "list_style": "numbered",
+        "button_label": "Scopri le posizioni aperte",
+        "button_url": "/pages/lavora-con-noi#posizioni-aperte"
+      },
+      "blocks": {
+        "culture_1": {
+          "type": "item",
+          "settings": {
+            "text": "<p><strong>Gli errori?</strong> Sono parte della crescita e in quanto tali, si dichiarano, si correggono e se ne fa tesoro.</p>"
+          }
+        },
+        "culture_2": {
+          "type": "item",
+          "settings": {
+            "text": "<p><strong>La trasparenza?</strong> Non è un optional. Chiunque, all’interno dell’azienda, è a conoscenza di tutto. Perché ogni scelta è basata sui dati e sulla meritocrazia, non su opinioni. Non c’è spazio per politica interna o giochi di ruolo: se qualcosa non funziona, lo diciamo e lo sistemiamo.</p>"
+          }
+        },
+        "culture_3": {
+          "type": "item",
+          "settings": {
+            "text": "<p><strong>L’ambizione? È ciò che più di tutto, ci guida.</strong> I nostri obiettivi sono da top 1%. Chi entra in Oasi non si accontenta del “buono”: vuole il meglio, per sé e per le donne che seguiamo.</p>"
+          }
+        },
+        "culture_4": {
+          "type": "item",
+          "settings": {
+            "text": "<p><strong>Determinazione?</strong> È racchiusa nella formula: problema → analisi → soluzione → consegna. No scuse. Si al miglioramento continuo. Sì, ai risultati.</p>"
+          }
+        },
+        "culture_5": {
+          "type": "item",
+          "settings": {
+            "text": "<p><strong>La crescita in azienda? Non è un “forse”: è tracciata e definita, per chi porta risultati.</strong> Ogni ruolo ha i suoi step chiari per raggiungere la vetta, in base al MERITO. Non all’anzianità. Non alle preferenze personali. Tutto, in virtù della cultura della trasparenza, è reso noto fin dall’inizio: skill richieste, KPI, responsabilità e compensi.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "culture_1",
+        "culture_2",
+        "culture_3",
+        "culture_4",
+        "culture_5"
+      ]
+    },
+    "crusade": {
+      "type": "oasi-split",
+      "settings": {
+        "tone": "white",
+        "image": "shopify://shop_images/gempages_571219258252461280-3d2d3e5f-54b2-4665-b871-c8bea514a1bf.jpg",
+        "image_side": "left",
+        "heading": "La crociata che combattiamo",
+        "body": "<p>Oasi Ormonale è un movimento contro il terrorismo nutrizionale che ha invaso il web.<br>Contro i nutri-criminali che vendono diete copia-incolla, promesse facili, sensi di colpa.</p><p>La nostra missione è liberare le donne dal ciclo infinito dieta-fallimento-sensi di colpa, restituendo loro la comprensione del proprio corpo e l'indipendenza dalle mode alimentari.</p><p>Chi entra nel team sa esattamente quale nemico combattiamo e perché.<br><strong>Chi entra, conosce l'impatto a livello nazionale ed internazionale che vogliamo avere, e che pian piano stiamo raggiungendo.</strong></p>",
+        "button_label": "Scopri le posizioni aperte",
+        "button_url": "/pages/lavora-con-noi#posizioni-aperte"
+      }
+    },
+    "career": {
+      "type": "oasi-split",
+      "settings": {
+        "tone": "soft",
+        "image": "shopify://shop_images/gempages_571219258252461280-24093707-e44a-4e7f-9004-af1670b2ee27.jpg",
+        "image_side": "right",
+        "eyebrow": "La crescita",
+        "heading": "Ogni talento? Un piano carriera personale,",
+        "heading_fade": "a cui non poniamo alcun limite.",
+        "lead": "<p>Così come non ce ne sono alla crescita di Oasi Ormonale.</p>",
+        "body": "<p>La tua crescita è tracciata, misurata, premiata.</p><p>Ogni ruolo ha un percorso di sviluppo chiaro con obiettivi, competenze e compensi definiti.</p><p>La tua evoluzione professionale è nelle tue mani. E noi faremo di tutto affinché diventi il più grande possibile.</p>",
+        "button_label": "Scopri le posizioni aperte",
+        "button_url": "/pages/lavora-con-noi#posizioni-aperte"
+      }
+    },
+    "values": {
+      "type": "oasi-split",
+      "settings": {
+        "tone": "white",
+        "image": "shopify://shop_images/gempages_571219258252461280-ddbaeed4-e222-4954-9f98-302e8df6c1f5.jpg",
+        "image_side": "left",
+        "heading": "I nostri valori",
+        "list_style": "numbered",
+        "button_label": "Scopri le posizioni aperte",
+        "button_url": "/pages/lavora-con-noi#posizioni-aperte"
+      },
+      "blocks": {
+        "values_1": {
+          "type": "item",
+          "settings": {
+            "title": "Eticità",
+            "text": "<p>Facciamo sempre la cosa giusta, anche quando è più difficile.<br>Le persone che lavorano con noi sanno che qui conta l’integrità, non le scorciatoie.</p>"
+          }
+        },
+        "values_2": {
+          "type": "item",
+          "settings": {
+            "title": "Trasparenza radicale",
+            "text": "<p>Dati chiari, decisioni motivate, comunicazione aperta.<br>Tutti devono poter capire perché una scelta viene fatta, in totale trasparenza e senza motivazioni personali.</p>"
+          }
+        },
+        "values_3": {
+          "type": "item",
+          "settings": {
+            "title": "Personalizzazione",
+            "text": "<p>Ogni donna che si affida a Oasi è unica.<br>Lo stesso vale per chi lavora con noi: ognuno porta un contributo diverso, e lo valorizziamo.</p>"
+          }
+        },
+        "values_4": {
+          "type": "item",
+          "settings": {
+            "title": "Rispetto",
+            "text": "<p>Nessun terrorismo sul cibo, nessuna colpa addosso alle persone.<br>Crediamo in un approccio che educa e sostiene, senza mai giudicare, colpevolizzare, manipolare.</p>"
+          }
+        },
+        "values_5": {
+          "type": "item",
+          "settings": {
+            "title": "Rispetto per la realtà",
+            "text": "<p>Niente promesse impossibili, niente fumo negli occhi.<br>Promettiamo risultati concreti ma realistici, anche se non veloci (che non esistono), tuttavia duraturi perché sostenibili.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "values_1",
+        "values_2",
+        "values_3",
+        "values_4",
+        "values_5"
+      ]
+    },
+    "final": {
+      "type": "oasi-split",
+      "settings": {
+        "tone": "dark",
+        "image": "shopify://shop_images/gempages_571219258252461280-0203b0cf-92b3-4b79-88b4-350de088bcf3.jpg",
+        "image_side": "right",
+        "heading": "Un progetto che non ha limiti, né confini.",
+        "body": "<p>Oasi Ormonale non si ferma. Dopo aver cambiato la vita di migliaia di donne in Italia, stiamo espandendo il nostro impatto in Estonia, Spagna, Francia, Svizzera e Australia.<br>Chi entra oggi nel team, entra in un progetto che non ha confini.<br>Allo stesso modo, chi entra oggi, non ha un limite alla propria crescita.</p><p>Se pensi di avere quello che serve, compila il form.<br>Il processo è rapido, trasparente e meritocratico: selezioniamo chi può davvero fare la differenza.</p>",
+        "button_label": "Scopri le posizioni aperte",
+        "button_url": "/pages/lavora-con-noi#posizioni-aperte"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "intro",
+    "positions",
+    "positions_marketing",
+    "culture",
+    "crusade",
+    "career",
+    "values",
+    "final"
+  ]
+}
