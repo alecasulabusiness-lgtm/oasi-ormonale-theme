@@ -1,0 +1,77 @@
+{%- liquid
+  assign tone = section.settings.tone | default: 'light'
+  assign btn_style = 'dark'
+  if tone == 'dark'
+    assign btn_style = 'light'
+  endif
+-%}
+<section class="oasi oasi-shell oasi-shell--{{ tone }} oasi-statement"{% if section.settings.anchor != blank %} id="{{ section.settings.anchor }}"{% endif %} {{ section.shopify_attributes }}>
+  <div class="oasi-box oasi-tone-{{ tone }}{% if tone == 'dark' %} oasi-dark{% endif %}">
+    <div class="oasi-s" style="--oasi-pt: {{ section.settings.padding_top }}px; --oasi-pb: {{ section.settings.padding_bottom }}px">
+      <div class="oasi-statement__inner">
+        {%- if section.settings.kicker != blank -%}
+          <p class="oasi-kicker oasi-muted">{{ section.settings.kicker }}</p>
+        {%- endif -%}
+        <h2>
+          {{- section.settings.heading_before -}}
+          {%- if section.settings.highlight != blank %} <mark>{{ section.settings.highlight }}</mark>{% endif -%}
+          {%- if section.settings.heading_after != blank %} {{ section.settings.heading_after }}{% endif -%}
+        </h2>
+        {%- if section.settings.text != blank -%}
+          <div class="oasi-statement__text oasi-rich oasi-muted">{{ section.settings.text }}</div>
+        {%- endif -%}
+        {%- if section.blocks.size > 0 -%}
+          <ul class="oasi-pills">
+            {%- for block in section.blocks -%}
+              <li class="oasi-pill" {{ block.shopify_attributes }}>{{ block.settings.text }}</li>
+            {%- endfor -%}
+          </ul>
+        {%- endif -%}
+        {%- if section.settings.button_label != blank and section.settings.button_url != blank -%}
+          <div class="oasi-actions">
+            {%- render 'oasi-button', label: section.settings.button_label, url: section.settings.button_url, style: btn_style -%}
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Oasi: frase centrale",
+  "settings": [
+    {
+      "type": "select",
+      "id": "tone",
+      "label": "Fondo",
+      "options": [
+        { "value": "light", "label": "Crema, senza riquadro" },
+        { "value": "white", "label": "Bianco, riquadro arrotondato" },
+        { "value": "soft", "label": "Sfumatura rosa cipria" },
+        { "value": "rose", "label": "Rosa antico" },
+        { "value": "dark", "label": "Borgogna" }
+      ],
+      "default": "light"
+    },
+    { "type": "text", "id": "anchor", "label": "Ancoraggio (id)" },
+    { "type": "text", "id": "kicker", "label": "Frase in corsivo sopra il titolo" },
+    { "type": "text", "id": "heading_before", "label": "Titolo, prima parte" },
+    { "type": "text", "id": "highlight", "label": "Titolo, parte evidenziata" },
+    { "type": "text", "id": "heading_after", "label": "Titolo, ultima parte" },
+    { "type": "richtext", "id": "text", "label": "Testo" },
+    { "type": "text", "id": "button_label", "label": "Pulsante, testo" },
+    { "type": "url", "id": "button_url", "label": "Pulsante, link" },
+    { "type": "range", "id": "padding_top", "min": 0, "max": 200, "step": 4, "unit": "px", "label": "Spazio sopra", "default": 96 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 200, "step": 4, "unit": "px", "label": "Spazio sotto", "default": 96 }
+  ],
+  "blocks": [
+    {
+      "type": "pill",
+      "name": "Etichetta",
+      "settings": [{ "type": "text", "id": "text", "label": "Testo" }]
+    }
+  ],
+  "presets": [{ "name": "Oasi: frase centrale" }]
+}
+{% endschema %}

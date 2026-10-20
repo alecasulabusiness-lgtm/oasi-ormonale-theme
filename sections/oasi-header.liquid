@@ -1,0 +1,61 @@
+<header class="oasi oasi-header" role="banner">
+  <div class="oasi-header__inner">
+    <a class="oasi-header__logo" href="{{ routes.root_url }}" aria-label="{{ shop.name }}">
+      <img src="{{ 'oasi-logo-burgundy.svg' | asset_url }}" alt="{{ shop.name }}" width="85" height="56">
+    </a>
+
+    <nav class="oasi-nav" aria-label="Navigazione principale">
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'link' and block.settings.label != blank and block.settings.url != blank -%}
+          <a href="{{ block.settings.url }}" {{ block.shopify_attributes }}>{{ block.settings.label }}</a>
+        {%- endif -%}
+      {%- endfor -%}
+    </nav>
+
+    {%- render 'oasi-button',
+      label: section.settings.cta_label,
+      url: section.settings.cta_url,
+      style: 'dark',
+      class: 'oasi-header__cta'
+    -%}
+
+    <details class="oasi-menu">
+      <summary aria-label="Apri il menu">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14"/></svg>
+      </summary>
+      <div class="oasi-menu__panel">
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'link' and block.settings.label != blank and block.settings.url != blank -%}
+            <a href="{{ block.settings.url }}">{{ block.settings.label }}</a>
+          {%- endif -%}
+        {%- endfor -%}
+        {%- render 'oasi-button',
+          label: section.settings.cta_label,
+          url: section.settings.cta_url,
+          style: 'light'
+        -%}
+      </div>
+    </details>
+  </div>
+</header>
+
+{% schema %}
+{
+  "name": "Oasi: header",
+  "settings": [
+    { "type": "text", "id": "cta_label", "label": "Testo del pulsante", "default": "Scopri Oasi Ormonale" },
+    { "type": "url", "id": "cta_url", "label": "Link del pulsante" }
+  ],
+  "blocks": [
+    {
+      "type": "link",
+      "name": "Voce di menu",
+      "settings": [
+        { "type": "text", "id": "label", "label": "Testo", "default": "Chi siamo" },
+        { "type": "url", "id": "url", "label": "Link" }
+      ]
+    }
+  ],
+  "max_blocks": 6
+}
+{% endschema %}

@@ -1,0 +1,86 @@
+<section class="oasi oasi-shell oasi-shell--light"{% if section.settings.anchor != blank %} id="{{ section.settings.anchor }}"{% endif %} {{ section.shopify_attributes }}>
+  <div class="oasi-box oasi-tone-light">
+    <div class="oasi-s" style="--oasi-pt: {{ section.settings.padding_top }}px; --oasi-pb: {{ section.settings.padding_bottom }}px">
+      <div class="oasi-wrap">
+        <div class="oasi-method__head">
+          {%- if section.settings.label != blank -%}
+            <p class="oasi-label">{{ section.settings.label }}</p>
+          {%- endif -%}
+          <h2>
+            {{ section.settings.heading }}
+            {%- if section.settings.heading_fade != blank %} <span class="oasi-fade">{{ section.settings.heading_fade }}</span>{% endif -%}
+          </h2>
+        </div>
+
+        <div class="oasi-method__grid">
+          <div class="oasi-media oasi-media--shade oasi-method__image">
+            {%- render 'oasi-image', image: section.settings.image, sizes: '(min-width: 900px) 700px, 92vw' -%}
+            <div class="oasi-media__over">
+              {%- if section.settings.card_title != blank -%}
+                <h3>{{ section.settings.card_title }}</h3>
+              {%- endif -%}
+              {%- if section.settings.card_intro != blank -%}
+                <p><strong>{{ section.settings.card_intro }}</strong></p>
+              {%- endif -%}
+              <ul class="oasi-chips">
+                {%- for block in section.blocks -%}
+                  {%- if block.settings.text != blank -%}
+                    <li class="oasi-chip" {{ block.shopify_attributes }}>{{ block.settings.text }}</li>
+                  {%- endif -%}
+                {%- endfor -%}
+              </ul>
+            </div>
+          </div>
+
+          <div class="oasi-method__side">
+            <div>
+              {%- if section.settings.side_label != blank -%}
+                <p class="oasi-label">{{ section.settings.side_label }}</p>
+              {%- endif -%}
+              <p class="oasi-method__quote">{{ section.settings.side_text }}</p>
+            </div>
+            <div>
+              {%- if section.settings.side_centre != blank -%}
+                <p class="oasi-method__centre">{{ section.settings.side_centre }}</p>
+              {%- endif -%}
+              {%- render 'oasi-button', label: section.settings.button_label, url: section.settings.button_url, style: 'light' -%}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Oasi: il metodo",
+  "settings": [
+    { "type": "text", "id": "label", "label": "Etichetta", "default": "Il metodo" },
+    { "type": "text", "id": "heading", "label": "Titolo" },
+    { "type": "text", "id": "heading_fade", "label": "Seconda parte del titolo (più chiara)" },
+    { "type": "text", "id": "anchor", "label": "Ancoraggio (id)" },
+    { "type": "header", "content": "Riquadro con immagine" },
+    { "type": "image_picker", "id": "image", "label": "Immagine" },
+    { "type": "textarea", "id": "card_title", "label": "Titolo del riquadro" },
+    { "type": "text", "id": "card_intro", "label": "Frase prima dei chip" },
+    { "type": "header", "content": "Riquadro scuro" },
+    { "type": "text", "id": "side_label", "label": "Etichetta" },
+    { "type": "textarea", "id": "side_text", "label": "Testo" },
+    { "type": "text", "id": "side_centre", "label": "Frase in rosa" },
+    { "type": "text", "id": "button_label", "label": "Pulsante, testo", "default": "Scopri Oasi Ormonale" },
+    { "type": "url", "id": "button_url", "label": "Pulsante, link" },
+    { "type": "header", "content": "Spazi" },
+    { "type": "range", "id": "padding_top", "min": 0, "max": 200, "step": 4, "unit": "px", "label": "Spazio sopra", "default": 96 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 200, "step": 4, "unit": "px", "label": "Spazio sotto", "default": 40 }
+  ],
+  "blocks": [
+    {
+      "type": "chip",
+      "name": "Chip nel riquadro con immagine",
+      "settings": [{ "type": "text", "id": "text", "label": "Testo" }]
+    }
+  ],
+  "presets": [{ "name": "Oasi: il metodo" }]
+}
+{% endschema %}

@@ -1,0 +1,8 @@
+{%- comment -%}
+  Aggiunge target e rel ai link verso altri siti (WhatsApp, Typeform, iubenda).
+  I link interni, gli ancoraggi e i mailto restano nella stessa scheda.
+  Uso: <a href="{{ url }}"{% render 'oasi-url-attrs', url: url %}>
+{%- endcomment -%}
+{%- if url contains '://' -%}
+  {%- unless url contains shop.domain or url contains shop.permanent_domain %} target="_blank" rel="noopener"{% endunless -%}
+{%- endif -%}

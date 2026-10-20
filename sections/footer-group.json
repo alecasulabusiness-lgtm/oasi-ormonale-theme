@@ -11,252 +11,57 @@
   "type": "footer",
   "name": "Footer",
   "sections": {
-    "footer_utilities": {
-      "type": "footer-utilities",
+    "oasi_footer": {
+      "type": "oasi-footer",
       "blocks": {
-        "block_22fd846657de": {
-          "type": "footer-copyright",
+        "col_1": {
+          "type": "column",
           "settings": {
-            "font_size": "0.75rem",
-            "case": "none"
+            "title": "Navigazione rapida",
+            "label_1": "Home",
+            "url_1": "/",
+            "label_2": "I Nostri Brand",
+            "url_2": "/pages/i-nostri-brand",
+            "label_3": "Chi Siamo",
+            "url_3": "/pages/chi-siamo"
           }
         },
-        "block_387816b8398b": {
-          "type": "footer-policy-list",
+        "col_2": {
+          "type": "column",
           "settings": {
-            "font_size": "0.75rem",
-            "case": "none"
+            "title": "Risorse",
+            "label_1": "Lavora con noi",
+            "url_1": "/pages/lavora-con-noi",
+            "label_2": "Contattaci via email",
+            "url_2": "mailto:ufficio@oasiormonale.com?subject=Richiesta%20di%20Contatto"
           }
         },
-        "block_0e66830c6f57": {
-          "type": "social-links",
+        "col_3": {
+          "type": "column",
           "settings": {
-            "facebook_url": "https://www.facebook.com/shopify",
-            "instagram_url": "https://www.instagram.com/shopify/#",
-            "youtube_url": "https://www.youtube.com/shopify",
-            "tiktok_url": "https://www.tiktok.com/@shopify",
-            "twitter_url": "https://x.com/shopify"
+            "title": "Legale",
+            "label_1": "Privacy Policy",
+            "url_1": "https://www.iubenda.com/privacy-policy/12323298",
+            "label_2": "Cookie Policy",
+            "url_2": "https://www.iubenda.com/privacy-policy/12323298/cookie-policy",
+            "label_3": "Termini e Condizioni",
+            "url_3": "/pages/termini-e-condizioni"
           }
         }
       },
       "block_order": [
-        "block_22fd846657de",
-        "block_387816b8398b",
-        "block_0e66830c6f57"
+        "col_1",
+        "col_2",
+        "col_3"
       ],
       "settings": {
-        "color_scheme": "scheme-1"
-      }
-    },
-    "migrated_footer_content": {
-      "type": "section",
-      "blocks": {
-        "divider_hFm3am": {
-          "type": "_divider",
-          "name": "t:names.divider",
-          "settings": {
-            "thickness": 1,
-            "corner_radius": "square",
-            "width_percent": 100,
-            "padding-block-start": 0,
-            "padding-block-end": 0
-          },
-          "blocks": {}
-        },
-        "group_tbFfTQ": {
-          "type": "group",
-          "name": "Join the club",
-          "settings": {
-            "content_direction": "row",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "space-between",
-            "vertical_alignment": "flex-end",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 32,
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "custom",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "link": "",
-            "open_in_new_tab": false,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "group_4aCyy7": {
-              "type": "group",
-              "name": "t:names.group",
-              "settings": {
-                "content_direction": "column",
-                "vertical_on_mobile": true,
-                "horizontal_alignment": "flex-start",
-                "vertical_alignment": "center",
-                "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "flex-start",
-                "vertical_alignment_flex_direction_column": "center",
-                "gap": 12,
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fit",
-                "custom_height": 100,
-                "inherit_color_scheme": true,
-                "color_scheme": "",
-                "background_media": "none",
-                "video_position": "cover",
-                "background_image_position": "cover",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
-                "toggle_overlay": false,
-                "overlay_color": "#00000026",
-                "overlay_style": "solid",
-                "gradient_direction": "to top",
-                "link": "",
-                "open_in_new_tab": false,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "text_3L9Fjq": {
-                  "type": "text",
-                  "name": "Heading",
-                  "settings": {
-                    "text": "<h2>Join the club</h2>",
-                    "width": "fit-content",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "h3",
-                    "font": "var(--font-primary--family)",
-                    "font_size": "",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "text_eC4rXd": {
-                  "type": "text",
-                  "name": "Text",
-                  "settings": {
-                    "text": "<p>Get exclusive deals and early access to new products. </p>",
-                    "width": "fit-content",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-primary--family)",
-                    "font_size": "",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_3L9Fjq",
-                "text_eC4rXd"
-              ]
-            },
-            "email_signup_NcLwNb": {
-              "type": "email-signup",
-              "name": "t:names.email_signup",
-              "settings": {
-                "width": "custom",
-                "custom_width": 50,
-                "inherit_color_scheme": true,
-                "color_scheme": "scheme-1",
-                "border_style": "all",
-                "border_width": 1,
-                "border_radius": 39,
-                "input_type_preset": "paragraph",
-                "style_class": "button-unstyled",
-                "display_type": "arrow",
-                "label": "Sign up",
-                "integrated_button": true,
-                "button_type_preset": "paragraph",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "group_4aCyy7",
-            "email_signup_NcLwNb"
-          ]
-        }
-      },
-      "block_order": [
-        "divider_hFm3am",
-        "group_tbFfTQ"
-      ],
-      "name": "Footer",
-      "settings": {
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "center",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "center",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 48,
-        "section_width": "page-width",
-        "section_height": "",
-        "color_scheme": "scheme-1",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "padding-block-start": 0,
-        "padding-block-end": 48
+        "tagline": "Il 1° Protocollo in Italia Specializzato nel Benessere Ormonale",
+        "legal": "I risultati conseguibili dipendono da fattori individuali (condizioni fisiche, salute, costanza, alimentazione, predisposizione personale) e non sono in alcun modo garantiti. Ai sensi degli artt. 1176 e 2222 c.c., il rapporto si configura come obbligazione di mezzi e non di risultato: il titolare si impegna a fornire metodologie e strumenti con la diligenza richiesta, senza assumere alcun obbligo in ordine all'esito finale. Le informazioni divulgate hanno carattere informativo e non sostituiscono il parere di un medico o di altro professionista sanitario abilitato. Si invita l'utente a consultare il proprio medico curante prima di intraprendere qualsiasi percorso. Le comunicazioni promozionali sono rese nel rispetto del D.Lgs. 206/2005 (Codice del Consumo) e del D.Lgs. 145/2007 in materia di pubblicità. Le immagini di confronto e le rappresentazioni visive presenti su questo sito hanno finalità illustrative. Non costituiscono prova, garanzia o promessa di risultato, ma una mera proiezione indicativa.",
+        "copyright": "Copyright © 2026 Oasi Ormonale | Tutti i diritti riservati"
       }
     }
   },
   "order": [
-    "migrated_footer_content",
-    "footer_utilities"
+    "oasi_footer"
   ]
 }

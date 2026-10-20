@@ -1,0 +1,16 @@
+{%- comment -%}
+  Bottone a pillola con freccia.
+  Parametri: label, url, style ('dark' | 'light' | 'ghost'), class (facoltativo).
+{%- endcomment -%}
+{%- if label != blank and url != blank -%}
+  <a
+    class="oasi-btn oasi-btn--{{ style | default: 'dark' }}{% if class != blank %} {{ class }}{% endif %}"
+    href="{{ url }}"
+    {%- render 'oasi-url-attrs', url: url -%}
+  >
+    <span>{{ label }}</span>
+    <span class="oasi-btn__arrow" aria-hidden="true">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+    </span>
+  </a>
+{%- endif -%}

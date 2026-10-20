@@ -1,0 +1,104 @@
+{%- liquid
+  assign tone = section.settings.tone | default: 'light'
+  assign btn_style = 'dark'
+  if tone == 'dark'
+    assign btn_style = 'light'
+  endif
+-%}
+<section class="oasi oasi-shell oasi-shell--{{ tone }}"{% if section.settings.anchor != blank %} id="{{ section.settings.anchor }}"{% endif %} {{ section.shopify_attributes }}>
+  <div class="oasi-box oasi-tone-{{ tone }}{% if tone == 'dark' %} oasi-dark{% endif %}">
+    <div class="oasi-s" style="--oasi-pt: {{ section.settings.padding_top }}px; --oasi-pb: {{ section.settings.padding_bottom }}px">
+      <div class="oasi-wrap oasi-videos">
+        {%- if section.settings.label != blank -%}
+          <p class="oasi-label oasi-label--rule">{{ section.settings.label }}</p>
+        {%- endif -%}
+        <h2 class="oasi-videos__title">
+          {{ section.settings.heading }}
+          {%- if section.settings.heading_fade != blank %} <span class="oasi-fade">{{ section.settings.heading_fade }}</span>{% endif -%}
+        </h2>
+        {%- if section.settings.intro != blank -%}
+          <p class="oasi-muted oasi-videos__intro">{{ section.settings.intro }}</p>
+        {%- endif -%}
+
+        <ul class="oasi-videos__grid">
+          {%- for block in section.blocks -%}
+            {%- liquid
+              assign video_url = block.settings.video_url
+              assign yt_id = ''
+              if video_url contains 'youtu.be/'
+                assign yt_id = video_url | split: 'youtu.be/' | last | split: '?' | first
+              elsif video_url contains 'v='
+                assign yt_id = video_url | split: 'v=' | last | split: '&' | first
+              endif
+            -%}
+            <li {{ block.shopify_attributes }}>
+              <figure class="oasi-video">
+                <div class="oasi-video__frame"{% if yt_id != blank %} data-yt="{{ yt_id }}"{% endif %}>
+                  {%- if yt_id != blank -%}
+                    <button type="button" class="oasi-video__play" aria-label="Guarda il video: {{ block.settings.quote | strip_html | escape }}">
+                      <svg width="64" height="64" viewBox="0 0 72 72" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="36" cy="36" r="33"/><path d="M29 24 L50 36 L29 48 Z" fill="currentColor"/></svg>
+                    </button>
+                  {%- endif -%}
+                </div>
+                <figcaption>
+                  <p class="oasi-video__quote">{{ block.settings.quote }}</p>
+                  {%- if block.settings.who != blank -%}
+                    <p class="oasi-video__who">{{ block.settings.who }}</p>
+                  {%- endif -%}
+                </figcaption>
+              </figure>
+            </li>
+          {%- endfor -%}
+        </ul>
+
+        {%- if section.settings.button_label != blank and section.settings.button_url != blank -%}
+          <div class="oasi-actions oasi-videos__actions">
+            {%- render 'oasi-button', label: section.settings.button_label, url: section.settings.button_url, style: btn_style -%}
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</section>
+<script src="{{ 'oasi-videos.js' | asset_url }}" defer></script>
+
+{% schema %}
+{
+  "name": "Oasi: video e storie",
+  "settings": [
+    {
+      "type": "select",
+      "id": "tone",
+      "label": "Fondo",
+      "options": [
+        { "value": "light", "label": "Crema, senza riquadro" },
+        { "value": "white", "label": "Bianco, riquadro arrotondato" },
+        { "value": "soft", "label": "Sfumatura rosa cipria" },
+        { "value": "dark", "label": "Borgogna" }
+      ],
+      "default": "light"
+    },
+    { "type": "text", "id": "anchor", "label": "Ancoraggio (id)" },
+    { "type": "text", "id": "label", "label": "Etichetta", "default": "Le storie" },
+    { "type": "text", "id": "heading", "label": "Titolo" },
+    { "type": "text", "id": "heading_fade", "label": "Seconda parte del titolo (più chiara)" },
+    { "type": "text", "id": "intro", "label": "Frase sotto il titolo" },
+    { "type": "text", "id": "button_label", "label": "Pulsante, testo" },
+    { "type": "url", "id": "button_url", "label": "Pulsante, link" },
+    { "type": "range", "id": "padding_top", "min": 0, "max": 200, "step": 4, "unit": "px", "label": "Spazio sopra", "default": 112 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 200, "step": 4, "unit": "px", "label": "Spazio sotto", "default": 96 }
+  ],
+  "blocks": [
+    {
+      "type": "video",
+      "name": "Video",
+      "settings": [
+        { "type": "text", "id": "video_url", "label": "Indirizzo del video su YouTube" },
+        { "type": "text", "id": "quote", "label": "Frase" },
+        { "type": "text", "id": "who", "label": "Chi parla (facoltativo)" }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Oasi: video e storie", "blocks": [{ "type": "video" }] }]
+}
+{% endschema %}

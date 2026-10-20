@@ -1,0 +1,61 @@
+<section class="oasi oasi-shell oasi-hero" {{ section.shopify_attributes }}>
+  <div class="oasi-box oasi-dark">
+    <img class="oasi-breath" src="{{ 'oasi-pictogram-white.svg' | asset_url }}" alt="" width="860" height="939" aria-hidden="true">
+    <div class="oasi-hero__inner">
+      <div class="oasi-hero__copy">
+        {%- if section.settings.eyebrow != blank -%}
+          <p class="oasi-label">{{ section.settings.eyebrow }}</p>
+        {%- endif -%}
+        <h1>{{ section.settings.heading }}</h1>
+        {%- if section.settings.text != blank -%}
+          <div class="oasi-hero__text oasi-rich">{{ section.settings.text }}</div>
+        {%- endif -%}
+        <div class="oasi-actions">
+          {%- render 'oasi-button', label: section.settings.primary_label, url: section.settings.primary_url, style: 'light' -%}
+          {%- if section.settings.secondary_label != blank and section.settings.secondary_url != blank -%}
+            <a class="oasi-textlink" href="{{ section.settings.secondary_url }}">{{ section.settings.secondary_label }}</a>
+          {%- endif -%}
+        </div>
+      </div>
+
+      <div class="oasi-media oasi-media--shade oasi-hero__media">
+        {%- render 'oasi-image', image: section.settings.image, sizes: '(min-width: 900px) 500px, 90vw', loading: 'eager' -%}
+        <div class="oasi-journey oasi-glass">
+          {%- if section.settings.journey_title != blank -%}
+            <p class="oasi-journey__title">{{ section.settings.journey_title }}</p>
+          {%- endif -%}
+          <div class="oasi-journey__bars" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+          <div class="oasi-journey__steps">
+            <span>{{ section.settings.step_1 }}</span>
+            <span>{{ section.settings.step_2 }}</span>
+            <span>{{ section.settings.step_3 }}</span>
+            <span>{{ section.settings.step_4 }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Oasi: hero della home",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Etichetta sopra il titolo" },
+    { "type": "text", "id": "heading", "label": "Titolo", "default": "Ritrova bellezza, energia e salute, partendo dal tuo benessere ormonale" },
+    { "type": "richtext", "id": "text", "label": "Testo" },
+    { "type": "text", "id": "primary_label", "label": "Pulsante, testo", "default": "Scopri Oasi Ormonale" },
+    { "type": "url", "id": "primary_url", "label": "Pulsante, link" },
+    { "type": "text", "id": "secondary_label", "label": "Link secondario, testo", "default": "Come funziona" },
+    { "type": "url", "id": "secondary_url", "label": "Link secondario, indirizzo" },
+    { "type": "image_picker", "id": "image", "label": "Immagine" },
+    { "type": "header", "content": "Riquadro del percorso" },
+    { "type": "text", "id": "journey_title", "label": "Titolo", "default": "Il tuo percorso" },
+    { "type": "text", "id": "step_1", "label": "Fase 1", "default": "Analisi" },
+    { "type": "text", "id": "step_2", "label": "Fase 2", "default": "Strategia" },
+    { "type": "text", "id": "step_3", "label": "Fase 3", "default": "Supporto" },
+    { "type": "text", "id": "step_4", "label": "Fase 4", "default": "Risultati" }
+  ],
+  "presets": [{ "name": "Oasi: hero della home" }]
+}
+{% endschema %}

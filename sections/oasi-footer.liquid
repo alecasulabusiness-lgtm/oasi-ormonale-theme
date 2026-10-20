@@ -1,0 +1,67 @@
+<footer class="oasi oasi-footer" role="contentinfo">
+  <div class="oasi-box oasi-dark oasi-footer__box">
+    <div class="oasi-footer__top">
+      <div class="oasi-footer__brand">
+        <img src="{{ 'oasi-logo-white.svg' | asset_url }}" alt="{{ shop.name }}" width="146" height="96" loading="lazy">
+        {%- if section.settings.tagline != blank -%}
+          <p class="oasi-footer__tag">{{ section.settings.tagline }}</p>
+        {%- endif -%}
+      </div>
+
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'column' -%}
+          <nav class="oasi-footer__col" aria-label="{{ block.settings.title | escape }}" {{ block.shopify_attributes }}>
+            <h4>{{ block.settings.title }}</h4>
+            {%- for i in (1..4) -%}
+              {%- assign label_key = 'label_' | append: i -%}
+              {%- assign url_key = 'url_' | append: i -%}
+              {%- assign link_label = block.settings[label_key] -%}
+              {%- assign link_url = block.settings[url_key] -%}
+              {%- if link_label != blank and link_url != blank -%}
+                <a href="{{ link_url }}"{% render 'oasi-url-attrs', url: link_url %}>{{ link_label }}</a>
+              {%- endif -%}
+            {%- endfor -%}
+          </nav>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+
+    <div class="oasi-footer__legal">
+      {%- if section.settings.legal != blank -%}
+        <p>{{ section.settings.legal }}</p>
+      {%- endif -%}
+      {%- if section.settings.copyright != blank -%}
+        <p>{{ section.settings.copyright }}</p>
+      {%- endif -%}
+    </div>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Oasi: footer",
+  "settings": [
+    { "type": "text", "id": "tagline", "label": "Frase sotto il logo", "default": "Il 1° Protocollo in Italia Specializzato nel Benessere Ormonale" },
+    { "type": "textarea", "id": "legal", "label": "Avvertenze legali" },
+    { "type": "text", "id": "copyright", "label": "Copyright", "default": "Copyright © 2026 Oasi Ormonale | Tutti i diritti riservati" }
+  ],
+  "blocks": [
+    {
+      "type": "column",
+      "name": "Colonna di link",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Titolo", "default": "Navigazione rapida" },
+        { "type": "text", "id": "label_1", "label": "Link 1, testo" },
+        { "type": "url", "id": "url_1", "label": "Link 1, indirizzo" },
+        { "type": "text", "id": "label_2", "label": "Link 2, testo" },
+        { "type": "url", "id": "url_2", "label": "Link 2, indirizzo" },
+        { "type": "text", "id": "label_3", "label": "Link 3, testo" },
+        { "type": "url", "id": "url_3", "label": "Link 3, indirizzo" },
+        { "type": "text", "id": "label_4", "label": "Link 4, testo" },
+        { "type": "url", "id": "url_4", "label": "Link 4, indirizzo" }
+      ]
+    }
+  ],
+  "max_blocks": 3
+}
+{% endschema %}

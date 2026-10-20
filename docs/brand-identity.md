@@ -37,6 +37,12 @@ Il marchio è il pittogramma (un triangolo dai bordi arrotondati, vuoto al centr
 - Pag. 7, "Respiro visivo / Benessere Clinico": un'animazione lenta e pulsante, che simula un respiro profondo, per accogliere chi arriva sul sito.
 - Pag. 4, 14, 15: foto di donne adulte, luce naturale, abiti in toni vino e terra, carta goffrata e sigillata a secco su fondi borgogna e sabbia.
 
+## Palette e font applicati
+
+Il tema usa la palette ufficiale con sette schemi colore (`config/settings_data.json`, generati da `tools/apply_palette.py`) e i font Geologica e Niramit, serviti dal tema. Home, Chi siamo, I nostri brand, Lavora con noi, header e footer li usano per intero: vedi [migrazione-pagine.md](migrazione-pagine.md). Il corsivo Brush Script MT non è stato usato, per la ragione scritta sopra.
+
+I loghi in bianco e nero qui sotto restano sulle pagine GemPages che non sono state ricostruite.
+
 ## Applicato nel tema (ramo `brand/nuova-identita`)
 
 Logo nuovo in bianco e nero al posto del vecchio logo dorato:

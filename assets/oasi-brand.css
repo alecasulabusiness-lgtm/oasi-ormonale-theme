@@ -1,0 +1,356 @@
+/* Oasi Ormonale: strato di brand (palette, font e componenti delle sezioni oasi-*).
+   Fonte: brand/OAS_B26_Guidelines.pdf. Contrasti verificati in docs/brand-identity.md:
+   il rosa antico si usa come testo solo su borgogna o vino, il marrone solo per filetti e testi grandi. */
+
+:root {
+  --oasi-burgundy: #4b1c22;
+  --oasi-wine: #65333c;
+  --oasi-rose: #db9aa8;
+  --oasi-blush: #ebccd2;
+  --oasi-cream: #f6ede4;
+  --oasi-brown: #9d7961;
+  --oasi-white: #ffffff;
+  --oasi-tint: #7d2f3f;
+  --oasi-display: 'Geologica', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --oasi-text: 'Niramit', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --oasi-gutter: clamp(20px, 5vw, 72px);
+  --oasi-max: 1240px;
+  --oasi-r-xl: 40px;
+  --oasi-r-lg: 32px;
+  --oasi-r-md: 24px;
+  --header-height: 80px;
+
+  /* Il tema Horizon legge questi valori dalle impostazioni; qui li portiamo sui font della guida. */
+  --font-body--family: var(--oasi-text);
+  --font-body--weight: 400;
+  --font-subheading--family: var(--oasi-display);
+  --font-subheading--weight: 500;
+  --font-heading--family: var(--oasi-display);
+  --font-heading--weight: 400;
+  --font-accent--family: var(--oasi-display);
+  --font-accent--weight: 500;
+}
+
+html { scroll-behavior: smooth; }
+body { background: var(--oasi-cream); }
+
+/* Header e footer stanno in gruppi di sezioni: il wrapper di Shopify non deve limitare lo sticky. */
+#header-group,
+.shopify-section-group-header-group { display: contents; }
+
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* ---------- Base dei componenti ---------- */
+.oasi { font-family: var(--oasi-text); font-size: 18px; line-height: 1.6; color: var(--oasi-burgundy); }
+.oasi *, .oasi *::before, .oasi *::after { box-sizing: border-box; }
+/* :where() azzera la specificità, così le classi dei componenti vincono sempre sui valori di base. */
+.oasi :where(p) { margin: 0; }
+.oasi :where(ul, ol) { margin: 0; padding: 0; list-style: none; }
+.oasi :where(a) { color: inherit; }
+.oasi :where(img) { max-width: 100%; }
+.oasi :where(h1, h2, h3, h4) {
+  margin: 0; font-family: var(--oasi-display); font-weight: 300; letter-spacing: -.022em;
+  line-height: 1.08; color: inherit; text-transform: none;
+}
+.oasi :where(h1) { font-size: clamp(2.6rem, 5.4vw, 5rem); line-height: 1.04; letter-spacing: -.025em; }
+.oasi :where(h2) { font-size: clamp(2.1rem, 4.4vw, 3.9rem); }
+.oasi :where(h3) { font-size: clamp(1.4rem, 2.2vw, 1.9rem); line-height: 1.2; letter-spacing: -.01em; }
+.oasi :focus-visible { outline: 2px solid currentColor; outline-offset: 3px; border-radius: 6px; }
+.oasi-split__copy > :first-child { margin-top: 0; }
+
+.oasi-s {
+  padding: var(--oasi-pt, clamp(64px, 8vw, 112px)) var(--oasi-gutter) var(--oasi-pb, clamp(64px, 8vw, 112px));
+}
+@media (max-width: 700px) {
+  .oasi-s { padding-top: calc(var(--oasi-pt, 80px) * .6); padding-bottom: calc(var(--oasi-pb, 80px) * .6); }
+}
+.oasi-wrap { max-width: var(--oasi-max); margin: 0 auto; }
+.oasi-shell { padding: 16px 16px 0; }
+.oasi-box { position: relative; overflow: hidden; max-width: 1400px; margin: 0 auto; border-radius: var(--oasi-r-xl); }
+
+/* Tonalità dei contenitori delle sezioni: light (sulla pagina crema, senza riquadro), white, soft, rose, dark. */
+.oasi-dark,
+.oasi-tone-dark {
+  background: radial-gradient(120% 100% at 75% 0%, var(--oasi-wine) 0%, var(--oasi-burgundy) 58%);
+  color: var(--oasi-cream);
+}
+.oasi-tone-white { background: var(--oasi-white); }
+.oasi-tone-soft { background: linear-gradient(180deg, var(--oasi-blush) 0%, var(--oasi-cream) 100%); }
+.oasi-tone-rose { background: var(--oasi-rose); }
+.oasi-shell--light { padding: 0; }
+.oasi-tone-light { background: transparent; border-radius: 0; overflow: visible; max-width: none; }
+.oasi-center { text-align: center; }
+.oasi-muted { color: var(--oasi-wine); }
+.oasi-dark .oasi-muted { color: var(--oasi-blush); }
+.oasi-fade { color: var(--oasi-brown); } /* solo su testi grandi (3,4:1 su crema) */
+.oasi-dark .oasi-fade { color: var(--oasi-rose); }
+
+.oasi-label {
+  display: flex; align-items: center; gap: 14px; font: 500 11px/1.4 var(--oasi-display);
+  letter-spacing: .18em; text-transform: uppercase;
+}
+.oasi-label::before { content: ""; flex: none; width: 8px; height: 8px; border-radius: 2px; background: currentColor; }
+.oasi-label--rule::after { content: ""; flex: 1; height: 1px; background: currentColor; opacity: .25; }
+.oasi-label--center { justify-content: center; }
+.oasi-dark .oasi-label { color: var(--oasi-blush); }
+.oasi-dark .oasi-label::before { background: var(--oasi-rose); }
+
+.oasi-kicker { font-style: italic; font-weight: 300; font-size: 1.25rem; line-height: 1.5; }
+.oasi-lead { font-size: 1.25rem; line-height: 1.55; }
+.oasi-rich p + p { margin-top: 1em; }
+.oasi-rich strong { font-weight: 600; }
+.oasi-rich a { text-underline-offset: 3px; }
+
+.oasi-btn {
+  display: inline-flex; align-items: center; gap: 16px; min-height: 56px; padding: 0 10px 0 28px;
+  border-radius: 999px; font: 500 13px/1.2 var(--oasi-display); letter-spacing: .12em; text-transform: uppercase;
+  text-decoration: none; transition: opacity .2s ease, transform .2s ease; cursor: pointer;
+}
+.oasi-btn:hover { opacity: .88; }
+.oasi-btn__arrow { display: inline-flex; align-items: center; justify-content: center; flex: none; width: 38px; height: 38px; border-radius: 50%; }
+.oasi-btn--dark { background: var(--oasi-burgundy); color: var(--oasi-cream); }
+.oasi-btn--dark .oasi-btn__arrow { background: var(--oasi-cream); color: var(--oasi-burgundy); }
+.oasi-btn--light { background: var(--oasi-cream); color: var(--oasi-burgundy); }
+.oasi-btn--light .oasi-btn__arrow { background: var(--oasi-burgundy); color: var(--oasi-cream); }
+.oasi-btn--ghost {
+  min-height: 46px; padding: 0 24px; border: 1px solid rgba(246, 237, 228, .4);
+  background: rgba(246, 237, 228, .1); color: var(--oasi-cream);
+}
+.oasi-btn--ghost .oasi-btn__arrow { display: none; }
+.oasi-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 20px 32px; margin-top: 40px; }
+.oasi-textlink {
+  display: inline-block; padding: 14px 0; font: 500 12px/1.2 var(--oasi-display); letter-spacing: .14em;
+  text-transform: uppercase; text-decoration: none;
+}
+.oasi-textlink:hover { text-decoration: underline; }
+.oasi-dark .oasi-textlink { color: var(--oasi-blush); }
+
+/* ---------- Immagini: bianco e nero con tinta borgogna ---------- */
+.oasi-media { position: relative; isolation: isolate; overflow: hidden; border-radius: var(--oasi-r-lg); background: var(--oasi-burgundy); }
+.oasi-media > img, .oasi-media > picture, .oasi-media > picture img {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: grayscale(1);
+}
+.oasi-media::after { content: ""; position: absolute; inset: 0; background: var(--oasi-tint); mix-blend-mode: color; opacity: .85; pointer-events: none; }
+.oasi-media--shade::before {
+  content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background: linear-gradient(180deg, rgba(75, 28, 34, 0) 45%, rgba(75, 28, 34, .85) 100%);
+}
+.oasi-media__over { position: relative; z-index: 2; padding: clamp(20px, 3vw, 40px); color: var(--oasi-cream); }
+.oasi-glass {
+  background: rgba(75, 28, 34, .62); border: 1px solid rgba(246, 237, 228, .28);
+  -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px); color: var(--oasi-cream);
+}
+.oasi-glass--soft { background: rgba(246, 237, 228, .08); border-color: rgba(246, 237, 228, .22); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); }
+
+/* ---------- Respiro visivo (pag. 7 delle guidelines) ---------- */
+@keyframes oasi-breath { 0%, 100% { transform: scale(1); opacity: .07; } 50% { transform: scale(1.07); opacity: .14; } }
+.oasi-breath { position: absolute; z-index: 0; pointer-events: none; height: auto; animation: oasi-breath 10s ease-in-out infinite; opacity: .07; }
+@media (prefers-reduced-motion: reduce) { .oasi-breath { animation: none; } }
+
+/* ---------- Header ---------- */
+.oasi-header {
+  position: sticky; top: 0; z-index: 60; background: rgba(246, 237, 228, .94);
+  -webkit-backdrop-filter: saturate(1.2) blur(14px); backdrop-filter: saturate(1.2) blur(14px);
+  border-bottom: 1px solid rgba(75, 28, 34, .12);
+}
+.oasi-header__inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; max-width: 1400px; margin: 0 auto; padding: 12px var(--oasi-gutter); }
+.oasi-header__logo { display: block; line-height: 0; flex: none; }
+.oasi-header__logo img { display: block; height: 56px; width: auto; }
+.oasi-nav { display: flex; align-items: center; gap: 0 36px; }
+.oasi-nav a { display: inline-block; padding: 16px 0; font: 500 12px/1 var(--oasi-display); letter-spacing: .16em; text-transform: uppercase; text-decoration: none; }
+.oasi-nav a:hover { text-decoration: underline; text-underline-offset: 6px; }
+.oasi-header__cta { min-height: 46px; padding: 0 24px; }
+.oasi-header__cta .oasi-btn__arrow { display: none; }
+.oasi-menu { display: none; position: relative; }
+.oasi-menu summary { list-style: none; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 50%; border: 1px solid rgba(75, 28, 34, .25); }
+.oasi-menu summary::-webkit-details-marker { display: none; }
+.oasi-menu__panel {
+  position: absolute; right: 0; top: calc(100% + 12px); width: min(320px, calc(100vw - 2 * var(--oasi-gutter)));
+  padding: 12px 24px 24px; border-radius: var(--oasi-r-md); background: var(--oasi-burgundy); color: var(--oasi-cream);
+}
+.oasi-menu__panel a { display: block; padding: 14px 0; border-bottom: 1px solid rgba(246, 237, 228, .2); font: 400 13px/1.2 var(--oasi-display); letter-spacing: .14em; text-transform: uppercase; text-decoration: none; }
+.oasi-menu__panel .oasi-btn { margin-top: 20px; border-bottom: 0; }
+@media (max-width: 860px) {
+  .oasi-nav, .oasi-header__cta { display: none; }
+  .oasi-menu { display: block; }
+  .oasi-header__logo img { height: 48px; }
+}
+
+/* ---------- Hero (home) e hero delle pagine ---------- */
+.oasi-hero__inner {
+  position: relative; z-index: 1; max-width: 1320px; margin: 0 auto;
+  padding: clamp(48px, 7vw, 88px) var(--oasi-gutter) clamp(64px, 8vw, 104px);
+  display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); gap: clamp(32px, 5vw, 64px); align-items: center;
+}
+.oasi-hero__inner--single { grid-template-columns: minmax(0, 1fr); padding-block: clamp(64px, 10vw, 128px); }
+.oasi-hero__inner--single .oasi-hero__copy { max-width: 880px; }
+.oasi-hero .oasi-label { margin-bottom: 32px; }
+.oasi-hero__text { margin-top: 28px; max-width: 540px; font-size: 1.2rem; line-height: 1.55; color: var(--oasi-blush); }
+.oasi-hero__media { aspect-ratio: 4 / 5; min-height: 420px; max-width: 500px; width: 100%; margin-left: auto; }
+.oasi-hero .oasi-breath { right: -6%; top: -10%; width: min(860px, 72%); }
+.oasi-journey { position: absolute; z-index: 2; left: 18px; right: 18px; bottom: 18px; padding: 20px 22px 22px; border-radius: var(--oasi-r-md); }
+.oasi-journey__title { margin-bottom: 14px; font: 500 11px/1.4 var(--oasi-display); letter-spacing: .18em; text-transform: uppercase; color: var(--oasi-blush); }
+.oasi-journey__bars { display: flex; gap: 6px; margin-bottom: 12px; }
+.oasi-journey__bars span { flex: 1; height: 3px; border-radius: 2px; background: rgba(246, 237, 228, .35); }
+.oasi-journey__bars span:first-child { background: var(--oasi-cream); }
+.oasi-journey__steps { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 4px 12px; font-size: 14px; line-height: 1.3; }
+@media (max-width: 900px) {
+  .oasi-hero__inner { grid-template-columns: minmax(0, 1fr); }
+  .oasi-hero__media { margin: 0 auto; }
+}
+
+/* ---------- Striscia di chip ---------- */
+.oasi-chips { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.oasi-chip { display: inline-block; padding: 12px 22px; border-radius: 999px; background: var(--oasi-white); border: 1px solid rgba(75, 28, 34, .16); font-size: 16px; line-height: 1.3; }
+.oasi-glass .oasi-chip, .oasi-media .oasi-chip { background: rgba(75, 28, 34, .6); border-color: rgba(246, 237, 228, .3); color: var(--oasi-cream); font-size: 15px; -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); }
+
+/* ---------- Metodo (home) ---------- */
+.oasi-method__head { max-width: 940px; margin: 0 auto; text-align: center; }
+.oasi-method__head .oasi-label { justify-content: center; }
+.oasi-method__head h2 { margin-top: 28px; }
+.oasi-method__grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 20px; margin-top: clamp(40px, 6vw, 72px); }
+.oasi-method__image { display: flex; flex-direction: column; justify-content: flex-end; min-height: 600px; border-radius: var(--oasi-r-xl); color: var(--oasi-cream); }
+.oasi-method__image h3 { max-width: 560px; font-size: clamp(1.5rem, 2.4vw, 2.1rem); margin-bottom: 24px; }
+.oasi-method__image .oasi-chips { margin-top: 14px; gap: 10px; }
+.oasi-method__side { display: flex; flex-direction: column; justify-content: space-between; gap: 40px; padding: clamp(28px, 3.5vw, 44px); border-radius: var(--oasi-r-xl); background: var(--oasi-wine); color: var(--oasi-cream); }
+.oasi-method__side .oasi-label { color: var(--oasi-blush); margin-bottom: 28px; }
+.oasi-method__side .oasi-method__quote { font-family: var(--oasi-display); font-weight: 300; font-size: clamp(1.4rem, 2.2vw, 1.9rem); line-height: 1.3; letter-spacing: -.01em; }
+.oasi-method__centre { margin-bottom: 28px; font-family: var(--oasi-display); font-weight: 300; font-size: clamp(1.8rem, 3vw, 2.6rem); line-height: 1.1; letter-spacing: -.02em; color: var(--oasi-rose); }
+@media (max-width: 900px) { .oasi-method__grid { grid-template-columns: minmax(0, 1fr); } .oasi-method__image { min-height: 520px; } }
+
+/* ---------- Split (immagine + testo) ---------- */
+.oasi-split__inner { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(32px, 5vw, 64px); align-items: stretch; }
+.oasi-split__media { min-height: 520px; }
+.oasi-split__copy { display: flex; flex-direction: column; justify-content: center; min-width: 0; }
+.oasi-split--right .oasi-split__media { order: 2; }
+.oasi-split--noimage .oasi-split__inner { grid-template-columns: minmax(0, 1fr); max-width: 920px; margin: 0 auto; }
+.oasi-split__copy h2 { margin-top: 28px; font-size: clamp(2rem, 3.8vw, 3.3rem); }
+.oasi-split__lead { margin-top: 20px; }
+.oasi-split__body { margin-top: 28px; }
+.oasi-split__sub { margin-top: 24px; font-weight: 600; font-size: 1.2rem; }
+.oasi-list { margin-top: 32px; }
+.oasi-list__item { display: flex; gap: 24px; align-items: flex-start; padding: 20px 0; border-top: 1px solid rgba(75, 28, 34, .18); }
+.oasi-list__item:last-child { border-bottom: 1px solid rgba(75, 28, 34, .18); }
+.oasi-list__num { flex: none; width: 32px; padding-top: 6px; font: 400 12px/1.4 var(--oasi-display); letter-spacing: .14em; }
+.oasi-list__check { flex: none; margin-top: 4px; }
+.oasi-list__item .oasi-rich { min-width: 0; }
+.oasi-list__title { font-family: var(--oasi-display); font-weight: 400; font-size: 1.15rem; line-height: 1.3; margin-bottom: 6px; }
+.oasi-dark .oasi-list__item { border-color: rgba(246, 237, 228, .22); }
+.oasi-split__outro { margin-top: 32px; font-family: var(--oasi-display); font-weight: 300; font-size: clamp(1.4rem, 2.3vw, 1.9rem); line-height: 1.25; letter-spacing: -.015em; }
+@media (max-width: 900px) {
+  .oasi-split__inner { grid-template-columns: minmax(0, 1fr); }
+  .oasi-split--right .oasi-split__media { order: 0; }
+  .oasi-split__media { min-height: 420px; }
+}
+
+/* ---------- Statement centrato ---------- */
+.oasi-statement__inner { max-width: 1000px; margin: 0 auto; text-align: center; }
+.oasi-statement .oasi-kicker { margin-bottom: 28px; }
+.oasi-statement h2 { font-size: clamp(1.9rem, 3.8vw, 3.3rem); line-height: 1.2; }
+.oasi-statement h2 mark { background: var(--oasi-blush); color: inherit; padding: 0 .3em; border-radius: 14px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+.oasi-dark h2 mark { background: var(--oasi-rose); color: var(--oasi-burgundy); }
+.oasi-tone-rose h2 mark { background: var(--oasi-burgundy); color: var(--oasi-cream); }
+.oasi-statement__text { margin-top: 28px; font-size: 1.2rem; }
+.oasi-pills { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 28px; }
+.oasi-pill { display: inline-block; padding: 12px 26px; border-radius: 999px; font: 500 13px/1.2 var(--oasi-display); letter-spacing: .12em; text-transform: uppercase; }
+.oasi-pill:nth-child(4n+1) { background: var(--oasi-burgundy); color: var(--oasi-cream); }
+.oasi-pill:nth-child(4n+2) { background: var(--oasi-wine); color: var(--oasi-cream); }
+.oasi-pill:nth-child(4n+3) { background: var(--oasi-rose); color: var(--oasi-burgundy); }
+.oasi-pill:nth-child(4n+4) { background: var(--oasi-blush); color: var(--oasi-burgundy); }
+.oasi-statement .oasi-actions { justify-content: center; }
+
+/* ---------- Card (protocollo, posizioni, valori, brand) ---------- */
+.oasi-cards__head { max-width: 780px; }
+.oasi-cards__head h2 { margin-top: 28px; }
+.oasi-cards__head p.oasi-muted { margin-top: 20px; font-size: 1.25rem; }
+.oasi-cards__head--center { margin: 0 auto; text-align: center; }
+.oasi-cards__head--center .oasi-label { justify-content: center; }
+.oasi-cards__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-top: clamp(40px, 6vw, 64px); }
+.oasi-card { display: flex; flex-direction: column; gap: 56px; min-height: 420px; padding: 32px; border-radius: var(--oasi-r-lg); min-width: 0; }
+.oasi-card > div:last-child { display: flex; flex: 1; flex-direction: column; align-items: flex-start; }
+.oasi-card:nth-child(4n+1) { background: var(--oasi-wine); color: var(--oasi-cream); }
+.oasi-card:nth-child(4n+2) { background: var(--oasi-rose); color: var(--oasi-burgundy); }
+.oasi-card:nth-child(4n+3) { background: var(--oasi-blush); color: var(--oasi-burgundy); }
+.oasi-card:nth-child(4n+4) { background: var(--oasi-burgundy); color: var(--oasi-cream); }
+.oasi-cards--soft .oasi-card { background: var(--oasi-white); color: var(--oasi-burgundy); border: 1px solid rgba(75, 28, 34, .12); min-height: 0; }
+.oasi-card__top { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
+.oasi-card__num { font: 400 12px/1.4 var(--oasi-display); letter-spacing: .16em; }
+.oasi-card__tag { margin-bottom: 14px; font: 500 11px/1.4 var(--oasi-display); letter-spacing: .18em; text-transform: uppercase; }
+.oasi-card:nth-child(4n+1) .oasi-card__tag, .oasi-card:nth-child(4n+4) .oasi-card__tag { color: var(--oasi-blush); }
+.oasi-cards--soft .oasi-card .oasi-card__tag { color: var(--oasi-wine); }
+.oasi-card h3 { font-weight: 400; font-size: 1.65rem; line-height: 1.15; margin-bottom: 16px; }
+.oasi-card:nth-child(4n+1) .oasi-rich, .oasi-card:nth-child(4n+4) .oasi-rich { color: var(--oasi-blush); }
+.oasi-cards--soft .oasi-card .oasi-rich { color: var(--oasi-wine); }
+.oasi-card .oasi-rich { margin-bottom: 28px; }
+.oasi-card .oasi-btn { margin-top: auto; }
+.oasi-card:nth-child(4n+2) .oasi-btn, .oasi-card:nth-child(4n+3) .oasi-btn { background: var(--oasi-burgundy); color: var(--oasi-cream); }
+.oasi-card:nth-child(4n+2) .oasi-btn .oasi-btn__arrow, .oasi-card:nth-child(4n+3) .oasi-btn .oasi-btn__arrow { background: var(--oasi-cream); color: var(--oasi-burgundy); }
+.oasi-card:nth-child(4n+1) .oasi-btn, .oasi-card:nth-child(4n+4) .oasi-btn { background: var(--oasi-cream); color: var(--oasi-burgundy); }
+.oasi-card:nth-child(4n+1) .oasi-btn .oasi-btn__arrow, .oasi-card:nth-child(4n+4) .oasi-btn .oasi-btn__arrow { background: var(--oasi-burgundy); color: var(--oasi-cream); }
+.oasi-cards--soft .oasi-card .oasi-btn { background: var(--oasi-burgundy) !important; color: var(--oasi-cream) !important; }
+.oasi-cards--soft .oasi-card .oasi-btn .oasi-btn__arrow { background: var(--oasi-cream) !important; color: var(--oasi-burgundy) !important; }
+.oasi-shape { flex: none; display: block; width: 60px; height: 60px; border: 11px solid currentColor; border-radius: 50%; opacity: .92; }
+.oasi-card:nth-child(4n+2) .oasi-shape { border-radius: 50% 50% 50% 50% / 62% 62% 38% 38%; }
+.oasi-card:nth-child(4n+3) .oasi-shape { border-radius: 56% 44% 50% 50% / 48% 56% 44% 52%; transform: rotate(-18deg); }
+.oasi-card:nth-child(4n+4) .oasi-shape { border-radius: 46% 54% 40% 60% / 62% 40% 60% 38%; transform: rotate(12deg); }
+.oasi-card:nth-child(4n+1) .oasi-shape { color: var(--oasi-blush); }
+.oasi-card:nth-child(4n+4) .oasi-shape { color: var(--oasi-rose); }
+
+/* ---------- Video ---------- */
+.oasi-videos__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-top: clamp(40px, 6vw, 56px); }
+.oasi-video { margin: 0; min-width: 0; overflow: hidden; border-radius: var(--oasi-r-lg); background: var(--oasi-white); border: 1px solid rgba(75, 28, 34, .12); }
+.oasi-video__frame { position: relative; aspect-ratio: 16 / 10; background: radial-gradient(100% 120% at 30% 0%, var(--oasi-wine) 0%, var(--oasi-burgundy) 70%); }
+.oasi-video__play { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; width: 100%; padding: 0; border: 0; background: transparent; color: var(--oasi-cream); cursor: pointer; }
+.oasi-video__play svg { transition: transform .2s ease; }
+.oasi-video__play:hover svg { transform: scale(1.06); }
+.oasi-video__frame iframe, .oasi-video__frame video { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.oasi-video figcaption { padding: 26px 28px 30px; }
+.oasi-video__quote { font-family: var(--oasi-display); font-weight: 300; font-size: 1.3rem; line-height: 1.3; letter-spacing: -.01em; }
+.oasi-video__who { margin-top: 12px; color: var(--oasi-wine); }
+
+/* ---------- Footer ---------- */
+.oasi-footer { padding: 16px; }
+.oasi-footer__box { padding: clamp(56px, 7vw, 96px) var(--oasi-gutter) 48px; }
+.oasi-footer__top { display: grid; grid-template-columns: minmax(0, 1.4fr) repeat(3, minmax(0, 1fr)); gap: 48px 64px; max-width: var(--oasi-max); margin: 0 auto; }
+.oasi-footer__brand img { display: block; height: 96px; width: auto; }
+.oasi-footer__tag { margin-top: 32px; max-width: 300px; font-size: 1rem; color: var(--oasi-blush); }
+.oasi-footer__col h4 { margin-bottom: 12px; font: 500 11px/1.4 var(--oasi-display); letter-spacing: .18em; text-transform: uppercase; color: var(--oasi-rose); }
+.oasi-footer__col a { display: block; padding: 8px 0; font-size: 1rem; text-decoration: none; }
+.oasi-footer__col a:hover { text-decoration: underline; }
+.oasi-footer__legal { max-width: var(--oasi-max); margin: 64px auto 0; padding-top: 32px; border-top: 1px solid var(--oasi-brown); }
+.oasi-footer__legal p { max-width: 1000px; font-size: .875rem; line-height: 1.7; color: var(--oasi-blush); }
+.oasi-footer__legal p + p { margin-top: 24px; }
+@media (max-width: 900px) { .oasi-footer__top { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } .oasi-footer__brand { grid-column: 1 / -1; } }
+@media (max-width: 520px) { .oasi-footer__top { grid-template-columns: minmax(0, 1fr); } }
+
+/* ---------- Etichetta sull'immagine ---------- */
+.oasi-badge {
+  position: absolute; z-index: 2; left: 18px; bottom: 18px; padding: 16px 22px; border-radius: 999px;
+  font: 500 12px/1.3 var(--oasi-display); letter-spacing: .14em; text-transform: uppercase;
+}
+
+/* ---------- Le specialiste ---------- */
+.oasi-team__inner { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: clamp(32px, 5vw, 64px); align-items: center; }
+.oasi-team .oasi-label { margin-bottom: 28px; }
+.oasi-team__lead { margin-top: 24px; }
+.oasi-team__body { margin-top: 20px; }
+.oasi-team__mark { left: -8%; bottom: -24%; width: min(640px, 60%); }
+.oasi-team__list { padding: 12px 32px; border-radius: var(--oasi-r-lg); }
+.oasi-team__list li { display: flex; gap: 20px; align-items: baseline; padding: 20px 0; border-bottom: 1px solid rgba(246, 237, 228, .2); font-size: 1.1rem; }
+.oasi-team__list li:last-child { border-bottom: 0; }
+.oasi-team__num { flex: none; width: 28px; font: 400 12px/1.4 var(--oasi-display); letter-spacing: .14em; color: var(--oasi-blush); }
+@media (max-width: 900px) { .oasi-team__inner { grid-template-columns: minmax(0, 1fr); } }
+
+/* Nel riquadro del metodo il testo sta su una foto chiara: la sfumatura è più decisa. */
+.oasi-method__image.oasi-media--shade::before {
+  background: linear-gradient(180deg, rgba(75, 28, 34, .15) 0%, rgba(75, 28, 34, .9) 62%);
+}
+
+/* ---------- Ritocchi dopo la verifica visiva ---------- */
+.oasi-label + h2 { margin-top: 28px; }
+.oasi-label + .oasi-kicker { margin-top: 24px; }
+.oasi-videos__intro { margin-top: 20px; font-size: 1.2rem; }
+.oasi-videos__title { max-width: 760px; }
+.oasi-videos__grid > li { display: flex; }
+.oasi-videos__grid .oasi-video { flex: 1; display: flex; flex-direction: column; }
+.oasi-split__outro--text { font-family: var(--oasi-text); font-weight: 400; font-size: 1.1rem; line-height: 1.6; letter-spacing: 0; }

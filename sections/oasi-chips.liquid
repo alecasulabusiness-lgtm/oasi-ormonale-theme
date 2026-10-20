@@ -1,0 +1,38 @@
+<section class="oasi oasi-shell oasi-shell--light"{% if section.settings.anchor != blank %} id="{{ section.settings.anchor }}"{% endif %} {{ section.shopify_attributes }}>
+  <div class="oasi-box oasi-tone-light">
+    <div class="oasi-s" style="--oasi-pt: {{ section.settings.padding_top }}px; --oasi-pb: {{ section.settings.padding_bottom }}px">
+      <div class="oasi-wrap">
+        {%- if section.settings.label != blank -%}
+          <p class="oasi-label oasi-label--rule">{{ section.settings.label }}</p>
+        {%- endif -%}
+        <ul class="oasi-chips">
+          {%- for block in section.blocks -%}
+            {%- if block.settings.text != blank -%}
+              <li class="oasi-chip" {{ block.shopify_attributes }}>{{ block.settings.text }}</li>
+            {%- endif -%}
+          {%- endfor -%}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Oasi: striscia di chip",
+  "settings": [
+    { "type": "text", "id": "label", "label": "Etichetta", "default": "Professioniste del Benessere Ormonale" },
+    { "type": "text", "id": "anchor", "label": "Ancoraggio (id)" },
+    { "type": "range", "id": "padding_top", "min": 0, "max": 200, "step": 4, "unit": "px", "label": "Spazio sopra", "default": 72 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 200, "step": 4, "unit": "px", "label": "Spazio sotto", "default": 24 }
+  ],
+  "blocks": [
+    {
+      "type": "chip",
+      "name": "Chip",
+      "settings": [{ "type": "text", "id": "text", "label": "Testo" }]
+    }
+  ],
+  "presets": [{ "name": "Oasi: striscia di chip", "blocks": [{ "type": "chip" }, { "type": "chip" }] }]
+}
+{% endschema %}

@@ -1,0 +1,13 @@
+{%- comment -%}
+  Immagine responsive. Parametri: image, sizes, loading ('lazy' | 'eager'), alt (facoltativo).
+  Senza immagine non stampa nulla: il contenitore resta sul fondo borgogna.
+{%- endcomment -%}
+{%- if image != blank -%}
+  {%- assign img_loading = loading | default: 'lazy' -%}
+  {%- assign img_alt = alt | default: image.alt | default: '' -%}
+  {{
+    image
+    | image_url: width: 1600
+    | image_tag: widths: '400, 700, 1000, 1400, 1600', sizes: sizes, loading: img_loading, alt: img_alt
+  }}
+{%- endif -%}

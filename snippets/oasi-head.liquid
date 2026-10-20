@@ -1,0 +1,58 @@
+{%- comment -%}
+  Font della guida (Geologica per i titoli, Niramit per il testo) serviti dal tema, e foglio di stile del brand.
+  Va incluso nell'head dopo theme-styles-variables e color-schemes, così sovrascrive i font di Horizon.
+{%- endcomment -%}
+{{ 'geologica-latin-wght-normal.woff2' | asset_url | preload_tag: as: 'font', type: 'font/woff2', crossorigin: '' }}
+{{ 'niramit-latin-400-normal.woff2' | asset_url | preload_tag: as: 'font', type: 'font/woff2', crossorigin: '' }}
+{% style %}
+  @font-face {
+    font-family: 'Geologica';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('{{ 'geologica-latin-wght-normal.woff2' | asset_url }}') format('woff2');
+  }
+  @font-face {
+    font-family: 'Niramit';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('{{ 'niramit-latin-300-normal.woff2' | asset_url }}') format('woff2');
+  }
+  @font-face {
+    font-family: 'Niramit';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('{{ 'niramit-latin-400-normal.woff2' | asset_url }}') format('woff2');
+  }
+  @font-face {
+    font-family: 'Niramit';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('{{ 'niramit-latin-500-normal.woff2' | asset_url }}') format('woff2');
+  }
+  @font-face {
+    font-family: 'Niramit';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('{{ 'niramit-latin-600-normal.woff2' | asset_url }}') format('woff2');
+  }
+  @font-face {
+    font-family: 'Niramit';
+    font-style: italic;
+    font-weight: 300;
+    font-display: swap;
+    src: url('{{ 'niramit-latin-300-italic.woff2' | asset_url }}') format('woff2');
+  }
+  @font-face {
+    font-family: 'Niramit';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url('{{ 'niramit-latin-400-italic.woff2' | asset_url }}') format('woff2');
+  }
+{% endstyle %}
+{{ 'oasi-brand.css' | asset_url | stylesheet_tag }}

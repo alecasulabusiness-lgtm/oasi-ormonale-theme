@@ -27,14 +27,23 @@ Le cartelle del tema stanno alla radice (`assets`, `blocks`, `config`, `layout`,
 
 | Cartella | Contenuto |
 | --- | --- |
-| `docs/` | Esportazione, identità attuale, brand identity 2026 con i contrasti della palette |
+| `docs/` | Esportazione, identità attuale, brand identity 2026 con i contrasti della palette, migrazione delle pagine |
 | `brand/` | Guidelines in PDF e logo in vettoriale e PNG, bianco e nero |
-| `tools/` | `apply_logo.py` (mette il logo nuovo nel tema), `extract_logo.py` (estrae il logo dal PDF) |
+| `tools/` | `build_templates.py` (ricostruisce home e pagine interne dai testi originali), `validate_templates.py` (controlla i template contro gli schema delle sezioni), `apply_palette.py` (palette ufficiale in `config/settings_data.json`), `apply_logo.py` (mette il logo nuovo nel tema), `extract_logo.py` (estrae il logo dal PDF) |
 
 ## Stato del ramo `brand/nuova-identita`
 
-Fatto: logo nuovo in bianco e nero (header, footer, header nativo, favicon). Da decidere: palette e font, in bianco e nero oppure con borgogna e rosa. Dettagli in [docs/brand-identity.md](docs/brand-identity.md).
+Pronto da pubblicare. Contiene la nuova identità (palette ufficiale borgogna, rosa e crema; Geologica e Niramit; logo nuovo) applicata a home, Chi siamo, I nostri brand, Lavora con noi, header e footer. Cosa è cambiato, i link, le correzioni ai testi e i punti da sapere sono in [docs/migrazione-pagine.md](docs/migrazione-pagine.md).
+
+## Pubblicare
+
+1. Admin Shopify > Negozio online > Temi.
+2. Sul tema `oasi-ormonale-theme/brand/nuova-identita` > Pubblica.
+
+Da quel momento il ramo `brand/nuova-identita` è il tema live: ogni push su quel ramo va in produzione. Per lavorare su altro, crea un ramo nuovo e collegalo come tema separato.
+
+Le pagine GemPages non rifatte (Sensualità, Celebrities, quiz, TYP e le altre) non cambiano.
 
 ## GemPages
 
-218 delle 253 sezioni e 56 dei 69 template vengono da GemPages (`gp-section-*`, `*.gp-template-*`, `*.gem-*`). Font e colori di quelle pagine sono scritti dentro i file. È probabile che ripubblicare una pagina dall'editor di GemPages rigeneri il suo file e cancelli le modifiche fatte qui; da verificare sul tema collegato.
+Le pagine GemPages hanno font e colori scritti dentro i file (`gp-section-*`, `*.gp-template-*`, `*.gem-*`). Le quattro pagine ricostruite non usano più GemPages. Se si ripubblica una di quelle pagine dall'editor di GemPages, GemPages può rigenerare il suo template e cancellare la versione nativa: per modificarle si usa l'editor del tema.

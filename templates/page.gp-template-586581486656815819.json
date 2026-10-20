@@ -1,159 +1,175 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
-    "gp_global_section_591092676917461672-1": {
-      "type": "gp-global-section-591092676917461672",
+    "hero": {
+      "type": "oasi-page-hero",
       "settings": {
-        "section_preload": "false",
-        "checksum": "",
-        "ggj43eRnQnT_text": "Navigazione rapida",
-        "ggt66MKpypD_label": "Home",
-        "gg89Czjfy2h_label": "I Nostri Brand",
-        "ggEiWL_4Vkl_label": "Chi Siamo",
-        "gg6cAz5qcRW_text": "Risorse",
-        "ggVx9gIK7qg_label": "Lavora con noi",
-        "ggq_NLf63o1_label": "Contattaci via email",
-        "ggsXQzUYyfv_text": "Legale",
-        "ggX2Wf0WlZq_label": "Privacy Policy",
-        "ggsKAvFG3Lh_label": "Cookie Policy",
-        "ggIPNBXcDiS_label": "Termini e Condizioni",
-        "gglNKFWI2Va_srcSet_desktop_src_728777627": "https://cdn.shopify.com/s/files/1/0922/5004/6807/files/oasi-logo-white.svg",
-        "ggSGWNtKEwb_text_428721502": "Il 1° Protocollo in Italia Specializzato nel Benessere Ormonale",
-        "ggypewUmpks_text_547674795": "I risultati conseguibili dipendono da fattori individuali (condizioni fisiche, salute, costanza, alimentazione, predisposizione personale) e non sono in alcun modo garantiti. Ai sensi degli artt. 1176 e 2222 c.c., il rapporto si configura come obbligazione di mezzi e non di risultato: il titolare si impegna a fornire metodologie e strumenti con la diligenza richiesta, senza assumere alcun obbligo in ordine all'esito finale. Le informazioni divulgate hanno carattere informativo e non sostituiscono il parere di un medico o di altro professionista sanitario abilitato. Si invita l'utente a consultare il proprio medico curante prima di intraprendere qualsiasi percorso. Le comunicazioni promozionali sono rese nel rispetto del D.Lgs. 206/2005 (Codice del Consumo) e del D.Lgs. 145/2007 in materia di pubblicità. Le immagini di confronto e le rappresentazioni visive presenti su questo sito hanno finalità illustrative. Non costituiscono prova, garanzia o promessa di risultato, ma una mera proiezione indicativa.",
-        "ggcF30HUJp__text": "Copyright © 2026 Oasi Ormonale | Tutti i diritti riservati"
+        "eyebrow": "Chi siamo",
+        "heading": "La prima realtà in Italia",
+        "text": "<p>interamente specializzata nel benessere ormonale</p>"
       }
     },
-    "gp_section_586581486740701899": {
-      "type": "gp-section-586581486740701899",
+    "intro": {
+      "type": "oasi-split",
       "settings": {
-        "section_preload": "true",
-        "checksum": "e28d11ddda114424802d998a80cc35d55dec9ed95fd521f26f81f95fe71bfc67_1_1_1_0__1",
-        "ggnj68vZxPR_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0922/5004/6807/files/gempages_571219258252461280-e39bc9bf-a206-4d1b-8eb4-ab58c9c9c4e9.jpg",
-        "ggpX4N_9NkK_text": "OASI ormonale",
-        "ggMfso5R6pk_text": "Nasce da una necessità concreta: troppo spesso, quando si parla di temi delicati come il dimagrimento e la salute, molte donne vengono trattate con approcci generici, fuorvianti e dannosi… che ignorano le specificità della persona.<br><br>Per questo abbiamo scelto di concentrarci su ciò che caratterizza più di tutto il benessere femminile: <strong>il Benessere Ormonale</strong>.",
-        "gg6zk5EGGNp_label": "<p>SCOPRI OASI ORMONALE</p>"
+        "tone": "light",
+        "image": "shopify://shop_images/gempages_571219258252461280-e39bc9bf-a206-4d1b-8eb4-ab58c9c9c4e9.jpg",
+        "image_side": "left",
+        "heading": "Oasi Ormonale",
+        "body": "<p>Nasce da una necessità concreta: troppo spesso, quando si parla di temi delicati come il dimagrimento e la salute, molte donne vengono trattate con approcci generici, fuorvianti e dannosi… che ignorano le specificità della persona.</p><p>Per questo abbiamo scelto di concentrarci su ciò che caratterizza più di tutto il benessere femminile: <strong>il Benessere Ormonale</strong>.</p>",
+        "button_label": "Scopri Oasi Ormonale",
+        "button_url": "/pages/oasi-ormonale"
       }
     },
-    "gp_section_586581486740767435": {
-      "type": "gp-section-586581486740767435",
+    "who": {
+      "type": "oasi-split",
       "settings": {
-        "section_preload": "true",
-        "checksum": "8733ec69d5fc40a4570159c2807c4264ce4af934b7f0b2adb11aa4d79764b12e_1_1_1_0__1",
-        "ggdD9tO8yXN_text": "Il Nostro Team?",
-        "ggAHouq8Z7f_text": "Non solo nutrizionisti,&nbsp;<br>ma esperti per&nbsp;<span style=\"background-color:#FCE19A;\"> il tuo benessere 360°</span>."
+        "tone": "dark",
+        "image": "shopify://shop_images/gempages_571219258252461280-999d0652-d7c9-4819-a5ae-6d2defc21ae8.jpg",
+        "image_side": "right",
+        "eyebrow": "Chi siamo",
+        "heading": "Chi c'è dietro Oasi Ormonale?",
+        "body": "<p>Il team di Oasi Ormonale è composto da una squadra completa di Professioniste del Benessere Ormonale.</p><p>Una caratteristica distintiva dell'approccio è che molte delle professioniste, prima di diventare specialiste, hanno attraversato personalmente esperienze simili a quelle delle donne che aiutano.</p><p>Questa combinazione tra esperienza personale e competenza scientifica contribuisce a creare un approccio più empatico e comprensivo delle reali difficoltà femminili… ma soprattutto funzionante.</p>",
+        "button_label": "Scopri Oasi Ormonale",
+        "button_url": "https://wa.me/+393296912328"
       }
     },
-    "gp_section_586581486740832971": {
-      "type": "gp-section-586581486740832971",
+    "team_title": {
+      "type": "oasi-statement",
       "settings": {
-        "section_preload": "true",
-        "checksum": "1273cd82e8330111ee480a3126b2665b393424987006ea3d0591e2d38e9318c3_1_1_1_0__1",
-        "gg0ExmTqF0n_background_desktop_image_src": "https://cdn.shopify.com/s/files/1/0922/5004/6807/files/gempages_571219258252461280-3a759ad0-97e3-4657-90b5-5dd6fc02a696.jpg",
-        "ggqyqK4Co5B_text": "<span style=\"color:#FCE19A;\">chi</span> siamo?",
-        "ggA2aMIWSMr_text": "Chi c'è dietro Oasi Ormonale?",
-        "ggdj1I5UnSw_text": "Il team di Oasi Ormonale è composto da una squadra completa di Professioniste del Benessere Ormonale.<br><br>Una caratteristica distintiva dell'approccio è che molte delle professioniste, prima di diventare specialiste, hanno attraversato personalmente esperienze simili a quelle delle donne che aiutano.<br><br>Questa combinazione tra esperienza personale e competenza scientifica contribuisce a creare un approccio più empatico e comprensivo delle reali difficoltà femminili… ma soprattutto funzionante.",
-        "ggju2HoPPZ6_label": "<p>scopri oasi ormonale</p>",
-        "gga0mPstFYE_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0922/5004/6807/files/gempages_571219258252461280-999d0652-d7c9-4819-a5ae-6d2defc21ae8.jpg"
+        "tone": "light",
+        "kicker": "Il nostro team?",
+        "heading_before": "Non solo nutrizionisti, ma esperti per il tuo benessere 360°.",
+        "padding_top": 96,
+        "padding_bottom": 24
       }
     },
-    "gp_section_586581486740898507": {
-      "type": "gp-section-586581486740898507",
+    "team": {
+      "type": "oasi-split",
       "settings": {
-        "checksum": "3f7f5217592eca3590855060269c2d410b1957313b67306e60111663a57d8cb2_1_1_1_0__1",
-        "ggqDNFkBFwu_text": "Oasi Ormonale integra diverse competenze specialistiche, per garantire un risultato duraturo e sostenibile a chi si approccia al nostro Protocollo Nutrizionale.<br><br>Riconosciamo che la salute, non è un gioco, come lo è per molti che propinano consigli generici e dannosi. Per questo i nostri percorsi sono composti da:",
-        "ggoNX3BMPKd_childItem_0": "<p><strong>Biologhe Nutrizioniste</strong> Specializzate nel Benessere Ormonale Femminile;</p>",
-        "ggoNX3BMPKd_childItem_1": "<p><strong>Personal Trainer</strong> con expertise nel movimento applicato al benessere femminile;</p>",
-        "ggoNX3BMPKd_childItem_2": "<p><strong>Medici collaboratori </strong>per un approccio clinico integrato a tutto tondo.</p>",
-        "ggp40mV0HZp_label": "<p>SCOPRI OASI ORMONALE</p>"
+        "tone": "white",
+        "body": "<p>Oasi Ormonale integra diverse competenze specialistiche, per garantire un risultato duraturo e sostenibile a chi si approccia al nostro Protocollo Nutrizionale.</p><p>Riconosciamo che la salute, non è un gioco, come lo è per molti che propinano consigli generici e dannosi. Per questo i nostri percorsi sono composti da:</p>",
+        "list_style": "check",
+        "button_label": "Scopri Oasi Ormonale",
+        "button_url": "/pages/oasi-ormonale"
+      },
+      "blocks": {
+        "team_1": {
+          "type": "item",
+          "settings": {
+            "text": "<p>Biologhe Nutrizioniste Specializzate nel Benessere Ormonale Femminile</p>"
+          }
+        },
+        "team_2": {
+          "type": "item",
+          "settings": {
+            "text": "<p>Personal Trainer con expertise nel movimento applicato al benessere femminile</p>"
+          }
+        },
+        "team_3": {
+          "type": "item",
+          "settings": {
+            "text": "<p>Medici collaboratori per un approccio clinico integrato a tutto tondo</p>"
+          }
+        }
+      },
+      "block_order": [
+        "team_1",
+        "team_2",
+        "team_3"
+      ]
+    },
+    "stat": {
+      "type": "oasi-statement",
+      "settings": {
+        "tone": "dark",
+        "heading_before": "Oltre 4.000 donne hanno scelto Oasi Ormonale per il loro percorso di benessere",
+        "button_label": "Scopri Oasi Ormonale",
+        "button_url": "/pages/oasi-ormonale"
       }
     },
-    "gp_section_586581486741029579": {
-      "type": "gp-section-586581486741029579",
+    "stories": {
+      "type": "oasi-videos",
       "settings": {
-        "checksum": "a6edde5830bdd920900d4ede10a6b57dc2e8d26a0cdb7f1df63a0b4e29719b2f_1_1_1_0__1",
-        "ggKu4PReshF_text": "<span style=\"background-color:#FCE19A;\">&nbsp;OLTRE 4.000 DONNE&nbsp;</span> HANNO SCELTO OASI ORMONALE PER IL LORO PERCORSO DI BENESSRE",
-        "ggpCjCsNnrP_label": "<p>scopri oasi ormonale</p>"
+        "tone": "light",
+        "label": "Le storie",
+        "heading": "Per gli altri sono pazienti,",
+        "heading_fade": "per noi sono leonesse:",
+        "intro": "E ci piace celebrare le loro vittorie. Eccone alcune:",
+        "button_label": "Scopri Oasi Ormonale",
+        "button_url": "/pages/oasi-ormonale"
+      },
+      "blocks": {
+        "stories_1": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://youtu.be/R0xIBtepwII",
+            "quote": "Da stanca e senza energie a rinata",
+            "who": "Monica ce l'ha fatta!"
+          }
+        },
+        "stories_2": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://youtu.be/rMPCQhE_7qM",
+            "quote": "Meno 6 kg e di nuovo taglia 42",
+            "who": "Cristina svela perché Oasi non è una dieta qualunque!"
+          }
+        },
+        "stories_3": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://youtu.be/7_Y4otQyJuc",
+            "quote": "Mi hanno sempre detto che all’endometriosi non c’è soluzione. Oasi mi ha aiutata!"
+          }
+        },
+        "stories_4": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://youtu.be/tv0aJ0pn9Qk",
+            "quote": "-7 kg, -14 cm in vita e -13 cm sui fianchi, senza patire la fame",
+            "who": "Il percorso di Antonella"
+          }
+        }
+      },
+      "block_order": [
+        "stories_1",
+        "stories_2",
+        "stories_3",
+        "stories_4"
+      ]
+    },
+    "plan": {
+      "type": "oasi-split",
+      "settings": {
+        "tone": "soft",
+        "kicker": "Una missione? No.",
+        "heading": "Un piano concreto di Oasi Ormonale.",
+        "body": "<p>Ogni giorno, migliaia di donne iniziano una nuova dieta.<br>Ogni settimana, la abbandonano deluse.<br>Ogni mese, ripetono lo stesso ciclo di speranza e frustrazione.</p><p>Questo schema distruttivo ha creato un'intera generazione di donne convinte di essere \"sbagliate\" quando, in realtà, erano solo gli approcci a essere inadeguati.</p><p>Oasi Ormonale è nata per spezzare questo ciclo.<br>Non con soluzioni miracolose, ma proprio in contrapposizione ad essi:<br><strong>con strumenti concreti basati sulla scienza del benessere ormonale.</strong></p><p>Il piano è semplice: restituire alle donne la conoscenza del proprio corpo, l'indipendenza dalle diete infinite, la serenità nel rapporto con l'alimentazione. Ridare loro energia autentica, vitalità duratura, fiducia nelle proprie scelte.</p>",
+        "button_label": "Scopri Oasi Ormonale",
+        "button_url": "/pages/oasi-ormonale"
       }
     },
-    "gp_section_586581486741160651": {
-      "type": "gp-section-586581486741160651",
+    "future": {
+      "type": "oasi-split",
       "settings": {
-        "checksum": "0e428b18a489650a0ed1077b87e6f82ac02c00bad3d7b17314fca5df98c8605a_1_1_1_0__1",
-        "ggf4amP1EvJ_background_desktop_image_src": "https://cdn.shopify.com/s/files/1/0922/5004/6807/files/gempages_571219258252461280-3a759ad0-97e3-4657-90b5-5dd6fc02a696.jpg",
-        "ggpwkNE3zi4_text": "Per gli altri sono pazienti,",
-        "ggemhsXZD8S_text": "per noi sono <span style=\"color:#FDE19A;\">leonesse</span>:",
-        "ggEmo0sKGz__text": "E ci piace celebrare le loro vittorie. Eccone alcune:",
-        "gg9A0CkCERp_youtubeUrl": "https://youtu.be/R0xIBtepwII",
-        "gg9A0CkCERp_vimeoUrl": "https://vimeo.com/1095883398",
-        "gg9A0CkCERp_html5Url": "https://cdn.shopify.com/videos/c/o/v/2cd3deb506b54b009063f7270ab5cf2e.mp4",
-        "ggmo32aXqCj_text": "<i>\"Da stanca e senza energie a <strong>rinata\"</strong> - Monica ce l'ha fatta!</i>",
-        "ggtdQ1n5tA6_youtubeUrl": "https://youtu.be/rMPCQhE_7qM",
-        "ggtdQ1n5tA6_vimeoUrl": "https://vimeo.com/1095883398",
-        "ggtdQ1n5tA6_html5Url": "https://cdn.shopify.com/videos/c/o/v/2cd3deb506b54b009063f7270ab5cf2e.mp4",
-        "ggkavXAaL7T_text": "<i>“<strong>Meno 6 kg e di nuovo taglia 42</strong>\"- Cristina svela perché <u>Oasi non è una dieta qualunque</u>!</i>",
-        "ggdFMYvr6OG_youtubeUrl": "https://youtu.be/7_Y4otQyJuc",
-        "ggdFMYvr6OG_vimeoUrl": "https://vimeo.com/1095883398",
-        "ggdFMYvr6OG_html5Url": "https://cdn.shopify.com/videos/c/o/v/2cd3deb506b54b009063f7270ab5cf2e.mp4",
-        "ggS70Lu6ZaV_text": "<i>\"Mi hanno sempre detto che all’<strong>endometriosi </strong>non c’è soluzione. <u>Oasi mi ha aiutata</u>!\"</i>",
-        "ggsFUl92amj_youtubeUrl": "https://youtu.be/tv0aJ0pn9Qk",
-        "ggsFUl92amj_vimeoUrl": "https://vimeo.com/1095883398",
-        "ggsFUl92amj_html5Url": "https://cdn.shopify.com/videos/c/o/v/2cd3deb506b54b009063f7270ab5cf2e.mp4",
-        "gg6gnv2QjRw_text": "<strong>-7 kg, -14 cm in vita e -13 cm sui fianchi, </strong><u>senza patire la fame</u> - Il percorso di Antonella",
-        "gg1P8dtxHwK_label": "<p>scopri oasi ormonale</p>"
-      }
-    },
-    "gp_section_586581486741226187": {
-      "type": "gp-section-586581486741226187",
-      "settings": {
-        "checksum": "fc2684611e9b875de3cc3332aecb5f47938ed12a729df4a6dc424389816a7405_1_1_1_0__1",
-        "ggvB7lfWRxy_text": "Una missione? No.",
-        "gg5Jw9Ktryc_text": "un <u>piano concreto</u> di oasi ormonale.",
-        "ggnAup0ONH4_text": "Ogni giorno, migliaia di donne iniziano una nuova dieta.&nbsp;<br>Ogni settimana, la abbandonano deluse.&nbsp;<br>Ogni mese, ripetono lo stesso ciclo di speranza e frustrazione.<br><br>Questo schema distruttivo ha creato un'intera generazione di donne convinte di essere \"sbagliate\" quando, in realtà, erano solo gli approcci a essere inadeguati.<br><br>Oasi Ormonale è nata per spezzare questo ciclo.&nbsp;<br>Non con soluzioni miracolose, ma proprio in contrapposizione ad essi:<br><strong>con strumenti concreti basati sulla scienza del benessere ormonale.</strong><br><br>Il piano è semplice: restituire alle donne la conoscenza del proprio corpo, l'indipendenza dalle diete infinite, la serenità nel rapporto con l'alimentazione. Ridare loro energia autentica, vitalità duratura, fiducia nelle proprie scelte.",
-        "ggUiBaH-fMc_label": "<p>SCOPRI OASI ORMONALE</p>"
-      }
-    },
-    "gp_section_586581486741291723": {
-      "type": "gp-section-586581486741291723",
-      "settings": {
-        "section_preload": "true",
-        "checksum": "9757843f1834b4d05c8385f71f79f9d65ffc61870494e4f8ba5c595cb1dd6ed3_1_1_1_0__1",
-        "ggoHysvNWAD_label": "<p>Chi siamo</p>",
-        "ggxIzIt3tU__label": "<p>i Nostri Brand</p>",
-        "ggAhRqJvlmw_label": "<p>lavora con noi</p>",
-        "ggEhDqGUFVQ_text": "La <span style=\"color:#FCE19A;\">Prima realtà</span> in italia",
-        "ggxmisnvFl4_text": "interamente specializzata nel benessere ormonale"
-      }
-    },
-    "gp_section_586588499382108867": {
-      "type": "gp-section-586588499382108867",
-      "settings": {
-        "checksum": "1a69ccdcbd8c4aaa8bba6bca15b1b61d0760463dc1afe7b05ce1d215619f4b73_1_1_1_0__1",
-        "ggY4knyK01F_text": "il futuro a cui ambiamo?",
-        "ggmHj8KkKOQ_text": "Lo stiamo man mano già realizzando.",
-        "ggY66W3N5SE_text": "Oasi Ormonale non è un’idea, o un progetto nel cassetto.<br>È una realtà in forte crescita che sta impattando su tantissime donne.&nbsp;<br><br>Donne che hanno smesso di subire il proprio corpo e hanno imparato a comprenderlo.&nbsp;<br>Che prendono decisioni informate sul proprio corpo.<br>Che celebrano la propria unicità invece di cercare di somigliare a qualcun altro.<br><br>Ogni testimonianza racconta la stessa storia:<strong> la trasformazione da vittima inconsapevole a protagonista consapevole del proprio benessere.</strong><br><br>Il futuro che stiamo costruendo è fatto di donne che non hanno più bisogno di <strong>salvatori</strong> e guru, perché hanno gli strumenti per essere le salvatrici di se stesse.",
-        "ggNU9DrWuND_label": "<p>SCOPRI OASI ORMONALE</p>"
+        "tone": "white",
+        "eyebrow": "Il futuro a cui ambiamo?",
+        "heading": "Lo stiamo man mano già realizzando.",
+        "body": "<p>Oasi Ormonale non è un’idea, o un progetto nel cassetto.<br>È una realtà in forte crescita che sta impattando su tantissime donne.</p><p>Donne che hanno smesso di subire il proprio corpo e hanno imparato a comprenderlo.<br>Che prendono decisioni informate sul proprio corpo.<br>Che celebrano la propria unicità invece di cercare di somigliare a qualcun altro.</p><p>Ogni testimonianza racconta la stessa storia: <strong>la trasformazione da vittima inconsapevole a protagonista consapevole del proprio benessere.</strong></p><p>Il futuro che stiamo costruendo è fatto di donne che non hanno più bisogno di <strong>salvatori</strong> e guru, perché hanno gli strumenti per essere le salvatrici di se stesse.</p>",
+        "button_label": "Scopri Oasi Ormonale",
+        "button_url": "/pages/oasi-ormonale"
       }
     }
   },
   "order": [
-    "gp_section_586581486741291723",
-    "gp_section_586581486740701899",
-    "gp_section_586581486740832971",
-    "gp_section_586581486740767435",
-    "gp_section_586581486740898507",
-    "gp_section_586581486741029579",
-    "gp_section_586581486741160651",
-    "gp_section_586581486741226187",
-    "gp_section_586588499382108867",
-    "gp_global_section_591092676917461672-1"
-  ],
-  "layout": "theme.gempages.blank"
+    "hero",
+    "intro",
+    "who",
+    "team_title",
+    "team",
+    "stat",
+    "stories",
+    "plan",
+    "future"
+  ]
 }

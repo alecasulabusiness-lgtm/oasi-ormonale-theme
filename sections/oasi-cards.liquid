@@ -1,0 +1,120 @@
+{%- liquid
+  assign tone = section.settings.tone | default: 'light'
+  assign head_class = 'oasi-cards__head'
+  if section.settings.center_heading
+    assign head_class = 'oasi-cards__head oasi-cards__head--center'
+  endif
+  assign grid_class = 'oasi-cards'
+  if section.settings.card_style == 'soft'
+    assign grid_class = 'oasi-cards oasi-cards--soft'
+  endif
+-%}
+<section class="oasi oasi-shell oasi-shell--{{ tone }}"{% if section.settings.anchor != blank %} id="{{ section.settings.anchor }}"{% endif %} {{ section.shopify_attributes }}>
+  <div class="oasi-box oasi-tone-{{ tone }}{% if tone == 'dark' %} oasi-dark{% endif %}">
+    <div class="oasi-s" style="--oasi-pt: {{ section.settings.padding_top }}px; --oasi-pb: {{ section.settings.padding_bottom }}px">
+      <div class="oasi-wrap {{ grid_class }}">
+        <div class="{{ head_class }}">
+          {%- if section.settings.label != blank -%}
+            <p class="oasi-label{% unless section.settings.center_heading %} oasi-label--rule{% endunless %}">{{ section.settings.label }}</p>
+          {%- endif -%}
+          {%- if section.settings.heading != blank -%}
+            <h2>
+              {{ section.settings.heading }}
+              {%- if section.settings.heading_fade != blank %} <span class="oasi-fade">{{ section.settings.heading_fade }}</span>{% endif -%}
+            </h2>
+          {%- endif -%}
+          {%- if section.settings.intro != blank -%}
+            <p class="oasi-muted">{{ section.settings.intro }}</p>
+          {%- endif -%}
+        </div>
+
+        <ul class="oasi-cards__grid">
+          {%- for block in section.blocks -%}
+            <li class="oasi-card" {{ block.shopify_attributes }}>
+              <div>
+                <div class="oasi-card__top">
+                  {%- if section.settings.show_numbers -%}
+                    <span class="oasi-card__num">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
+                  {%- else -%}
+                    <span></span>
+                  {%- endif -%}
+                  {%- if section.settings.show_shapes -%}
+                    <span class="oasi-shape" aria-hidden="true"></span>
+                  {%- endif -%}
+                </div>
+              </div>
+              <div>
+                {%- if block.settings.tag != blank -%}
+                  <p class="oasi-card__tag">{{ block.settings.tag }}</p>
+                {%- endif -%}
+                {%- if block.settings.title != blank -%}
+                  <h3>{{ block.settings.title }}</h3>
+                {%- endif -%}
+                {%- if block.settings.text != blank -%}
+                  <div class="oasi-rich">{{ block.settings.text }}</div>
+                {%- endif -%}
+                {%- render 'oasi-button', label: block.settings.button_label, url: block.settings.button_url, style: 'dark' -%}
+              </div>
+            </li>
+          {%- endfor -%}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Oasi: card",
+  "settings": [
+    {
+      "type": "select",
+      "id": "tone",
+      "label": "Fondo",
+      "options": [
+        { "value": "light", "label": "Crema, senza riquadro" },
+        { "value": "white", "label": "Bianco, riquadro arrotondato" },
+        { "value": "soft", "label": "Sfumatura rosa cipria" },
+        { "value": "dark", "label": "Borgogna" }
+      ],
+      "default": "light"
+    },
+    {
+      "type": "select",
+      "id": "card_style",
+      "label": "Colore delle card",
+      "options": [
+        { "value": "palette", "label": "Una per colore della palette" },
+        { "value": "soft", "label": "Bianche con filetto (per testi lunghi)" }
+      ],
+      "default": "palette"
+    },
+    { "type": "checkbox", "id": "show_numbers", "label": "Mostra i numeri", "default": true },
+    { "type": "checkbox", "id": "show_shapes", "label": "Mostra le forme", "default": true },
+    { "type": "checkbox", "id": "center_heading", "label": "Titolo centrato", "default": false },
+    { "type": "text", "id": "anchor", "label": "Ancoraggio (id)" },
+    { "type": "header", "content": "Intestazione" },
+    { "type": "text", "id": "label", "label": "Etichetta" },
+    { "type": "text", "id": "heading", "label": "Titolo" },
+    { "type": "text", "id": "heading_fade", "label": "Seconda parte del titolo (più chiara)" },
+    { "type": "text", "id": "intro", "label": "Frase sotto il titolo" },
+    { "type": "header", "content": "Spazi" },
+    { "type": "range", "id": "padding_top", "min": 0, "max": 200, "step": 4, "unit": "px", "label": "Spazio sopra", "default": 40 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 200, "step": 4, "unit": "px", "label": "Spazio sotto", "default": 112 }
+  ],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "Card",
+      "settings": [
+        { "type": "text", "id": "tag", "label": "Etichetta" },
+        { "type": "text", "id": "title", "label": "Titolo" },
+        { "type": "richtext", "id": "text", "label": "Testo" },
+        { "type": "text", "id": "button_label", "label": "Pulsante, testo" },
+        { "type": "url", "id": "button_url", "label": "Pulsante, link" }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Oasi: card", "blocks": [{ "type": "card" }, { "type": "card" }] }]
+}
+{% endschema %}
