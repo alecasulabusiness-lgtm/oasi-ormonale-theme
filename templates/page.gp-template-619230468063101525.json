@@ -1,0 +1,46 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "gp_section_619230468197319253": {
+      "settings": {
+        "checksum": "a5023277d4b7ab8f8e573b00f2aa5749ec2b79dd67cfaea4b573b72846de51a6_1_1_1_0__1",
+        "gg6Z5ltXK-6_background_desktop_image_src": "https://cdn.shopify.com/s/files/1/0922/5004/6807/files/cat-han-W_5Eakb1598-unsplash-min.jpg",
+        "gg6Z5ltXK-6_background_desktop_videoHtml5": "https://media.w3.org/2010/05/sintel/trailer.mp4",
+        "ggBnjvjdTDC_text": "<strong>IL PRIMO PASSO È FATTO</strong><br><br>Hai appena aperto la porta per entrare nella tua OASI ORMONALE",
+        "ggNUrhq1u9J_text": "<p>A breve verrai contattata da un <strong>nostro numero</strong> che inizia con: <strong>+39 339...</strong></p><p>&nbsp;</p><p><strong>È una delle nostre Specialiste </strong>che chiama solo per fissare il tuo appuntamento.</p>",
+        "ggNnT6h97Sk_text": "<strong>Importante!!</strong>",
+        "ggwkVVrh03v_text": "<span style=\"color:#D675A4;\"><strong>COMPLIMENTI!</strong></span>",
+        "section_preload": "true"
+      },
+      "type": "gp-section-619230468197319253"
+    },
+    "gp_section_619230468197384789": {
+      "settings": {
+        "checksum": "b2d1f997ce29f93f8c14c48447de553d48c8c90b6bf1842f5423d678da6daa7b_1_1_1_0__1",
+        "gg2UlXTgg-B_label": "<p><u>Cookie Policy</u></p>",
+        "gg2YAaXpeZD_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0922/5004/6807/files/gempages_571219258252461280-d7ce851e-0c44-4d34-aaa9-34ddd775b51e.png",
+        "ggIp4qjwtnM_text": "Copyright © 2025 Oasi Ormonale | Tutti i diritti riservati",
+        "ggLzoS0YbY1_childItem_0": "<p>Ufficio Supporto</p>",
+        "ggO9gtVFw_5_text": "<strong>Email: </strong>ufficio@oasiormonale.com",
+        "ggaYdnqlIsq_label": "<p><u>Privacy Policy</u></p>",
+        "ggelFBQtbe1_text": "Oasi Ormonale è il primo protocollo in Italia specializzato nel benessere ormonale, creato da donne, per donne.",
+        "ggnSQZNmzGL_text": "*This Website is not a part of Facebook or Facebook Inc. Additionally, this site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK Inc.<br><br>Questo sito non fa parte del sito Facebook o Facebook Inc. Inoltre, questo sito NON è approvato da Facebook in alcun modo. FACEBOOK è un marchio registrato di FACEBOOK, Inc.",
+        "section_preload": "true"
+      },
+      "type": "gp-section-619230468197384789"
+    }
+  },
+  "order": [
+    "gp_section_619230468197319253",
+    "gp_section_619230468197384789"
+  ],
+  "layout": "theme.gempages.blank"
+}

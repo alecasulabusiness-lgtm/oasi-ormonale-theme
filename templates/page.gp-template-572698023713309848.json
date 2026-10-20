@@ -1,0 +1,42 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "gp_section_572698080520963224": {
+      "settings": {
+        "checksum": "0b8b8910de81511377f65a3a787a3261e122b4608ce581046c2e0a7904aba1f3_1_1_1_0__1",
+        "ggBnjvjdTDC_text": "<span style=\"font-size:25px;\"><strong>IL PRIMO PASSO E' FATTO.</strong></span><br><br><span style=\"font-size:20px;\">Hai appena aperto la porta per entrare nella tua OASI ORMONALE.</span>",
+        "ggNUrhq1u9J_text": "<p>A breve verrai contattata da un <strong>nostro numero</strong> che inizia con: <strong>+39 339...</strong></p><p>&nbsp;</p><p><strong>È una delle nostre Consulenti del Benessere </strong>che ti chiama per fissare il tuo appuntamento.</p>",
+        "ggNnT6h97Sk_text": "<span style=\"color:#FF0000;\"><strong>Importante!!</strong></span>",
+        "ggwkVVrh03v_text": "<span style=\"color:#E4BB7A;\"><strong><u>COMPLIMENTI!</u></strong></span>",
+        "section_preload": "true"
+      },
+      "type": "gp-section-572698080520963224"
+    },
+    "gp_section_601239969301791695": {
+      "settings": {
+        "checksum": "3112f26127b970adf9f402afef60c4d6bda1ba33ee4dc22e4f53a7e040fa879c_1_1_1_0__1",
+        "gg2UlXTgg-B_label": "<p><u>Cookie Policy</u></p>",
+        "ggIp4qjwtnM_text": "Copyright © 2025 Oasi Ormonale | Tutti i diritti riservati",
+        "ggLzoS0YbY1_childItem_0": "<p>Ufficio Supporto</p>",
+        "ggO9gtVFw_5_text": "<strong>Email: </strong>ufficio@oasiormonale.com",
+        "ggaYdnqlIsq_label": "<p><u>Privacy Policy</u></p>",
+        "ggelFBQtbe1_text": "Oasi Ormonale è il primo protocollo in Italia specializzato nel benessere ormonale, creato da donne, per donne.",
+        "ggnSQZNmzGL_text": "*This Website is not a part of Facebook or Facebook Inc. Additionally, this site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK Inc.<br><br>Questo sito non fa parte del sito Facebook o Facebook Inc. Inoltre, questo sito NON è approvato da Facebook in alcun modo. FACEBOOK è un marchio registrato di FACEBOOK, Inc."
+      },
+      "type": "gp-section-601239969301791695"
+    }
+  },
+  "order": [
+    "gp_section_572698080520963224",
+    "gp_section_601239969301791695"
+  ],
+  "layout": "theme.gempages.blank"
+}

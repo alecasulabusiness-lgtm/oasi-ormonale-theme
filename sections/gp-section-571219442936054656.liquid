@@ -1,0 +1,826 @@
+
+
+<style {% if section.settings.section_preload == "false" %} class="gps-link gps-style" type="text/disabled-css" {% endif %}>.gps-571219442936054656.gps.gpsil [style*="--bg:"]{background:var(--bg)}.gps-571219442936054656.gps.gpsil [style*="--bga:"]{background-attachment:var(--bga)}.gps-571219442936054656.gps.gpsil [style*="--bgc:"]{background-color:var(--bgc)}.gps-571219442936054656.gps.gpsil [style*="--bgi:"]{background-image:var(--bgi)}.gps-571219442936054656.gps.gpsil [style*="--bgp:"]{background-position:var(--bgp)}.gps-571219442936054656.gps.gpsil [style*="--bgr:"]{background-repeat:var(--bgr)}.gps-571219442936054656.gps.gpsil [style*="--bgs:"]{background-size:var(--bgs)}.gps-571219442936054656.gps.gpsil [style*="--b:"]{border:var(--b)}.gps-571219442936054656.gps.gpsil [style*="--bc:"]{border-color:var(--bc)}.gps-571219442936054656.gps.gpsil [style*="--bl:"]{border-left:var(--bl)}.gps-571219442936054656.gps.gpsil [style*="--bs:"]{border-style:var(--bs)}.gps-571219442936054656.gps.gpsil [style*="--bw:"]{border-width:var(--bw)}.gps-571219442936054656.gps.gpsil [style*="--shadow:"]{box-shadow:var(--shadow)}.gps-571219442936054656.gps.gpsil [style*="--c:"]{color:var(--c)}.gps-571219442936054656.gps.gpsil [style*="--cg:"]{-moz-column-gap:var(--cg);column-gap:var(--cg)}.gps-571219442936054656.gps.gpsil [style*="--ff:"]{font-family:var(--ff)}.gps-571219442936054656.gps.gpsil [style*="--size:"]{font-size:var(--size)}.gps-571219442936054656.gps.gpsil [style*="--weight:"]{font-weight:var(--weight)}.gps-571219442936054656.gps.gpsil [style*="--fs:"]{font-style:var(--fs)}.gps-571219442936054656.gps.gpsil [style*="--gtc:"]{grid-template-columns:var(--gtc)}.gps-571219442936054656.gps.gpsil [style*="--h:"]{height:var(--h)}.gps-571219442936054656.gps.gpsil [style*="--jc:"]{justify-content:var(--jc)}.gps-571219442936054656.gps.gpsil [style*="--ls:"]{letter-spacing:var(--ls)}.gps-571219442936054656.gps.gpsil [style*="--lh:"]{line-height:var(--lh)}.gps-571219442936054656.gps.gpsil [style*="--m:"]{margin:var(--m)}.gps-571219442936054656.gps.gpsil [style*="--mb:"]{margin-bottom:var(--mb)}.gps-571219442936054656.gps.gpsil [style*="--ml:"]{margin-left:var(--ml)}.gps-571219442936054656.gps.gpsil [style*="--mr:"]{margin-right:var(--mr)}.gps-571219442936054656.gps.gpsil [style*="--mt:"]{margin-top:var(--mt)}.gps-571219442936054656.gps.gpsil [style*="--minw:"]{min-width:var(--minw)}.gps-571219442936054656.gps.gpsil [style*="--op:"]{opacity:var(--op)}.gps-571219442936054656.gps.gpsil [style*="--o:"]{order:var(--o)}.gps-571219442936054656.gps.gpsil [style*="--pc:"]{place-content:var(--pc)}.gps-571219442936054656.gps.gpsil [style*="--p:"]{padding:var(--p)}.gps-571219442936054656.gps.gpsil [style*="--pb:"]{padding-bottom:var(--pb)}.gps-571219442936054656.gps.gpsil [style*="--pl:"]{padding-left:var(--pl)}.gps-571219442936054656.gps.gpsil [style*="--pr:"]{padding-right:var(--pr)}.gps-571219442936054656.gps.gpsil [style*="--pt:"]{padding-top:var(--pt)}.gps-571219442936054656.gps.gpsil [style*="--ta:"]{text-align:var(--ta)}.gps-571219442936054656.gps.gpsil [style*="--tt:"]{text-transform:var(--tt)}.gps-571219442936054656.gps.gpsil [style*="--t:"]{transform:var(--t)}.gps-571219442936054656.gps.gpsil [style*="--w:"]{width:var(--w)}.gps-571219442936054656.gps.gpsil [style*="--line-clamp:"]{-webkit-box-orient:vertical;-webkit-line-clamp:var(--line-clamp);display:-webkit-box;overflow:hidden}@media only screen and (max-width:1024px){.gps-571219442936054656.gps.gpsil [style*="--size-tablet:"]{font-size:var(--size-tablet)}.gps-571219442936054656.gps.gpsil [style*="--lh-tablet:"]{line-height:var(--lh-tablet)}.gps-571219442936054656.gps.gpsil [style*="--op-tablet:"]{opacity:var(--op-tablet)}.gps-571219442936054656.gps.gpsil [style*="--pl-tablet:"]{padding-left:var(--pl-tablet)}.gps-571219442936054656.gps.gpsil [style*="--pr-tablet:"]{padding-right:var(--pr-tablet)}.gps-571219442936054656.gps.gpsil [style*="--w-tablet:"]{width:var(--w-tablet)}.gps-571219442936054656.gps.gpsil [style*="--line-clamp-tablet:"]{-webkit-box-orient:vertical;-webkit-line-clamp:var(--line-clamp-tablet);display:-webkit-box;overflow:hidden}}@media only screen and (max-width:767px){.gps-571219442936054656.gps.gpsil [style*="--cg-mobile:"]{-moz-column-gap:var(--cg-mobile);column-gap:var(--cg-mobile)}.gps-571219442936054656.gps.gpsil [style*="--size-mobile:"]{font-size:var(--size-mobile)}.gps-571219442936054656.gps.gpsil [style*="--gtc-mobile:"]{grid-template-columns:var(--gtc-mobile)}.gps-571219442936054656.gps.gpsil [style*="--jc-mobile:"]{justify-content:var(--jc-mobile)}.gps-571219442936054656.gps.gpsil [style*="--lh-mobile:"]{line-height:var(--lh-mobile)}.gps-571219442936054656.gps.gpsil [style*="--mb-mobile:"]{margin-bottom:var(--mb-mobile)}.gps-571219442936054656.gps.gpsil [style*="--ml-mobile:"]{margin-left:var(--ml-mobile)}.gps-571219442936054656.gps.gpsil [style*="--mr-mobile:"]{margin-right:var(--mr-mobile)}.gps-571219442936054656.gps.gpsil [style*="--mt-mobile:"]{margin-top:var(--mt-mobile)}.gps-571219442936054656.gps.gpsil [style*="--op-mobile:"]{opacity:var(--op-mobile)}.gps-571219442936054656.gps.gpsil [style*="--pb-mobile:"]{padding-bottom:var(--pb-mobile)}.gps-571219442936054656.gps.gpsil [style*="--pl-mobile:"]{padding-left:var(--pl-mobile)}.gps-571219442936054656.gps.gpsil [style*="--pr-mobile:"]{padding-right:var(--pr-mobile)}.gps-571219442936054656.gps.gpsil [style*="--pt-mobile:"]{padding-top:var(--pt-mobile)}.gps-571219442936054656.gps.gpsil [style*="--ta-mobile:"]{text-align:var(--ta-mobile)}.gps-571219442936054656.gps.gpsil [style*="--w-mobile:"]{width:var(--w-mobile)}.gps-571219442936054656.gps.gpsil [style*="--line-clamp-mobile:"]{-webkit-box-orient:vertical;-webkit-line-clamp:var(--line-clamp-mobile);display:-webkit-box;overflow:hidden}}.gps-571219442936054656 .gp-relative{position:relative}.gps-571219442936054656 .gp-mx-auto{margin-left:auto;margin-right:auto}.gps-571219442936054656 .gp-mb-0{margin-bottom:0}.gps-571219442936054656 .gp-flex{display:flex}.gps-571219442936054656 .gp-inline-flex{display:inline-flex}.gps-571219442936054656 .gp-grid{display:grid}.gps-571219442936054656 .\!gp-hidden{display:none!important}.gps-571219442936054656 .gp-hidden{display:none}.gps-571219442936054656 .gp-max-w-full{max-width:100%}.gps-571219442936054656 .gp-grid-rows-\[1fr\]{grid-template-rows:1fr}.gps-571219442936054656 .gp-flex-col{flex-direction:column}.gps-571219442936054656 .gp-items-center{align-items:center}.gps-571219442936054656 .gp-justify-center{justify-content:center}.gps-571219442936054656 .gp-gap-y-0{row-gap:0}.gps-571219442936054656 .gp-overflow-hidden{overflow:hidden}.gps-571219442936054656 .gp-leading-\[0\]{line-height:0}.gps-571219442936054656 .gp-text-g-line-3{color:var(--g-c-line-3)}.gps-571219442936054656 .gp-transition-colors{transition-duration:.15s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1)}.gps-571219442936054656 .gp-duration-200{transition-duration:.2s}.gps-571219442936054656 .gp-ease-in-out{transition-timing-function:cubic-bezier(.4,0,.2,1)}@media (max-width:1024px){.gps-571219442936054656 .tablet\:\!gp-hidden{display:none!important}.gps-571219442936054656 .tablet\:gp-hidden{display:none}}@media (max-width:767px){.gps-571219442936054656 .mobile\:\!gp-hidden{display:none!important}.gps-571219442936054656 .mobile\:gp-hidden{display:none}}.gps-571219442936054656 .\[\&\>svg\]\:\!gp-h-\[var\(--height-desktop\)\]>svg{height:var(--height-desktop)!important}.gps-571219442936054656 .\[\&\>svg\]\:\!gp-w-auto>svg{width:auto!important}@media (max-width:1024px){.gps-571219442936054656 .tablet\:\[\&\>svg\]\:\!gp-h-\[var\(--height-tablet\)\]>svg{height:var(--height-tablet)!important}}@media (max-width:767px){.gps-571219442936054656 .mobile\:\[\&\>svg\]\:\!gp-h-\[var\(--height-mobile\)\]>svg{height:var(--height-mobile)!important}}.gps-571219442936054656 .\[\&_\*\]\:gp-max-w-full *{max-width:100%}.gps-571219442936054656 .\[\&_p\]\:gp-inline p{display:inline}.gps-571219442936054656 .\[\&_p\]\:after\:gp-whitespace-pre-wrap p:after{content:var(--tw-content);white-space:pre-wrap}.gps-571219442936054656 .\[\&_p\]\:after\:gp-content-\[\'\\A\'\] p:after{--tw-content:"\A";content:var(--tw-content)}</style>
+
+       
+      
+            <section
+              class="gp-mx-auto gp-max-w-full {% if section.settings.section_preload == "false" %}gps-lazy {% endif %}"
+              style="--w:100%;--w-tablet:100%;--w-mobile:100%;--pl:0px;--pl-tablet:0px;--pl-mobile:0px;--pr:0px;--pr-tablet:0px;--pr-mobile:0px"
+            >
+              
+    <div
+      id="gWWaTJ_hpH" data-id="gWWaTJ_hpH"
+        style="--blockPadding:base;--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--op-mobile:100%;--pt:80px;--pl:20px;--pb:80px;--pr:20px;--pt-mobile:42px;--pl-mobile:20px;--pb-mobile:42px;--pr-mobile:20px;--cg:32px;--pc:start;--gtc:minmax(0, 12fr);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:#FFFCF4;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="gWWaTJ_hpH gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="gp_QOAX9s1 gp-relative gp-flex gp-flex-col"
+    >
+      
+       
+      
+    <div
+      parentTag="Col" id="g8Z0DhTQZF" data-id="g8Z0DhTQZF"
+        style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--mb:0px;--cg:8px;--pc:start;--gtc:minmax(0, 12fr);--w:var(--g-ct-w, 1200px);--w-tablet:var(--g-ct-w, 100%);--w-mobile:var(--g-ct-w, 100%);--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="g8Z0DhTQZF gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="gFbK6iNXuM gp-relative gp-flex gp-flex-col"
+    >
+      
+       
+      
+    <div
+      parentTag="Col" id="gFkQvTYS5O" data-id="gFkQvTYS5O"
+        style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--op-mobile:100%;--op-tablet:100%;--mb:32px;--mb-mobile:28px;--cg:0px;--cg-mobile:28px;--pc:start;--gtc:minmax(0, 6fr) minmax(0, 6fr);--gtc-mobile:minmax(0, 6fr) minmax(0, 6fr);--w:var(--g-ct-w, 1200px);--w-tablet:var(--g-ct-w, 100%);--w-mobile:var(--g-ct-w, 100%);--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="gFkQvTYS5O gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="gJcSCzLHB1 gp-relative gp-flex gp-flex-col"
+    >
+      
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="guKK8BaMCd">
+    <div
+      parentTag="Col"
+        class="guKK8BaMCd "
+        style="--ta:center;--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--op-mobile:100%;--op-tablet:100%;--mb:8px;--mr:auto;--mb-mobile:8px;--mr-mobile:0px"
+      >
+      <div class="gp-flex" style="--jc:center">
+        <h2
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:400px;--w-tablet:400px;--w-mobile:100%;--ta:center;--fs:normal;--ff:var(--g-font-heading, heading);--weight:700;--ls:normal;--size:57px;--size-tablet:57px;--size-mobile:50px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;--c:#242424;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >{{ section.settings.gguKK8BaMCd_text | replace: '$locationOrigin', locationOrigin }}</h2>
+      </div>
+    </div>
+    </gp-text>
+    
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="g3k-Siwga8">
+    <div
+      parentTag="Col"
+        class="g3k-Siwga8 "
+        style="--ta:left;--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--op-mobile:100%;--mb:0px;--mr:auto;--mb-mobile:0px;--mr-mobile:0px"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <h3
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:400px;--w-tablet:400px;--w-mobile:400px;--ta:center;--fs:normal;--ff:var(--g-font-heading, heading);--weight:600;--ls:normal;--size:23px;--size-tablet:23px;--size-mobile:20px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;--c:#242424;--tt:uppercase;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >{{ section.settings.gg3k-Siwga8_text | replace: '$locationOrigin', locationOrigin }}</h3>
+      </div>
+    </div>
+    </gp-text>
+    
+    </div><div
+      label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="gIJ3bVWHYm gp-relative gp-flex gp-flex-col"
+    >
+      
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="gQWovQ0Ujo">
+    <div
+      parentTag="Col"
+        class="gQWovQ0Ujo "
+        style="--ta:center;--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--op-mobile:100%;--ml:auto;--mb:8px;--ml-mobile:0px;--mb-mobile:8px"
+      >
+      <div class="gp-flex" style="--jc:center">
+        <h2
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:400px;--w-tablet:400px;--w-mobile:100%;--ta:center;--fs:normal;--ff:var(--g-font-heading, heading);--weight:700;--ls:normal;--size:57px;--size-tablet:57px;--size-mobile:50px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;--c:#242424;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >{{ section.settings.ggQWovQ0Ujo_text | replace: '$locationOrigin', locationOrigin }}</h2>
+      </div>
+    </div>
+    </gp-text>
+    
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="grY2cgc8Wm">
+    <div
+      parentTag="Col"
+        class="grY2cgc8Wm "
+        style="--ta:left;--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--op-mobile:100%;--op-tablet:100%;--ml:auto;--mb:0px;--ml-mobile:0px;--mb-mobile:0px"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <h3
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:400px;--w-tablet:400px;--w-mobile:400px;--ta:center;--fs:normal;--ff:var(--g-font-heading, heading);--weight:600;--ls:normal;--size:23px;--size-tablet:23px;--size-mobile:20px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;--c:#242424;--tt:uppercase;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >{{ section.settings.ggrY2cgc8Wm_text | replace: '$locationOrigin', locationOrigin }}</h3>
+      </div>
+    </div>
+    </gp-text>
+    
+    </div>
+    </div>
+   
+    
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="ggnhKo3J9D">
+    <div
+      parentTag="Col"
+        class="ggnhKo3J9D "
+        style="--ta:left;--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--op-mobile:100%;--op-tablet:100%;--mb:24px;--mb-mobile:21px"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <h2
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:center;--fs:normal;--ff:var(--g-font-heading, heading);--weight:600;--ls:normal;--size:33px;--size-tablet:33px;--size-mobile:24px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;--c:#242424;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >{{ section.settings.gggnhKo3J9D_text | replace: '$locationOrigin', locationOrigin }}</h2>
+      </div>
+    </div>
+    </gp-text>
+    
+       
+      
+    <div
+      parentTag="Col" id="gSt8rbq0Vn" data-id="gSt8rbq0Vn"
+        style="--bs:solid;--bw:0px 0px 1px 0px;--bc:#B4B4B4;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--op-mobile:100%;--pt:16px;--pb:16px;--cg:30px;--cg-mobile:14px;--pc:start;--gtc:minmax(0, 4fr) minmax(0, 4fr) minmax(0, 4fr);--gtc-mobile:minmax(0, 3fr) minmax(0, 6fr) minmax(0, 3fr);--w:var(--g-ct-w, 1200px);--w-tablet:var(--g-ct-w, 100%);--w-mobile:var(--g-ct-w, 100%);--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="gSt8rbq0Vn gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--jc:center;--jc-mobile:center"
+      class="gwFr1Hyuz3 gp-relative gp-flex gp-flex-col"
+    >
+      
+  <div
+      
+      style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--ta:center"
+      class="gp-leading-[0] gWB3OrD1bn"
+    >
+      <div 
+      data-id="gWB3OrD1bn"
+      class="icon-wrapper gp-inline-flex gp-overflow-hidden"
+      style="--bs:none;--bw:1px 1px 1px 1px;--bc:#000000"
+      >
+      <div
+      
+    >
+      <span
+        style="--c:var(--g-c-line-3, line-3);--t:rotate(0deg);--w:24px;--h:24px;--minw:24px;--height-desktop:24px;--height-tablet:24px;--height-mobile:24px"
+        class="gp-inline-flex gp-items-center gp-justify-center gp-overflow-hidden [&>svg]:!gp-h-[var(--height-desktop)] [&>svg]:!gp-w-auto tablet:[&>svg]:!gp-h-[var(--height-tablet)] mobile:[&>svg]:!gp-h-[var(--height-mobile)] gp-text-g-line-3"
+      ><svg data-id="516201969157670038" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+<path d="M3.66601 11.1114C3.25181 11.1125 2.84639 11.2309 2.49667 11.4529C2.14695 11.6748 1.86722 11.9913 1.68984 12.3656C1.51246 12.7399 1.44468 13.1568 1.49434 13.568C1.544 13.9792 1.70907 14.368 1.97046 14.6893L7.54261 21.5152C7.74129 21.7619 7.99596 21.9576 8.28547 22.0861C8.57498 22.2146 8.89097 22.2722 9.2072 22.2541C9.88354 22.2177 10.4942 21.8559 10.8835 21.2611L22.4582 2.61989C22.4601 2.61679 22.4621 2.6137 22.4642 2.61065C22.5728 2.4439 22.5375 2.11344 22.3134 1.90584C22.2518 1.84883 22.1792 1.80503 22.1 1.77714C22.0209 1.74925 21.9369 1.73785 21.8532 1.74366C21.7694 1.74947 21.6878 1.77235 21.6133 1.8109C21.5387 1.84946 21.4729 1.90286 21.4197 1.96782C21.4156 1.97293 21.4113 1.97796 21.4069 1.98292L9.73358 15.172C9.68917 15.2222 9.63522 15.2631 9.57487 15.2922C9.51453 15.3214 9.44899 15.3383 9.38207 15.3419C9.31514 15.3455 9.24817 15.3358 9.18503 15.3133C9.12189 15.2908 9.06385 15.256 9.01428 15.2109L5.14012 11.6854C4.73776 11.3166 4.21186 11.1118 3.66601 11.1114Z" fill="#52C41A"/>
+</svg></span>
+    </div>
+      </div>
+    </div>
+    
+    </div><div
+      label="Block" tag="Col" type="component"
+      style="--jc:center;--jc-mobile:center"
+      class="gAA7fixzNg gp-relative gp-flex gp-flex-col"
+    >
+      
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="g018-l5JAA">
+    <div
+      parentTag="Col"
+        class="g018-l5JAA "
+        style="--ta:left;--ta-mobile:center;--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--op-mobile:100%;--op-tablet:100%;--mb:0px;--mt-mobile:0px;--mb-mobile:0px;--pl-mobile:0px;--pr-mobile:0px"
+      >
+      <div class="gp-flex" style="--jc:left;--jc-mobile:center">
+        <div
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:center;--ta-mobile:center;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--fs:normal;--ff:var(--g-font-body, body);--weight:600;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;--lh:150%;--lh-tablet:150%;--lh-mobile:150%;--c:#242424;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >{{ section.settings.gg018-l5JAA_text | replace: '$locationOrigin', locationOrigin }}</div>
+      </div>
+    </div>
+    </gp-text>
+    
+      <style id="custom-css-g018-l5JAA">
+        .g018-l5JAA {
+
+}
+.g018-l5JAA p {
+
+}
+      </style>
+    
+    </div><div
+      label="Block" tag="Col" type="component"
+      style="--jc:center;--jc-mobile:center"
+      class="giflRD5pEs gp-relative gp-flex gp-flex-col"
+    >
+      
+  <div
+      
+      style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--ta:center"
+      class="gp-leading-[0] g374ebN4b4"
+    >
+      <div 
+      data-id="g374ebN4b4"
+      class="icon-wrapper gp-inline-flex gp-overflow-hidden"
+      style="--bs:none;--bw:1px 1px 1px 1px;--bc:#000000"
+      >
+      <div
+      
+    >
+      <span
+        style="--c:var(--g-c-line-3, line-3);--t:rotate(0deg);--w:24px;--h:24px;--minw:24px;--height-desktop:24px;--height-tablet:24px;--height-mobile:24px"
+        class="gp-inline-flex gp-items-center gp-justify-center gp-overflow-hidden [&>svg]:!gp-h-[var(--height-desktop)] [&>svg]:!gp-w-auto tablet:[&>svg]:!gp-h-[var(--height-tablet)] mobile:[&>svg]:!gp-h-[var(--height-mobile)] gp-text-g-line-3"
+      ><svg data-id="516201979492435094" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+<g clip-path="url(#clip0_259_4685)">
+<path d="M12.0005 23.5205C5.64839 23.5205 0.480469 18.3525 0.480469 12.0005C0.480469 5.64839 5.64839 0.480469 12.0005 0.480469C18.3525 0.480469 23.5205 5.64839 23.5205 12.0005C23.5205 18.3525 18.3525 23.5205 12.0005 23.5205ZM12.0005 1.92047C6.44231 1.92047 1.92047 6.44231 1.92047 12.0005C1.92047 17.5586 6.44231 22.0805 12.0005 22.0805C17.5586 22.0805 22.0805 17.5586 22.0805 12.0005C22.0805 6.44231 17.5586 1.92047 12.0005 1.92047ZM17.3625 16.9646C17.7182 16.7868 17.8625 16.3543 17.6846 15.9986C17.6174 15.8645 15.9996 12.7205 12.0005 12.7205C8.00135 12.7205 6.38351 15.8645 6.31631 15.9984C6.13919 16.3529 6.28247 16.7825 6.63599 16.9613C6.99047 17.1396 7.42199 16.9982 7.60271 16.6457C7.65479 16.5441 8.91167 14.1605 12.0005 14.1605C15.0893 14.1605 16.3461 16.5441 16.3963 16.6425C16.5225 16.895 16.7767 17.0409 17.0412 17.0405C17.1492 17.0405 17.2591 17.0162 17.3625 16.9646ZM15.6005 10.5605C14.8063 10.5605 14.1605 9.91463 14.1605 9.12047C14.1605 8.32631 14.8063 7.68047 15.6005 7.68047C16.3946 7.68047 17.0405 8.32631 17.0405 9.12047C17.0405 9.91463 16.3946 10.5605 15.6005 10.5605ZM8.40047 10.5605C7.60631 10.5605 6.96047 9.91463 6.96047 9.12047C6.96047 8.32631 7.60631 7.68047 8.40047 7.68047C9.19463 7.68047 9.84047 8.32631 9.84047 9.12047C9.84047 9.91463 9.19463 10.5605 8.40047 10.5605Z" fill="#575757"/>
+</g>
+<defs>
+<clipPath id="clip0_259_4685">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg></span>
+    </div>
+      </div>
+    </div>
+    
+    </div>
+    </div>
+   
+    
+       
+      
+    <div
+      parentTag="Col" id="gHWLrAZfp7" data-id="gHWLrAZfp7"
+        style="--bs:solid;--bw:0px 0px 1px 0px;--bc:#B4B4B4;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--op-mobile:100%;--pt:16px;--pb:16px;--cg:30px;--cg-mobile:14px;--pc:start;--gtc:minmax(0, 4fr) minmax(0, 4fr) minmax(0, 4fr);--gtc-mobile:minmax(0, 3fr) minmax(0, 6fr) minmax(0, 3fr);--w:var(--g-ct-w, 1200px);--w-tablet:var(--g-ct-w, 100%);--w-mobile:var(--g-ct-w, 100%);--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="gHWLrAZfp7 gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--jc:center"
+      class="gOJgUTs1Bz gp-relative gp-flex gp-flex-col"
+    >
+      
+  <div
+      
+      style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--ta:center"
+      class="gp-leading-[0] g6lIXvpJsT"
+    >
+      <div 
+      data-id="g6lIXvpJsT"
+      class="icon-wrapper gp-inline-flex gp-overflow-hidden"
+      style="--bs:none;--bw:1px 1px 1px 1px;--bc:#000000"
+      >
+      <div
+      
+    >
+      <span
+        style="--c:var(--g-c-line-3, line-3);--t:rotate(0deg);--w:24px;--h:24px;--minw:24px;--height-desktop:24px;--height-tablet:24px;--height-mobile:24px"
+        class="gp-inline-flex gp-items-center gp-justify-center gp-overflow-hidden [&>svg]:!gp-h-[var(--height-desktop)] [&>svg]:!gp-w-auto tablet:[&>svg]:!gp-h-[var(--height-tablet)] mobile:[&>svg]:!gp-h-[var(--height-mobile)] gp-text-g-line-3"
+      ><svg data-id="516201969157670038" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+<path d="M3.66601 11.1114C3.25181 11.1125 2.84639 11.2309 2.49667 11.4529C2.14695 11.6748 1.86722 11.9913 1.68984 12.3656C1.51246 12.7399 1.44468 13.1568 1.49434 13.568C1.544 13.9792 1.70907 14.368 1.97046 14.6893L7.54261 21.5152C7.74129 21.7619 7.99596 21.9576 8.28547 22.0861C8.57498 22.2146 8.89097 22.2722 9.2072 22.2541C9.88354 22.2177 10.4942 21.8559 10.8835 21.2611L22.4582 2.61989C22.4601 2.61679 22.4621 2.6137 22.4642 2.61065C22.5728 2.4439 22.5375 2.11344 22.3134 1.90584C22.2518 1.84883 22.1792 1.80503 22.1 1.77714C22.0209 1.74925 21.9369 1.73785 21.8532 1.74366C21.7694 1.74947 21.6878 1.77235 21.6133 1.8109C21.5387 1.84946 21.4729 1.90286 21.4197 1.96782C21.4156 1.97293 21.4113 1.97796 21.4069 1.98292L9.73358 15.172C9.68917 15.2222 9.63522 15.2631 9.57487 15.2922C9.51453 15.3214 9.44899 15.3383 9.38207 15.3419C9.31514 15.3455 9.24817 15.3358 9.18503 15.3133C9.12189 15.2908 9.06385 15.256 9.01428 15.2109L5.14012 11.6854C4.73776 11.3166 4.21186 11.1118 3.66601 11.1114Z" fill="#52C41A"/>
+</svg></span>
+    </div>
+      </div>
+    </div>
+    
+    </div><div
+      label="Block" tag="Col" type="component"
+      style="--jc:center"
+      class="gNsbm1PJHi gp-relative gp-flex gp-flex-col"
+    >
+      
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="gfBeoeV0fX">
+    <div
+      parentTag="Col"
+        class="gfBeoeV0fX "
+        style="--ta:left;--ta-mobile:center;--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--op-mobile:100%;--op-tablet:100%;--mb:0px;--mt-mobile:0px;--mb-mobile:0px;--pl-mobile:0px;--pr-mobile:0px"
+      >
+      <div class="gp-flex" style="--jc:left;--jc-mobile:center">
+        <div
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:center;--ta-mobile:center;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--fs:normal;--ff:var(--g-font-body, body);--weight:600;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;--lh:150%;--lh-tablet:150%;--lh-mobile:150%;--c:#242424;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >{{ section.settings.ggfBeoeV0fX_text | replace: '$locationOrigin', locationOrigin }}</div>
+      </div>
+    </div>
+    </gp-text>
+    
+      <style id="custom-css-gfBeoeV0fX">
+        .gfBeoeV0fX {
+
+}
+.gfBeoeV0fX p {
+
+}
+      </style>
+    
+    </div><div
+      label="Block" tag="Col" type="component"
+      style="--jc:center"
+      class="gpyw4arHKO gp-relative gp-flex gp-flex-col"
+    >
+      
+  <div
+      
+      style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--ta:center"
+      class="gp-leading-[0] gCCfxYYjlr"
+    >
+      <div 
+      data-id="gCCfxYYjlr"
+      class="icon-wrapper gp-inline-flex gp-overflow-hidden"
+      style="--bs:none;--bw:1px 1px 1px 1px;--bc:#000000"
+      >
+      <div
+      
+    >
+      <span
+        style="--c:var(--g-c-line-3, line-3);--t:rotate(0deg);--w:24px;--h:24px;--minw:24px;--height-desktop:24px;--height-tablet:24px;--height-mobile:24px"
+        class="gp-inline-flex gp-items-center gp-justify-center gp-overflow-hidden [&>svg]:!gp-h-[var(--height-desktop)] [&>svg]:!gp-w-auto tablet:[&>svg]:!gp-h-[var(--height-tablet)] mobile:[&>svg]:!gp-h-[var(--height-mobile)] gp-text-g-line-3"
+      ><svg data-id="516201979492435094" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+<g clip-path="url(#clip0_259_4685)">
+<path d="M12.0005 23.5205C5.64839 23.5205 0.480469 18.3525 0.480469 12.0005C0.480469 5.64839 5.64839 0.480469 12.0005 0.480469C18.3525 0.480469 23.5205 5.64839 23.5205 12.0005C23.5205 18.3525 18.3525 23.5205 12.0005 23.5205ZM12.0005 1.92047C6.44231 1.92047 1.92047 6.44231 1.92047 12.0005C1.92047 17.5586 6.44231 22.0805 12.0005 22.0805C17.5586 22.0805 22.0805 17.5586 22.0805 12.0005C22.0805 6.44231 17.5586 1.92047 12.0005 1.92047ZM17.3625 16.9646C17.7182 16.7868 17.8625 16.3543 17.6846 15.9986C17.6174 15.8645 15.9996 12.7205 12.0005 12.7205C8.00135 12.7205 6.38351 15.8645 6.31631 15.9984C6.13919 16.3529 6.28247 16.7825 6.63599 16.9613C6.99047 17.1396 7.42199 16.9982 7.60271 16.6457C7.65479 16.5441 8.91167 14.1605 12.0005 14.1605C15.0893 14.1605 16.3461 16.5441 16.3963 16.6425C16.5225 16.895 16.7767 17.0409 17.0412 17.0405C17.1492 17.0405 17.2591 17.0162 17.3625 16.9646ZM15.6005 10.5605C14.8063 10.5605 14.1605 9.91463 14.1605 9.12047C14.1605 8.32631 14.8063 7.68047 15.6005 7.68047C16.3946 7.68047 17.0405 8.32631 17.0405 9.12047C17.0405 9.91463 16.3946 10.5605 15.6005 10.5605ZM8.40047 10.5605C7.60631 10.5605 6.96047 9.91463 6.96047 9.12047C6.96047 8.32631 7.60631 7.68047 8.40047 7.68047C9.19463 7.68047 9.84047 8.32631 9.84047 9.12047C9.84047 9.91463 9.19463 10.5605 8.40047 10.5605Z" fill="#575757"/>
+</g>
+<defs>
+<clipPath id="clip0_259_4685">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg></span>
+    </div>
+      </div>
+    </div>
+    
+    </div>
+    </div>
+   
+    
+       
+      
+    <div
+      parentTag="Col" id="gZ9yuW9ZKD" data-id="gZ9yuW9ZKD"
+        style="--bs:solid;--bw:0px 0px 1px 0px;--bc:#B4B4B4;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--op-mobile:100%;--pt:16px;--pb:16px;--cg:30px;--cg-mobile:14px;--pc:start;--gtc:minmax(0, 4fr) minmax(0, 4fr) minmax(0, 4fr);--gtc-mobile:minmax(0, 3fr) minmax(0, 6fr) minmax(0, 3fr);--w:var(--g-ct-w, 1200px);--w-tablet:var(--g-ct-w, 100%);--w-mobile:var(--g-ct-w, 100%);--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="gZ9yuW9ZKD gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--jc:center"
+      class="ggQ6ZEarsw gp-relative gp-flex gp-flex-col"
+    >
+      
+  <div
+      
+      style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--ta:center"
+      class="gp-leading-[0] gygLzVM1sd"
+    >
+      <div 
+      data-id="gygLzVM1sd"
+      class="icon-wrapper gp-inline-flex gp-overflow-hidden"
+      style="--bs:none;--bw:1px 1px 1px 1px;--bc:#000000"
+      >
+      <div
+      
+    >
+      <span
+        style="--c:var(--g-c-line-3, line-3);--t:rotate(0deg);--w:24px;--h:24px;--minw:24px;--height-desktop:24px;--height-tablet:24px;--height-mobile:24px"
+        class="gp-inline-flex gp-items-center gp-justify-center gp-overflow-hidden [&>svg]:!gp-h-[var(--height-desktop)] [&>svg]:!gp-w-auto tablet:[&>svg]:!gp-h-[var(--height-tablet)] mobile:[&>svg]:!gp-h-[var(--height-mobile)] gp-text-g-line-3"
+      ><svg data-id="516201969157670038" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+<path d="M3.66601 11.1114C3.25181 11.1125 2.84639 11.2309 2.49667 11.4529C2.14695 11.6748 1.86722 11.9913 1.68984 12.3656C1.51246 12.7399 1.44468 13.1568 1.49434 13.568C1.544 13.9792 1.70907 14.368 1.97046 14.6893L7.54261 21.5152C7.74129 21.7619 7.99596 21.9576 8.28547 22.0861C8.57498 22.2146 8.89097 22.2722 9.2072 22.2541C9.88354 22.2177 10.4942 21.8559 10.8835 21.2611L22.4582 2.61989C22.4601 2.61679 22.4621 2.6137 22.4642 2.61065C22.5728 2.4439 22.5375 2.11344 22.3134 1.90584C22.2518 1.84883 22.1792 1.80503 22.1 1.77714C22.0209 1.74925 21.9369 1.73785 21.8532 1.74366C21.7694 1.74947 21.6878 1.77235 21.6133 1.8109C21.5387 1.84946 21.4729 1.90286 21.4197 1.96782C21.4156 1.97293 21.4113 1.97796 21.4069 1.98292L9.73358 15.172C9.68917 15.2222 9.63522 15.2631 9.57487 15.2922C9.51453 15.3214 9.44899 15.3383 9.38207 15.3419C9.31514 15.3455 9.24817 15.3358 9.18503 15.3133C9.12189 15.2908 9.06385 15.256 9.01428 15.2109L5.14012 11.6854C4.73776 11.3166 4.21186 11.1118 3.66601 11.1114Z" fill="#52C41A"/>
+</svg></span>
+    </div>
+      </div>
+    </div>
+    
+    </div><div
+      label="Block" tag="Col" type="component"
+      style="--jc:center"
+      class="gIrY-mhb1Y gp-relative gp-flex gp-flex-col"
+    >
+      
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="g-zc4qhqc1">
+    <div
+      parentTag="Col"
+        class="g-zc4qhqc1 "
+        style="--ta:left;--ta-mobile:center;--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--op-mobile:100%;--op-tablet:100%;--mb:0px;--mt-mobile:0px;--mb-mobile:0px;--pl-mobile:0px;--pr-mobile:0px"
+      >
+      <div class="gp-flex" style="--jc:left;--jc-mobile:center">
+        <div
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:center;--ta-mobile:center;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--fs:normal;--ff:var(--g-font-body, body);--weight:600;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;--lh:150%;--lh-tablet:150%;--lh-mobile:150%;--c:#242424;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >{{ section.settings.gg-zc4qhqc1_text | replace: '$locationOrigin', locationOrigin }}</div>
+      </div>
+    </div>
+    </gp-text>
+    
+      <style id="custom-css-g-zc4qhqc1">
+        .g-zc4qhqc1 {
+
+}
+.g-zc4qhqc1 p {
+
+}
+      </style>
+    
+    </div><div
+      label="Block" tag="Col" type="component"
+      style="--jc:center"
+      class="g7lF9JYt1a gp-relative gp-flex gp-flex-col"
+    >
+      
+  <div
+      
+      style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--ta:center"
+      class="gp-leading-[0] gZo9paPGqD"
+    >
+      <div 
+      data-id="gZo9paPGqD"
+      class="icon-wrapper gp-inline-flex gp-overflow-hidden"
+      style="--bs:none;--bw:1px 1px 1px 1px;--bc:#000000"
+      >
+      <div
+      
+    >
+      <span
+        style="--c:var(--g-c-line-3, line-3);--t:rotate(0deg);--w:24px;--h:24px;--minw:24px;--height-desktop:24px;--height-tablet:24px;--height-mobile:24px"
+        class="gp-inline-flex gp-items-center gp-justify-center gp-overflow-hidden [&>svg]:!gp-h-[var(--height-desktop)] [&>svg]:!gp-w-auto tablet:[&>svg]:!gp-h-[var(--height-tablet)] mobile:[&>svg]:!gp-h-[var(--height-mobile)] gp-text-g-line-3"
+      ><svg data-id="516201979492435094" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+<g clip-path="url(#clip0_259_4685)">
+<path d="M12.0005 23.5205C5.64839 23.5205 0.480469 18.3525 0.480469 12.0005C0.480469 5.64839 5.64839 0.480469 12.0005 0.480469C18.3525 0.480469 23.5205 5.64839 23.5205 12.0005C23.5205 18.3525 18.3525 23.5205 12.0005 23.5205ZM12.0005 1.92047C6.44231 1.92047 1.92047 6.44231 1.92047 12.0005C1.92047 17.5586 6.44231 22.0805 12.0005 22.0805C17.5586 22.0805 22.0805 17.5586 22.0805 12.0005C22.0805 6.44231 17.5586 1.92047 12.0005 1.92047ZM17.3625 16.9646C17.7182 16.7868 17.8625 16.3543 17.6846 15.9986C17.6174 15.8645 15.9996 12.7205 12.0005 12.7205C8.00135 12.7205 6.38351 15.8645 6.31631 15.9984C6.13919 16.3529 6.28247 16.7825 6.63599 16.9613C6.99047 17.1396 7.42199 16.9982 7.60271 16.6457C7.65479 16.5441 8.91167 14.1605 12.0005 14.1605C15.0893 14.1605 16.3461 16.5441 16.3963 16.6425C16.5225 16.895 16.7767 17.0409 17.0412 17.0405C17.1492 17.0405 17.2591 17.0162 17.3625 16.9646ZM15.6005 10.5605C14.8063 10.5605 14.1605 9.91463 14.1605 9.12047C14.1605 8.32631 14.8063 7.68047 15.6005 7.68047C16.3946 7.68047 17.0405 8.32631 17.0405 9.12047C17.0405 9.91463 16.3946 10.5605 15.6005 10.5605ZM8.40047 10.5605C7.60631 10.5605 6.96047 9.91463 6.96047 9.12047C6.96047 8.32631 7.60631 7.68047 8.40047 7.68047C9.19463 7.68047 9.84047 8.32631 9.84047 9.12047C9.84047 9.91463 9.19463 10.5605 8.40047 10.5605Z" fill="#575757"/>
+</g>
+<defs>
+<clipPath id="clip0_259_4685">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg></span>
+    </div>
+      </div>
+    </div>
+    
+    </div>
+    </div>
+   
+    
+       
+      
+    <div
+      parentTag="Col" id="gf7Ix-d2io" data-id="gf7Ix-d2io"
+        style="--bs:solid;--bw:0px 0px 1px 0px;--bc:#B4B4B4;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--op-mobile:100%;--pt:16px;--pb:16px;--cg:30px;--cg-mobile:14px;--pc:start;--gtc:minmax(0, 4fr) minmax(0, 4fr) minmax(0, 4fr);--gtc-mobile:minmax(0, 3fr) minmax(0, 6fr) minmax(0, 3fr);--w:var(--g-ct-w, 1200px);--w-tablet:var(--g-ct-w, 100%);--w-mobile:var(--g-ct-w, 100%);--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="gf7Ix-d2io gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--jc:center"
+      class="ggEUIcMqkZ gp-relative gp-flex gp-flex-col"
+    >
+      
+  <div
+      
+      style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--ta:center"
+      class="gp-leading-[0] gP7glaIfi3"
+    >
+      <div 
+      data-id="gP7glaIfi3"
+      class="icon-wrapper gp-inline-flex gp-overflow-hidden"
+      style="--bs:none;--bw:1px 1px 1px 1px;--bc:#000000"
+      >
+      <div
+      
+    >
+      <span
+        style="--c:var(--g-c-line-3, line-3);--t:rotate(0deg);--w:24px;--h:24px;--minw:24px;--height-desktop:24px;--height-tablet:24px;--height-mobile:24px"
+        class="gp-inline-flex gp-items-center gp-justify-center gp-overflow-hidden [&>svg]:!gp-h-[var(--height-desktop)] [&>svg]:!gp-w-auto tablet:[&>svg]:!gp-h-[var(--height-tablet)] mobile:[&>svg]:!gp-h-[var(--height-mobile)] gp-text-g-line-3"
+      ><svg data-id="516201969157670038" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+<path d="M3.66601 11.1114C3.25181 11.1125 2.84639 11.2309 2.49667 11.4529C2.14695 11.6748 1.86722 11.9913 1.68984 12.3656C1.51246 12.7399 1.44468 13.1568 1.49434 13.568C1.544 13.9792 1.70907 14.368 1.97046 14.6893L7.54261 21.5152C7.74129 21.7619 7.99596 21.9576 8.28547 22.0861C8.57498 22.2146 8.89097 22.2722 9.2072 22.2541C9.88354 22.2177 10.4942 21.8559 10.8835 21.2611L22.4582 2.61989C22.4601 2.61679 22.4621 2.6137 22.4642 2.61065C22.5728 2.4439 22.5375 2.11344 22.3134 1.90584C22.2518 1.84883 22.1792 1.80503 22.1 1.77714C22.0209 1.74925 21.9369 1.73785 21.8532 1.74366C21.7694 1.74947 21.6878 1.77235 21.6133 1.8109C21.5387 1.84946 21.4729 1.90286 21.4197 1.96782C21.4156 1.97293 21.4113 1.97796 21.4069 1.98292L9.73358 15.172C9.68917 15.2222 9.63522 15.2631 9.57487 15.2922C9.51453 15.3214 9.44899 15.3383 9.38207 15.3419C9.31514 15.3455 9.24817 15.3358 9.18503 15.3133C9.12189 15.2908 9.06385 15.256 9.01428 15.2109L5.14012 11.6854C4.73776 11.3166 4.21186 11.1118 3.66601 11.1114Z" fill="#52C41A"/>
+</svg></span>
+    </div>
+      </div>
+    </div>
+    
+    </div><div
+      label="Block" tag="Col" type="component"
+      style="--jc:center"
+      class="gQjxHDdpIS gp-relative gp-flex gp-flex-col"
+    >
+      
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="gRJLP-1Kj2">
+    <div
+      parentTag="Col"
+        class="gRJLP-1Kj2 "
+        style="--ta:left;--ta-mobile:center;--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--op-mobile:100%;--op-tablet:100%;--mb:0px;--mt-mobile:0px;--mb-mobile:0px;--pl-mobile:0px;--pr-mobile:0px"
+      >
+      <div class="gp-flex" style="--jc:left;--jc-mobile:center">
+        <div
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:center;--ta-mobile:center;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--fs:normal;--ff:var(--g-font-body, body);--weight:600;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;--lh:150%;--lh-tablet:150%;--lh-mobile:150%;--c:#242424;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >{{ section.settings.ggRJLP-1Kj2_text | replace: '$locationOrigin', locationOrigin }}</div>
+      </div>
+    </div>
+    </gp-text>
+    
+      <style id="custom-css-gRJLP-1Kj2">
+        .gRJLP-1Kj2 {
+
+}
+.gRJLP-1Kj2 p {
+
+}
+      </style>
+    
+    </div><div
+      label="Block" tag="Col" type="component"
+      style="--jc:center"
+      class="gMFSjyd6a4 gp-relative gp-flex gp-flex-col"
+    >
+      
+  <div
+      
+      style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--ta:center"
+      class="gp-leading-[0] g-N0OVYVAI"
+    >
+      <div 
+      data-id="g-N0OVYVAI"
+      class="icon-wrapper gp-inline-flex gp-overflow-hidden"
+      style="--bs:none;--bw:1px 1px 1px 1px;--bc:#000000"
+      >
+      <div
+      
+    >
+      <span
+        style="--c:var(--g-c-line-3, line-3);--t:rotate(0deg);--w:24px;--h:24px;--minw:24px;--height-desktop:24px;--height-tablet:24px;--height-mobile:24px"
+        class="gp-inline-flex gp-items-center gp-justify-center gp-overflow-hidden [&>svg]:!gp-h-[var(--height-desktop)] [&>svg]:!gp-w-auto tablet:[&>svg]:!gp-h-[var(--height-tablet)] mobile:[&>svg]:!gp-h-[var(--height-mobile)] gp-text-g-line-3"
+      ><svg data-id="516201979492435094" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+<g clip-path="url(#clip0_259_4685)">
+<path d="M12.0005 23.5205C5.64839 23.5205 0.480469 18.3525 0.480469 12.0005C0.480469 5.64839 5.64839 0.480469 12.0005 0.480469C18.3525 0.480469 23.5205 5.64839 23.5205 12.0005C23.5205 18.3525 18.3525 23.5205 12.0005 23.5205ZM12.0005 1.92047C6.44231 1.92047 1.92047 6.44231 1.92047 12.0005C1.92047 17.5586 6.44231 22.0805 12.0005 22.0805C17.5586 22.0805 22.0805 17.5586 22.0805 12.0005C22.0805 6.44231 17.5586 1.92047 12.0005 1.92047ZM17.3625 16.9646C17.7182 16.7868 17.8625 16.3543 17.6846 15.9986C17.6174 15.8645 15.9996 12.7205 12.0005 12.7205C8.00135 12.7205 6.38351 15.8645 6.31631 15.9984C6.13919 16.3529 6.28247 16.7825 6.63599 16.9613C6.99047 17.1396 7.42199 16.9982 7.60271 16.6457C7.65479 16.5441 8.91167 14.1605 12.0005 14.1605C15.0893 14.1605 16.3461 16.5441 16.3963 16.6425C16.5225 16.895 16.7767 17.0409 17.0412 17.0405C17.1492 17.0405 17.2591 17.0162 17.3625 16.9646ZM15.6005 10.5605C14.8063 10.5605 14.1605 9.91463 14.1605 9.12047C14.1605 8.32631 14.8063 7.68047 15.6005 7.68047C16.3946 7.68047 17.0405 8.32631 17.0405 9.12047C17.0405 9.91463 16.3946 10.5605 15.6005 10.5605ZM8.40047 10.5605C7.60631 10.5605 6.96047 9.91463 6.96047 9.12047C6.96047 8.32631 7.60631 7.68047 8.40047 7.68047C9.19463 7.68047 9.84047 8.32631 9.84047 9.12047C9.84047 9.91463 9.19463 10.5605 8.40047 10.5605Z" fill="#575757"/>
+</g>
+<defs>
+<clipPath id="clip0_259_4685">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg></span>
+    </div>
+      </div>
+    </div>
+    
+    </div>
+    </div>
+   
+    
+       
+      
+    <div
+      parentTag="Col" id="ga7Gdcq985" data-id="ga7Gdcq985"
+        style="--bs:solid;--bw:0px 0px 1px 0px;--bc:#B4B4B4;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--op-mobile:100%;--pt:16px;--pb:16px;--cg:30px;--cg-mobile:14px;--pc:start;--gtc:minmax(0, 4fr) minmax(0, 4fr) minmax(0, 4fr);--gtc-mobile:minmax(0, 3fr) minmax(0, 6fr) minmax(0, 3fr);--w:var(--g-ct-w, 1200px);--w-tablet:var(--g-ct-w, 100%);--w-mobile:var(--g-ct-w, 100%);--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="ga7Gdcq985 gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--jc:center"
+      class="gUHpLW6T_m gp-relative gp-flex gp-flex-col"
+    >
+      
+  <div
+      
+      style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--ta:center"
+      class="gp-leading-[0] gu7j1Olmlo"
+    >
+      <div 
+      data-id="gu7j1Olmlo"
+      class="icon-wrapper gp-inline-flex gp-overflow-hidden"
+      style="--bs:none;--bw:1px 1px 1px 1px;--bc:#000000"
+      >
+      <div
+      
+    >
+      <span
+        style="--c:var(--g-c-line-3, line-3);--t:rotate(0deg);--w:24px;--h:24px;--minw:24px;--height-desktop:24px;--height-tablet:24px;--height-mobile:24px"
+        class="gp-inline-flex gp-items-center gp-justify-center gp-overflow-hidden [&>svg]:!gp-h-[var(--height-desktop)] [&>svg]:!gp-w-auto tablet:[&>svg]:!gp-h-[var(--height-tablet)] mobile:[&>svg]:!gp-h-[var(--height-mobile)] gp-text-g-line-3"
+      ><svg data-id="516201969157670038" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+<path d="M3.66601 11.1114C3.25181 11.1125 2.84639 11.2309 2.49667 11.4529C2.14695 11.6748 1.86722 11.9913 1.68984 12.3656C1.51246 12.7399 1.44468 13.1568 1.49434 13.568C1.544 13.9792 1.70907 14.368 1.97046 14.6893L7.54261 21.5152C7.74129 21.7619 7.99596 21.9576 8.28547 22.0861C8.57498 22.2146 8.89097 22.2722 9.2072 22.2541C9.88354 22.2177 10.4942 21.8559 10.8835 21.2611L22.4582 2.61989C22.4601 2.61679 22.4621 2.6137 22.4642 2.61065C22.5728 2.4439 22.5375 2.11344 22.3134 1.90584C22.2518 1.84883 22.1792 1.80503 22.1 1.77714C22.0209 1.74925 21.9369 1.73785 21.8532 1.74366C21.7694 1.74947 21.6878 1.77235 21.6133 1.8109C21.5387 1.84946 21.4729 1.90286 21.4197 1.96782C21.4156 1.97293 21.4113 1.97796 21.4069 1.98292L9.73358 15.172C9.68917 15.2222 9.63522 15.2631 9.57487 15.2922C9.51453 15.3214 9.44899 15.3383 9.38207 15.3419C9.31514 15.3455 9.24817 15.3358 9.18503 15.3133C9.12189 15.2908 9.06385 15.256 9.01428 15.2109L5.14012 11.6854C4.73776 11.3166 4.21186 11.1118 3.66601 11.1114Z" fill="#52C41A"/>
+</svg></span>
+    </div>
+      </div>
+    </div>
+    
+    </div><div
+      label="Block" tag="Col" type="component"
+      style="--jc:center"
+      class="g8M7CT-DLY gp-relative gp-flex gp-flex-col"
+    >
+      
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="gFQrvO_8wD">
+    <div
+      parentTag="Col"
+        class="gFQrvO_8wD "
+        style="--ta:left;--ta-mobile:center;--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--op-mobile:100%;--op-tablet:100%;--mb:0px;--mt-mobile:0px;--mb-mobile:0px;--pl-mobile:0px;--pr-mobile:0px"
+      >
+      <div class="gp-flex" style="--jc:left;--jc-mobile:center">
+        <div
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:center;--ta-mobile:center;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--fs:normal;--ff:var(--g-font-body, body);--weight:600;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;--lh:150%;--lh-tablet:150%;--lh-mobile:150%;--c:#242424;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >{{ section.settings.ggFQrvO_8wD_text | replace: '$locationOrigin', locationOrigin }}</div>
+      </div>
+    </div>
+    </gp-text>
+    
+      <style id="custom-css-gFQrvO_8wD">
+        .gFQrvO_8wD {
+
+}
+.gFQrvO_8wD p {
+
+}
+      </style>
+    
+    </div><div
+      label="Block" tag="Col" type="component"
+      style="--jc:center"
+      class="g6RKYp9wMH gp-relative gp-flex gp-flex-col"
+    >
+      
+  <div
+      
+      style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--ta:center"
+      class="gp-leading-[0] g8V7ImbQY2"
+    >
+      <div 
+      data-id="g8V7ImbQY2"
+      class="icon-wrapper gp-inline-flex gp-overflow-hidden"
+      style="--bs:none;--bw:1px 1px 1px 1px;--bc:#000000"
+      >
+      <div
+      
+    >
+      <span
+        style="--c:var(--g-c-line-3, line-3);--t:rotate(0deg);--w:24px;--h:24px;--minw:24px;--height-desktop:24px;--height-tablet:24px;--height-mobile:24px"
+        class="gp-inline-flex gp-items-center gp-justify-center gp-overflow-hidden [&>svg]:!gp-h-[var(--height-desktop)] [&>svg]:!gp-w-auto tablet:[&>svg]:!gp-h-[var(--height-tablet)] mobile:[&>svg]:!gp-h-[var(--height-mobile)] gp-text-g-line-3"
+      ><svg data-id="516201979492435094" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+<g clip-path="url(#clip0_259_4685)">
+<path d="M12.0005 23.5205C5.64839 23.5205 0.480469 18.3525 0.480469 12.0005C0.480469 5.64839 5.64839 0.480469 12.0005 0.480469C18.3525 0.480469 23.5205 5.64839 23.5205 12.0005C23.5205 18.3525 18.3525 23.5205 12.0005 23.5205ZM12.0005 1.92047C6.44231 1.92047 1.92047 6.44231 1.92047 12.0005C1.92047 17.5586 6.44231 22.0805 12.0005 22.0805C17.5586 22.0805 22.0805 17.5586 22.0805 12.0005C22.0805 6.44231 17.5586 1.92047 12.0005 1.92047ZM17.3625 16.9646C17.7182 16.7868 17.8625 16.3543 17.6846 15.9986C17.6174 15.8645 15.9996 12.7205 12.0005 12.7205C8.00135 12.7205 6.38351 15.8645 6.31631 15.9984C6.13919 16.3529 6.28247 16.7825 6.63599 16.9613C6.99047 17.1396 7.42199 16.9982 7.60271 16.6457C7.65479 16.5441 8.91167 14.1605 12.0005 14.1605C15.0893 14.1605 16.3461 16.5441 16.3963 16.6425C16.5225 16.895 16.7767 17.0409 17.0412 17.0405C17.1492 17.0405 17.2591 17.0162 17.3625 16.9646ZM15.6005 10.5605C14.8063 10.5605 14.1605 9.91463 14.1605 9.12047C14.1605 8.32631 14.8063 7.68047 15.6005 7.68047C16.3946 7.68047 17.0405 8.32631 17.0405 9.12047C17.0405 9.91463 16.3946 10.5605 15.6005 10.5605ZM8.40047 10.5605C7.60631 10.5605 6.96047 9.91463 6.96047 9.12047C6.96047 8.32631 7.60631 7.68047 8.40047 7.68047C9.19463 7.68047 9.84047 8.32631 9.84047 9.12047C9.84047 9.91463 9.19463 10.5605 8.40047 10.5605Z" fill="#575757"/>
+</g>
+<defs>
+<clipPath id="clip0_259_4685">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg></span>
+    </div>
+      </div>
+    </div>
+    
+    </div>
+    </div>
+   
+    
+       
+      
+    <div
+      parentTag="Col" id="gc20b-7-Ym" data-id="gc20b-7-Ym"
+        style="--bs:solid;--bw:0px 0px 1px 0px;--bc:#B4B4B4;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--op-mobile:100%;--pt:16px;--pb:16px;--cg:30px;--cg-mobile:14px;--pc:start;--gtc:minmax(0, 4fr) minmax(0, 4fr) minmax(0, 4fr);--gtc-mobile:minmax(0, 3fr) minmax(0, 6fr) minmax(0, 3fr);--w:var(--g-ct-w, 1200px);--w-tablet:var(--g-ct-w, 100%);--w-mobile:var(--g-ct-w, 100%);--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="gc20b-7-Ym gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--jc:center"
+      class="gxCvw2Zglh gp-relative gp-flex gp-flex-col"
+    >
+      
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="gDaXjNbOI3">
+    <div
+      parentTag="Col"
+        class="gDaXjNbOI3 "
+        style="--ta:left;--ta-mobile:center;--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--op-mobile:100%;--op-tablet:100%;--mt-mobile:0px;--mb-mobile:0px;--pl-mobile:0px;--pr-mobile:0px"
+      >
+      <div class="gp-flex" style="--jc:left;--jc-mobile:center">
+        <div
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:center;--ta-mobile:center;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--fs:normal;--ff:var(--g-font-body, body);--weight:600;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;--lh:150%;--lh-tablet:150%;--lh-mobile:150%;--c:#242424;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >{{ section.settings.ggDaXjNbOI3_text | replace: '$locationOrigin', locationOrigin }}</div>
+      </div>
+    </div>
+    </gp-text>
+    
+      <style id="custom-css-gDaXjNbOI3">
+        .gDaXjNbOI3 {
+
+}
+.gDaXjNbOI3 p {
+
+}
+      </style>
+    
+    </div><div
+      label="Block" tag="Col" type="component"
+      style="--jc:center"
+      class="gP1fdspkpC gp-relative gp-flex gp-flex-col"
+    >
+      
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="g9hB9z1x7S">
+    <div
+      parentTag="Col"
+        class="g9hB9z1x7S "
+        style="--ta:left;--ta-mobile:center;--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--op-mobile:100%;--op-tablet:100%;--mt-mobile:0px;--mb-mobile:0px;--pl-mobile:0px;--pr-mobile:0px"
+      >
+      <div class="gp-flex" style="--jc:left;--jc-mobile:center">
+        <div
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:center;--ta-mobile:center;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--fs:normal;--ff:var(--g-font-body, body);--weight:600;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;--lh:150%;--lh-tablet:150%;--lh-mobile:150%;--c:#242424;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >{{ section.settings.gg9hB9z1x7S_text | replace: '$locationOrigin', locationOrigin }}</div>
+      </div>
+    </div>
+    </gp-text>
+    
+      <style id="custom-css-g9hB9z1x7S">
+        .g9hB9z1x7S {
+
+}
+.g9hB9z1x7S p {
+
+}
+      </style>
+    
+    </div><div
+      label="Block" tag="Col" type="component"
+      style="--jc:center"
+      class="gWLdSoepQE gp-relative gp-flex gp-flex-col"
+    >
+      
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="gfU5Ww3jQJ">
+    <div
+      parentTag="Col"
+        class="gfU5Ww3jQJ "
+        style="--ta:left;--ta-mobile:center;--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--op-mobile:100%;--op-tablet:100%;--mt-mobile:0px;--mb-mobile:0px;--pl-mobile:0px;--pr-mobile:0px"
+      >
+      <div class="gp-flex" style="--jc:left;--jc-mobile:center">
+        <div
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:center;--ta-mobile:center;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--fs:normal;--ff:var(--g-font-body, body);--weight:600;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;--lh:150%;--lh-tablet:150%;--lh-mobile:150%;--c:#242424;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >{{ section.settings.ggfU5Ww3jQJ_text | replace: '$locationOrigin', locationOrigin }}</div>
+      </div>
+    </div>
+    </gp-text>
+    
+      <style id="custom-css-gfU5Ww3jQJ">
+        .gfU5Ww3jQJ {
+
+}
+.gfU5Ww3jQJ p {
+
+}
+      </style>
+    
+    </div>
+    </div>
+   
+    
+    </div>
+    </div>
+   
+    
+    </div>
+    </div>
+  
+            </section>
+           
+    
+
+
+{% schema %}
+  {
+    
+    "name": "Section 9",
+    "tag": "section",
+    "class": "gps-571219442936054656 gps gpsil",
+    "settings": [{"type":"paragraph","content":"Section design by GemPages. [Click here to start design](https://admin.shopify.com/store/1fkjyx-xd/apps/gempages-cro/app/shopify/edit?pageType=GP_STATIC&editorId=571219423893914776&sectionId=571219442936054656)"},{"type":"select","label":"Section Preload","id":"section_preload","options":[{"label":"On","value":"true"},{"label":"Off","value":"false"},{"label":"Off Lazy Script","value":"off_lazy_script"}],"default":"false"},{"type":"text","label":"Checksum","id":"checksum"},{"type":"html","id":"gguKK8BaMCd_text","label":"gguKK8BaMCd_text","default":"US"},{"type":"html","id":"gg3k-Siwga8_text","label":"gg3k-Siwga8_text","default":"Kombucha bliss"},{"type":"html","id":"ggQWovQ0Ujo_text","label":"ggQWovQ0Ujo_text","default":"<s>THEM</s>"},{"type":"html","id":"ggrY2cgc8Wm_text","label":"ggrY2cgc8Wm_text","default":"others&nbsp;"},{"type":"html","id":"gggnhKo3J9D_text","label":"gggnhKo3J9D_text","default":"Kombucha Comparison"},{"type":"html","id":"gg018-l5JAA_text","label":"gg018-l5JAA_text","default":"<p>Organic Ingredients</p>"},{"type":"html","id":"ggfBeoeV0fX_text","label":"ggfBeoeV0fX_text","default":"<p>Gut-Friendly Probiotics</p>"},{"type":"html","id":"gg-zc4qhqc1_text","label":"gg-zc4qhqc1_text","default":"<p>Refreshing Flavor</p>"},{"type":"html","id":"ggRJLP-1Kj2_text","label":"ggRJLP-1Kj2_text","default":"<p>Low Sugar Content</p>"},{"type":"html","id":"ggFQrvO_8wD_text","label":"ggFQrvO_8wD_text","default":"<p>Sustainable Packaging</p>"},{"type":"html","id":"ggDaXjNbOI3_text","label":"ggDaXjNbOI3_text","default":"<p>$2.00</p>"},{"type":"html","id":"gg9hB9z1x7S_text","label":"gg9hB9z1x7S_text","default":"<p>Price</p>"},{"type":"html","id":"ggfU5Ww3jQJ_text","label":"ggfU5Ww3jQJ_text","default":"<p>$3.00</p>"}],
+    "blocks": [{"type": "@app"}],
+    "locales": {}
+  }
+{% endschema %}

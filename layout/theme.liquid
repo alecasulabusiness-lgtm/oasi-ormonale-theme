@@ -1,0 +1,102 @@
+<!doctype html>
+<html
+  class="no-js{% if request.design_mode %} shopify-design-mode{% endif %}"
+  lang="{{ request.locale.iso_code }}"
+>
+  <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-85FNHY68ZJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-85FNHY68ZJ');
+</script>
+
+ {%- if settings.favicon != blank -%}
+      <link
+        rel="icon"
+        type="image/png"
+        href="{{ settings.favicon | image_url: width: 32, height: 32 }}"
+      >
+    {%- endif -%}
+
+
+{% unless template contains 'checkout' %}
+  {% if request.host == 'shop.oasiormonale.com' %}
+    {% assign excluded_paths = '/pages/oasi-ormonale-1,/pages/typ-p-a,/pages/oasi-ormonale-home-page,/pages/chi-siamo,/pages/oasi-ormonale-i-nostri-brand,/pages/oasi-ormonale-lavora-con-noi,/pages/progettoleonessa,/pages/typ-pl,pages/copy-of-progetto-leonessa-nuova-abbreviata-alessio,/pages/typ-celebrities,/pages/landing-page-alessia,/pages/typ-protocollo-pa-alessia,/pages/termini-e-condizioni,pages/typ-rec-pt' | split: ',' %}
+    {% assign should_redirect = true %}
+    
+    {% for path in excluded_paths %}
+      {% if request.path == path %}
+        {% assign should_redirect = false %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+    
+    {% if should_redirect %}
+      <script type="text/javascript">
+        window.location.href = "https://shop.oasiormonale.com/pages/home-oasiormonale";
+      </script>
+    {% endif %}
+  {% endif %}
+{% endunless %}
+    
+
+    {% comment %} This a way to wait for main content to load when navigating to a new page so that the view transitions can work consistently {% endcomment %}
+    <link
+      rel="expect"
+      href="#MainContent"
+      blocking="render"
+      id="view-transition-render-blocker"
+    >
+
+    {%- render 'meta-tags' -%}
+    {%- render 'stylesheets' -%}
+    {%- render 'fonts' -%}
+    {%- render 'scripts' -%}
+    {%- render 'theme-styles-variables' -%}
+    {%- render 'color-schemes' -%}
+
+    {% if request.design_mode %}
+      {%- render 'theme-editor' -%}
+    {% endif %}
+
+    {{ content_for_header }}
+    <meta name="description" content="Oasi Ormonale si basa su solide basi scientifiche: biochimica, biologia, chimica e fisiologia spiegano i meccanismi del nostro corpo e come esso risponde a ...">
+  </head>
+
+  <body class="page-width-{{ settings.page_width }} card-hover-effect-{{ settings.card_hover_effect }}">
+    {% render 'skip-to-content-link', href: '#MainContent', text: 'accessibility.skip_to_text' %}
+    <div id="header-group">
+      {% sections 'header-group' %}
+    </div>
+
+    <script
+      src="{{ 'critical.js' | asset_url }}"
+      type="module"
+      async
+      blocking="render"
+    ></script>
+
+    <main
+      id="MainContent"
+      class="content-for-layout"
+      role="main"
+      data-page-transition-enabled="{{ settings.page_transition_enabled }}"
+      data-product-transition="{{ settings.transition_to_main_product }}"
+      data-template="{{ template }}"
+    >
+      {{ content_for_layout }}
+    </main>
+
+    {% sections 'footer-group' %}
+
+    {% render 'search-modal' %}
+
+    {% if settings.quick_add or settings.mobile_quick_add %}
+      {% render 'quick-add-modal' %}
+    {% endif %}
+    </body>
+</html>

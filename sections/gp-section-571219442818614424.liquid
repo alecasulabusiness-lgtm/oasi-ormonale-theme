@@ -1,0 +1,991 @@
+
+
+<style {% if section.settings.section_preload == "false" %} class="gps-link gps-style" type="text/disabled-css" {% endif %}>.gps-571219442818614424.gps.gpsil [style*="--ai:"]{align-items:var(--ai)}.gps-571219442818614424.gps.gpsil [style*="--aspect:"]{aspect-ratio:var(--aspect)}.gps-571219442818614424.gps.gpsil [style*="--bg:"]{background:var(--bg)}.gps-571219442818614424.gps.gpsil [style*="--hvr-bg:"]:hover{background:var(--hvr-bg)}.gps-571219442818614424.gps.gpsil [style*="--bga:"]{background-attachment:var(--bga)}.gps-571219442818614424.gps.gpsil [style*="--bgc:"]{background-color:var(--bgc)}.gps-571219442818614424.gps.gpsil [style*="--bgi:"]{background-image:var(--bgi)}.gps-571219442818614424.gps.gpsil [style*="--bgp:"]{background-position:var(--bgp)}.gps-571219442818614424.gps.gpsil [style*="--bgr:"]{background-repeat:var(--bgr)}.gps-571219442818614424.gps.gpsil [style*="--bgs:"]{background-size:var(--bgs)}.gps-571219442818614424.gps.gpsil [style*="--b:"]{border:var(--b)}.gps-571219442818614424.gps.gpsil [style*="--hvr-b:"]:hover{border:var(--hvr-b)}.gps-571219442818614424.gps.gpsil [style*="--bb:"]{border-bottom:var(--bb)}.gps-571219442818614424.gps.gpsil [style*="--bc:"]{border-color:var(--bc)}.gps-571219442818614424.gps.gpsil [style*="--bblr:"]{border-bottom-left-radius:var(--bblr)}.gps-571219442818614424.gps.gpsil [style*="--bbrr:"]{border-bottom-right-radius:var(--bbrr)}.gps-571219442818614424.gps.gpsil [style*="--bl:"]{border-left:var(--bl)}.gps-571219442818614424.gps.gpsil [style*="--bs:"]{border-style:var(--bs)}.gps-571219442818614424.gps.gpsil [style*="--bt:"]{border-top:var(--bt)}.gps-571219442818614424.gps.gpsil [style*="--btlr:"]{border-top-left-radius:var(--btlr)}.gps-571219442818614424.gps.gpsil [style*="--btrr:"]{border-top-right-radius:var(--btrr)}.gps-571219442818614424.gps.gpsil [style*="--bw:"]{border-width:var(--bw)}.gps-571219442818614424.gps.gpsil [style*="--shadow:"]{box-shadow:var(--shadow)}.gps-571219442818614424.gps.gpsil [style*="--c:"]{color:var(--c)}.gps-571219442818614424.gps.gpsil [style*="--cg:"]{-moz-column-gap:var(--cg);column-gap:var(--cg)}.gps-571219442818614424.gps.gpsil [style*="--ff:"]{font-family:var(--ff)}.gps-571219442818614424.gps.gpsil [style*="--size:"]{font-size:var(--size)}.gps-571219442818614424.gps.gpsil [style*="--weight:"]{font-weight:var(--weight)}.gps-571219442818614424.gps.gpsil [style*="--fs:"]{font-style:var(--fs)}.gps-571219442818614424.gps.gpsil [style*="--gtc:"]{grid-template-columns:var(--gtc)}.gps-571219442818614424.gps.gpsil [style*="--h:"]{height:var(--h)}.gps-571219442818614424.gps.gpsil [style*="--jc:"]{justify-content:var(--jc)}.gps-571219442818614424.gps.gpsil [style*="--ls:"]{letter-spacing:var(--ls)}.gps-571219442818614424.gps.gpsil [style*="--lh:"]{line-height:var(--lh)}.gps-571219442818614424.gps.gpsil [style*="--m:"]{margin:var(--m)}.gps-571219442818614424.gps.gpsil [style*="--mb:"]{margin-bottom:var(--mb)}.gps-571219442818614424.gps.gpsil [style*="--ml:"]{margin-left:var(--ml)}.gps-571219442818614424.gps.gpsil [style*="--mr:"]{margin-right:var(--mr)}.gps-571219442818614424.gps.gpsil [style*="--mt:"]{margin-top:var(--mt)}.gps-571219442818614424.gps.gpsil [style*="--objf:"]{-o-object-fit:var(--objf);object-fit:var(--objf)}.gps-571219442818614424.gps.gpsil [style*="--op:"]{opacity:var(--op)}.gps-571219442818614424.gps.gpsil [style*="--o:"]{order:var(--o)}.gps-571219442818614424.gps.gpsil [style*="--pc:"]{place-content:var(--pc)}.gps-571219442818614424.gps.gpsil [style*="--p:"]{padding:var(--p)}.gps-571219442818614424.gps.gpsil [style*="--pb:"]{padding-bottom:var(--pb)}.gps-571219442818614424.gps.gpsil [style*="--pl:"]{padding-left:var(--pl)}.gps-571219442818614424.gps.gpsil [style*="--pr:"]{padding-right:var(--pr)}.gps-571219442818614424.gps.gpsil [style*="--pt:"]{padding-top:var(--pt)}.gps-571219442818614424.gps.gpsil [style*="--pos:"]{position:var(--pos)}.gps-571219442818614424.gps.gpsil [style*="--rg:"]{row-gap:var(--rg)}.gps-571219442818614424.gps.gpsil [style*="--ta:"]{text-align:var(--ta)}.gps-571219442818614424.gps.gpsil [style*="--tt:"]{text-transform:var(--tt)}.gps-571219442818614424.gps.gpsil [style*="--top:"]{top:var(--top)}.gps-571219442818614424.gps.gpsil [style*="--t:"]{transform:var(--t)}.gps-571219442818614424.gps.gpsil [style*="--w:"]{width:var(--w)}.gps-571219442818614424.gps.gpsil [style*="--line-clamp:"]{-webkit-box-orient:vertical;-webkit-line-clamp:var(--line-clamp);display:-webkit-box;overflow:hidden}@media only screen and (max-width:1024px){.gps-571219442818614424.gps.gpsil [style*="--ai-tablet:"]{align-items:var(--ai-tablet)}.gps-571219442818614424.gps.gpsil [style*="--aspect-tablet:"]{aspect-ratio:var(--aspect-tablet)}.gps-571219442818614424.gps.gpsil [style*="--bgc-tablet:"]{background-color:var(--bgc-tablet)}.gps-571219442818614424.gps.gpsil [style*="--size-tablet:"]{font-size:var(--size-tablet)}.gps-571219442818614424.gps.gpsil [style*="--h-tablet:"]{height:var(--h-tablet)}.gps-571219442818614424.gps.gpsil [style*="--lh-tablet:"]{line-height:var(--lh-tablet)}.gps-571219442818614424.gps.gpsil [style*="--mb-tablet:"]{margin-bottom:var(--mb-tablet)}.gps-571219442818614424.gps.gpsil [style*="--op-tablet:"]{opacity:var(--op-tablet)}.gps-571219442818614424.gps.gpsil [style*="--pb-tablet:"]{padding-bottom:var(--pb-tablet)}.gps-571219442818614424.gps.gpsil [style*="--pl-tablet:"]{padding-left:var(--pl-tablet)}.gps-571219442818614424.gps.gpsil [style*="--pr-tablet:"]{padding-right:var(--pr-tablet)}.gps-571219442818614424.gps.gpsil [style*="--pt-tablet:"]{padding-top:var(--pt-tablet)}.gps-571219442818614424.gps.gpsil [style*="--pos-tablet:"]{position:var(--pos-tablet)}.gps-571219442818614424.gps.gpsil [style*="--top-tablet:"]{top:var(--top-tablet)}.gps-571219442818614424.gps.gpsil [style*="--w-tablet:"]{width:var(--w-tablet)}.gps-571219442818614424.gps.gpsil [style*="--line-clamp-tablet:"]{-webkit-box-orient:vertical;-webkit-line-clamp:var(--line-clamp-tablet);display:-webkit-box;overflow:hidden}}@media only screen and (max-width:767px){.gps-571219442818614424.gps.gpsil [style*="--ai-mobile:"]{align-items:var(--ai-mobile)}.gps-571219442818614424.gps.gpsil [style*="--aspect-mobile:"]{aspect-ratio:var(--aspect-mobile)}.gps-571219442818614424.gps.gpsil [style*="--cg-mobile:"]{-moz-column-gap:var(--cg-mobile);column-gap:var(--cg-mobile)}.gps-571219442818614424.gps.gpsil [style*="--size-mobile:"]{font-size:var(--size-mobile)}.gps-571219442818614424.gps.gpsil [style*="--gtc-mobile:"]{grid-template-columns:var(--gtc-mobile)}.gps-571219442818614424.gps.gpsil [style*="--h-mobile:"]{height:var(--h-mobile)}.gps-571219442818614424.gps.gpsil [style*="--jc-mobile:"]{justify-content:var(--jc-mobile)}.gps-571219442818614424.gps.gpsil [style*="--lh-mobile:"]{line-height:var(--lh-mobile)}.gps-571219442818614424.gps.gpsil [style*="--mb-mobile:"]{margin-bottom:var(--mb-mobile)}.gps-571219442818614424.gps.gpsil [style*="--ml-mobile:"]{margin-left:var(--ml-mobile)}.gps-571219442818614424.gps.gpsil [style*="--mr-mobile:"]{margin-right:var(--mr-mobile)}.gps-571219442818614424.gps.gpsil [style*="--mt-mobile:"]{margin-top:var(--mt-mobile)}.gps-571219442818614424.gps.gpsil [style*="--op-mobile:"]{opacity:var(--op-mobile)}.gps-571219442818614424.gps.gpsil [style*="--o-mobile:"]{order:var(--o-mobile)}.gps-571219442818614424.gps.gpsil [style*="--pb-mobile:"]{padding-bottom:var(--pb-mobile)}.gps-571219442818614424.gps.gpsil [style*="--pl-mobile:"]{padding-left:var(--pl-mobile)}.gps-571219442818614424.gps.gpsil [style*="--pr-mobile:"]{padding-right:var(--pr-mobile)}.gps-571219442818614424.gps.gpsil [style*="--pt-mobile:"]{padding-top:var(--pt-mobile)}.gps-571219442818614424.gps.gpsil [style*="--pos-mobile:"]{position:var(--pos-mobile)}.gps-571219442818614424.gps.gpsil [style*="--rg-mobile:"]{row-gap:var(--rg-mobile)}.gps-571219442818614424.gps.gpsil [style*="--ta-mobile:"]{text-align:var(--ta-mobile)}.gps-571219442818614424.gps.gpsil [style*="--top-mobile:"]{top:var(--top-mobile)}.gps-571219442818614424.gps.gpsil [style*="--w-mobile:"]{width:var(--w-mobile)}.gps-571219442818614424.gps.gpsil [style*="--line-clamp-mobile:"]{-webkit-box-orient:vertical;-webkit-line-clamp:var(--line-clamp-mobile);display:-webkit-box;overflow:hidden}}.gps-571219442818614424 .gp-relative{position:relative}.gps-571219442818614424 .gp-z-1{z-index:1}.gps-571219442818614424 .gp-mx-auto{margin-left:auto;margin-right:auto}.gps-571219442818614424 .gp-mb-0{margin-bottom:0}.gps-571219442818614424 .gp-flex{display:flex}.gps-571219442818614424 .gp-inline-flex{display:inline-flex}.gps-571219442818614424 .gp-grid{display:grid}.gps-571219442818614424 .gp-contents{display:contents}.gps-571219442818614424 .\!gp-hidden{display:none!important}.gps-571219442818614424 .gp-hidden{display:none}.gps-571219442818614424 .gp-h-auto{height:auto}.gps-571219442818614424 .gp-h-full{height:100%}.gps-571219442818614424 .gp-w-full{width:100%}.gps-571219442818614424 .gp-max-w-full{max-width:100%}.gps-571219442818614424 .gp-flex-none{flex:none}.gps-571219442818614424 .gp-shrink-0{flex-shrink:0}.gps-571219442818614424 .gp-grid-rows-\[1fr\]{grid-template-rows:1fr}.gps-571219442818614424 .gp-flex-col{flex-direction:column}.gps-571219442818614424 .gp-items-center{align-items:center}.gps-571219442818614424 .gp-justify-center{justify-content:center}.gps-571219442818614424 .gp-gap-y-0{row-gap:0}.gps-571219442818614424 .gp-overflow-hidden{overflow:hidden}.gps-571219442818614424 .gp-break-words{overflow-wrap:break-word}.gps-571219442818614424 .gp-rounded-none{border-radius:0}.gps-571219442818614424 .gp-text-left{text-align:left}.gps-571219442818614424 .gp-text-center{text-align:center}.gps-571219442818614424 .gp-text-g-text-3{color:var(--g-c-text-3)}.gps-571219442818614424 .gp-no-underline{text-decoration-line:none}.gps-571219442818614424 .gp-transition-colors{transition-duration:.15s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1)}.gps-571219442818614424 .gp-duration-200{transition-duration:.2s}.gps-571219442818614424 .gp-duration-300{transition-duration:.3s}.gps-571219442818614424 .gp-ease-in-out{transition-timing-function:cubic-bezier(.4,0,.2,1)}.gps-571219442818614424 .disabled\:gp-btn-disabled:disabled{cursor:default}.gps-571219442818614424 .disabled\:gp-pointer-events-none:disabled{pointer-events:none}.gps-571219442818614424 .disabled\:gp-opacity-30:disabled{opacity:.3}@media (hover:hover) and (pointer:fine){.gps-571219442818614424 .gp-group\/button:hover .group-hover\/button\:\!gp-text-inherit{color:inherit!important}}.gps-571219442818614424 .gp-group\/button:active .group-active\/button\:\!gp-text-inherit{color:inherit!important}.gps-571219442818614424 .gp-group\/button[data-state=loading] .group-data-\[state\=loading\]\/button\:gp-invisible{visibility:hidden}@media (max-width:1024px){.gps-571219442818614424 .tablet\:\!gp-hidden{display:none!important}.gps-571219442818614424 .tablet\:gp-hidden{display:none}.gps-571219442818614424 .tablet\:gp-h-auto{height:auto}.gps-571219442818614424 .tablet\:gp-flex-none{flex:none}}@media (max-width:767px){.gps-571219442818614424 .mobile\:\!gp-hidden{display:none!important}.gps-571219442818614424 .mobile\:gp-hidden{display:none}.gps-571219442818614424 .mobile\:gp-h-auto{height:auto}.gps-571219442818614424 .mobile\:gp-flex-none{flex:none}}.gps-571219442818614424 .\[\&\>svg\]\:\!gp-h-\[var\(--size-desktop\)\]>svg{height:var(--size-desktop)!important}.gps-571219442818614424 .\[\&\>svg\]\:\!gp-w-\[var\(--size-desktop\)\]>svg{width:var(--size-desktop)!important}@media (max-width:1024px){.gps-571219442818614424 .tablet\:\[\&\>svg\]\:\!gp-h-\[var\(--size-tablet\)\]>svg{height:var(--size-tablet)!important}.gps-571219442818614424 .tablet\:\[\&\>svg\]\:\!gp-w-\[var\(--size-tablet\)\]>svg{width:var(--size-tablet)!important}}@media (max-width:767px){.gps-571219442818614424 .mobile\:\[\&\>svg\]\:\!gp-h-\[var\(--size-mobile\)\]>svg{height:var(--size-mobile)!important}.gps-571219442818614424 .mobile\:\[\&\>svg\]\:\!gp-w-\[var\(--size-mobile\)\]>svg{width:var(--size-mobile)!important}}.gps-571219442818614424 .\[\&_\*\]\:gp-max-w-full *{max-width:100%}.gps-571219442818614424 .\[\&_p\]\:gp-inline p{display:inline}.gps-571219442818614424 .\[\&_p\]\:gp-whitespace-pre-line p{white-space:pre-line}.gps-571219442818614424 .\[\&_p\]\:after\:gp-whitespace-pre-wrap p:after{content:var(--tw-content);white-space:pre-wrap}.gps-571219442818614424 .\[\&_p\]\:after\:gp-content-\[\'\\A\'\] p:after{--tw-content:"\A";content:var(--tw-content)}</style>
+
+       
+      
+            <section
+              class="gp-mx-auto gp-max-w-full {% if section.settings.section_preload == "false" %}gps-lazy {% endif %}"
+              style="--w:100%;--w-tablet:100%;--w-mobile:100%;--pl:0px;--pl-tablet:0px;--pl-mobile:0px;--pr:0px;--pr-tablet:0px;--pr-mobile:0px"
+            >
+              
+    <div
+      id="gzBkKLWjoh" data-id="gzBkKLWjoh"
+        style="--blockPadding:base;--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--op-mobile:100%;--op-tablet:100%;--mb:0px;--pt:0px;--pl:20px;--pb:115px;--pr:20px;--pt-mobile:42px;--pl-mobile:20px;--pb-mobile:79px;--pr-mobile:20px;--pt-tablet:0px;--pl-tablet:20px;--pb-tablet:80px;--pr-tablet:20px;--cg:32px;--pc:start;--gtc:minmax(0, 12fr);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:#FFFCF4;--bgc-tablet:#FFFCF4;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="gzBkKLWjoh gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="grCv1cuE0o gp-relative gp-flex gp-flex-col"
+    >
+      
+       
+      
+    <div
+      parentTag="Col" id="gbyh0syse1" data-id="gbyh0syse1"
+        style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--op-mobile:100%;--op-tablet:100%;--mb:0px;--mb-mobile:0px;--pb-mobile:0px;--mb-tablet:0px;--cg:8px;--pc:start;--gtc:minmax(0, 12fr);--w:var(--g-ct-w, 1200px);--w-tablet:1200px;--w-mobile:var(--g-ct-w, 100%);--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="gbyh0syse1 gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="gaN_Fsk0dP gp-relative gp-flex gp-flex-col"
+    >
+      
+       
+      
+    <div
+      parentTag="Col" id="gC5LtpoOok" data-id="gC5LtpoOok"
+        style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--op-mobile:100%;--op-tablet:100%;--mb:80px;--mt-mobile:0px;--mb-mobile:42px;--pt-mobile:0px;--cg:30px;--pc:start;--gtc:minmax(0, 6fr) minmax(0, 6fr);--gtc-mobile:minmax(0, 12fr);--w:var(--g-ct-w, 1200px);--w-tablet:1200px;--w-mobile:var(--g-ct-w, 100%);--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="gC5LtpoOok gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--jc:center;--o-mobile:1"
+      class="gq3AerDrOW gp-relative gp-flex gp-flex-col"
+    >
+      
+       
+      
+    <div
+      parentTag="Col" id="gsxAcI-a9w" data-id="gsxAcI-a9w"
+        style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--op-mobile:100%;--pr:32px;--mt-mobile:21px;--pr-mobile:0px;--cg:8px;--pc:start;--gtc:minmax(0, 12fr);--w:var(--g-ct-w, 1200px);--w-tablet:var(--g-ct-w, 100%);--w-mobile:var(--g-ct-w, 100%);--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="gsxAcI-a9w gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="gsdrKcsHdU gp-relative gp-flex gp-flex-col"
+    >
+      
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="gsPmVnQlZF">
+    <div
+      parentTag="Col"
+        class="gsPmVnQlZF "
+        style="--ta:left;--ta-mobile:center;--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--op-mobile:100%;--op-tablet:100%;--mb:16px;--mt-mobile:0px;--mb-mobile:14px;--pt-mobile:0px"
+      >
+      <div class="gp-flex" style="--jc:left;--jc-mobile:center">
+        <h2
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:left;--ta-mobile:left;--fs:normal;--ff:var(--g-font-heading, heading);--weight:600;--ls:normal;--size:40px;--size-tablet:35px;--size-mobile:24px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;--c:#242424;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >{{ section.settings.ggsPmVnQlZF_text | replace: '$locationOrigin', locationOrigin }}</h2>
+      </div>
+    </div>
+    </gp-text>
+    
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="giSuNau3sr">
+    <div
+      parentTag="Col"
+        class="giSuNau3sr "
+        style="--ta:left;--ta-mobile:center;--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--op-mobile:100%;--op-tablet:100%;--mb:14px;--mt-mobile:0px;--mb-mobile:0px;--pl-mobile:0px;--pr-mobile:0px"
+      >
+      <div class="gp-flex" style="--jc:left;--jc-mobile:center">
+        <div
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:left;--ta-mobile:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--fs:normal;--ff:var(--g-font-body, body);--weight:400;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;--c:#575757;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >{{ section.settings.ggiSuNau3sr_text | replace: '$locationOrigin', locationOrigin }}</div>
+      </div>
+    </div>
+    </gp-text>
+    
+      <style id="custom-css-giSuNau3sr">
+        .giSuNau3sr {
+
+}
+.giSuNau3sr p {
+
+}
+      </style>
+    <div gp-el-wrapper  class="gvGxzvLMoF ">
+      
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <gp-icon-list
+      uid="gvGxzvLMoF"
+      data-id="gvGxzvLMoF"
+      gp-data='{"position":{"desktop":"center","mobile":"baseline","tablet":"center"},"iconWidth":{"desktop":5,"mobile":4,"tablet":5}}'
+       style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--op-mobile:100%;--op-tablet:100%;--mb:16px;--pl:8px;--mb-mobile:16px;--pl-mobile:7px;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll">
+     
+      <div class="gp-flex" style="--jc:left">
+        <div
+        class="gp-inline-flex gp-flex-col "
+        style="--rg:10px;--rg-mobile:10px">
+        
+           <div
+            class="gp-icon-list-wrapper gp-flex gp-child-item-gvGxzvLMoF"
+            style="--cg:8px;--cg-mobile:7px;--ai:center;--ai-tablet:center;--ai-mobile:baseline"
+            data-index="0"
+          >
+            <div class="gp-icon-list-icon gp-inline-flex gp-shrink-0 gp-overflow-hidden" style="--pl:0px;--pr:0px;--pt:0px;--pb:0px;--pl-mobile:0px;--pr-mobile:0px;--pt-mobile:0px;--pb-mobile:0px;--bs:none;--bw:1px 1px 1px 1px;--bc:#000000;--bg:transparent;--pos:relative;--pos-tablet:relative;--pos-mobile:relative;--top:inherit;--top-tablet:inherit;--top-mobile:inherit">
+              <span
+                class="gp-inline-flex gp-items-center gp-justify-center gp-overflow-hidden [&>svg]:!gp-h-[var(--size-desktop)] tablet:[&>svg]:!gp-h-[var(--size-tablet)] mobile:[&>svg]:!gp-h-[var(--size-mobile)] [&>svg]:!gp-w-[var(--size-desktop)] tablet:[&>svg]:!gp-w-[var(--size-tablet)] mobile:[&>svg]:!gp-w-[var(--size-mobile)]"
+                style="--c:#575757;--w:100%;--h:100%;--size-desktop:5px;--size-tablet:5px;--size-mobile:4px"
+              >
+               <svg data-id="515476861875127446" xmlns="http://www.w3.org/2000/svg" width="5" height="5" viewBox="0 0 5 5" fill="none">
+<path d="M2.5 5C2.04167 5 1.62311 4.88826 1.24432 4.66477C0.865531 4.4375 0.562501 4.13447 0.335228 3.75568C0.111743 3.37689 0 2.95833 0 2.5C0 2.03788 0.111743 1.61932 0.335228 1.24432C0.562501 0.86553 0.865531 0.564393 1.24432 0.340908C1.62311 0.113635 2.04167 0 2.5 0C2.96212 0 3.38068 0.113635 3.75568 0.340908C4.13447 0.564393 4.43561 0.86553 4.65909 1.24432C4.88636 1.61932 5 2.03788 5 2.5C5 2.95833 4.88636 3.37689 4.65909 3.75568C4.43561 4.13447 4.13447 4.4375 3.75568 4.66477C3.38068 4.88826 2.96212 5 2.5 5Z" fill="#242424"/>
+</svg>
+              </span>
+            </div>
+             <div class=" gp-text-left gp-icon-list-text" style="--fs:normal;--ff:var(--g-font-body, body);--weight:400;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;--c:#575757">
+                {{ section.settings.ggvGxzvLMoF_childItem_0 | replace: '$locationOrigin', locationOrigin }}
+            </div>
+            </div> 
+           <div
+            class="gp-icon-list-wrapper gp-flex gp-child-item-gvGxzvLMoF"
+            style="--cg:8px;--cg-mobile:7px;--ai:center;--ai-tablet:center;--ai-mobile:baseline"
+            data-index="1"
+          >
+            <div class="gp-icon-list-icon gp-inline-flex gp-shrink-0 gp-overflow-hidden" style="--pl:0px;--pr:0px;--pt:0px;--pb:0px;--pl-mobile:0px;--pr-mobile:0px;--pt-mobile:0px;--pb-mobile:0px;--bs:none;--bw:1px 1px 1px 1px;--bc:#000000;--bg:transparent;--pos:relative;--pos-tablet:relative;--pos-mobile:relative;--top:inherit;--top-tablet:inherit;--top-mobile:inherit">
+              <span
+                class="gp-inline-flex gp-items-center gp-justify-center gp-overflow-hidden [&>svg]:!gp-h-[var(--size-desktop)] tablet:[&>svg]:!gp-h-[var(--size-tablet)] mobile:[&>svg]:!gp-h-[var(--size-mobile)] [&>svg]:!gp-w-[var(--size-desktop)] tablet:[&>svg]:!gp-w-[var(--size-tablet)] mobile:[&>svg]:!gp-w-[var(--size-mobile)]"
+                style="--c:#575757;--w:100%;--h:100%;--size-desktop:5px;--size-tablet:5px;--size-mobile:4px"
+              >
+               <svg data-id="515476861875127446" xmlns="http://www.w3.org/2000/svg" width="5" height="5" viewBox="0 0 5 5" fill="none">
+<path d="M2.5 5C2.04167 5 1.62311 4.88826 1.24432 4.66477C0.865531 4.4375 0.562501 4.13447 0.335228 3.75568C0.111743 3.37689 0 2.95833 0 2.5C0 2.03788 0.111743 1.61932 0.335228 1.24432C0.562501 0.86553 0.865531 0.564393 1.24432 0.340908C1.62311 0.113635 2.04167 0 2.5 0C2.96212 0 3.38068 0.113635 3.75568 0.340908C4.13447 0.564393 4.43561 0.86553 4.65909 1.24432C4.88636 1.61932 5 2.03788 5 2.5C5 2.95833 4.88636 3.37689 4.65909 3.75568C4.43561 4.13447 4.13447 4.4375 3.75568 4.66477C3.38068 4.88826 2.96212 5 2.5 5Z" fill="#242424"/>
+</svg>
+              </span>
+            </div>
+             <div class=" gp-text-left gp-icon-list-text" style="--fs:normal;--ff:var(--g-font-body, body);--weight:400;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;--c:#575757">
+                {{ section.settings.ggvGxzvLMoF_childItem_1 | replace: '$locationOrigin', locationOrigin }}
+            </div>
+            </div> 
+           <div
+            class="gp-icon-list-wrapper gp-flex gp-child-item-gvGxzvLMoF"
+            style="--cg:8px;--cg-mobile:7px;--ai:center;--ai-tablet:center;--ai-mobile:baseline"
+            data-index="2"
+          >
+            <div class="gp-icon-list-icon gp-inline-flex gp-shrink-0 gp-overflow-hidden" style="--pl:0px;--pr:0px;--pt:0px;--pb:0px;--pl-mobile:0px;--pr-mobile:0px;--pt-mobile:0px;--pb-mobile:0px;--bs:none;--bw:1px 1px 1px 1px;--bc:#000000;--bg:transparent;--pos:relative;--pos-tablet:relative;--pos-mobile:relative;--top:inherit;--top-tablet:inherit;--top-mobile:inherit">
+              <span
+                class="gp-inline-flex gp-items-center gp-justify-center gp-overflow-hidden [&>svg]:!gp-h-[var(--size-desktop)] tablet:[&>svg]:!gp-h-[var(--size-tablet)] mobile:[&>svg]:!gp-h-[var(--size-mobile)] [&>svg]:!gp-w-[var(--size-desktop)] tablet:[&>svg]:!gp-w-[var(--size-tablet)] mobile:[&>svg]:!gp-w-[var(--size-mobile)]"
+                style="--c:#575757;--w:100%;--h:100%;--size-desktop:5px;--size-tablet:5px;--size-mobile:4px"
+              >
+               <svg data-id="515476861875127446" xmlns="http://www.w3.org/2000/svg" width="5" height="5" viewBox="0 0 5 5" fill="none">
+<path d="M2.5 5C2.04167 5 1.62311 4.88826 1.24432 4.66477C0.865531 4.4375 0.562501 4.13447 0.335228 3.75568C0.111743 3.37689 0 2.95833 0 2.5C0 2.03788 0.111743 1.61932 0.335228 1.24432C0.562501 0.86553 0.865531 0.564393 1.24432 0.340908C1.62311 0.113635 2.04167 0 2.5 0C2.96212 0 3.38068 0.113635 3.75568 0.340908C4.13447 0.564393 4.43561 0.86553 4.65909 1.24432C4.88636 1.61932 5 2.03788 5 2.5C5 2.95833 4.88636 3.37689 4.65909 3.75568C4.43561 4.13447 4.13447 4.4375 3.75568 4.66477C3.38068 4.88826 2.96212 5 2.5 5Z" fill="#242424"/>
+</svg>
+              </span>
+            </div>
+             <div class=" gp-text-left gp-icon-list-text" style="--fs:normal;--ff:var(--g-font-body, body);--weight:400;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;--c:#575757">
+                {{ section.settings.ggvGxzvLMoF_childItem_2 | replace: '$locationOrigin', locationOrigin }}
+            </div>
+            </div>
+      </div>
+      </div>
+    </gp-icon-list>
+    <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://d2ls1pfffhvy22.cloudfront.net/assets-v2/gp-icon-list.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+  
+      </div>
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="gY-c4woa-8">
+    <div
+      parentTag="Col"
+        class="gY-c4woa-8 "
+        style="--ta:left;--ta-mobile:center;--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--op-mobile:100%;--op-tablet:100%;--mb:48px;--mt-mobile:0px;--mb-mobile:28px;--pl-mobile:0px;--pr-mobile:0px"
+      >
+      <div class="gp-flex" style="--jc:left;--jc-mobile:center">
+        <div
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:left;--ta-mobile:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--fs:normal;--ff:var(--g-font-body, body);--weight:400;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;--c:#EA8302;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >{{ section.settings.ggY-c4woa-8_text | replace: '$locationOrigin', locationOrigin }}</div>
+      </div>
+    </div>
+    </gp-text>
+    
+      <style id="custom-css-gY-c4woa-8">
+        .gY-c4woa-8 {
+
+}
+.gY-c4woa-8 p {
+
+}
+      </style>
+    
+  <gp-button >
+  <div
+    style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--op-mobile:100%;--op-tablet:100%;--ml-mobile:0px;--mr-mobile:0px;--ta:left"
+    
+  >
+    <style>
+    .g9DXXRVo79.gp-button-base::before {
+      content: "";
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      pointer-events: none;
+      border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: #242424;
+  
+      
+      border-bottom-left-radius: 100px;
+      border-bottom-right-radius: 100px;
+      border-top-left-radius: 100px;
+      border-top-right-radius: 100px;
+      
+    }
+
+    .g9DXXRVo79:hover::before {
+      
+      
+    }
+
+    .g9DXXRVo79:hover .gp-button-icon {
+      color: undefined;
+    }
+
+     .g9DXXRVo79 .gp-button-icon {
+      color: var(--g-c-text-3, text-3);
+    }
+
+    .g9DXXRVo79:hover .gp-button-price {
+      color: undefined;
+    }
+
+    .g9DXXRVo79 .gp-button-price {
+      color: var(--g-c-text-3, text-3);
+    }
+
+    .g9DXXRVo79 .gp-product-dot-price {
+       color: var(--g-c-text-3, text-3);
+    }
+
+    .g9DXXRVo79:hover .gp-product-dot-price {
+      color: undefined;
+    }
+  </style>
+    <a
+      href="#gFnViiAM2L" target="_self" data-id="g9DXXRVo79" aria-label="Shop Now"
+      
+      data-state="idle"
+      class="g9DXXRVo79 gp-button-base gp-group/button gp-rounded-none gp-max-w-full gp-relative gp-inline-flex gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-300 disabled:gp-btn-disabled disabled:gp-opacity-30 disabled:gp-pointer-events-none gp-text-g-text-3 gp-text-center"
+      style="--hvr-bg:#8A00AD;--bg:#C564DD;--bblr:100px;--bbrr:100px;--btlr:100px;--btrr:100px;--shadow:none;--w:270px;--w-tablet:270px;--w-mobile:100%;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--pl:16px;--pr:16px;--pt:12px;--pb:12px;--pl-mobile:14px;--pr-mobile:14px;--pt-mobile:10px;--pb-mobile:10px;--c:var(--g-c-text-3, text-3);--size:19px;--size-tablet:19px;--size-mobile:17px;--fs:normal;--ff:var(--g-font-body, body);--weight:700;--ls:normal;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;--tt:uppercase"
+    >
+      
+    <div
+    class="gp-inline-flex">
+    
+      <span
+        data-gp-text
+        class="gp-content-product-button group-hover/button:!gp-text-inherit group-active/button:!gp-text-inherit  gp-button-text-only gp-break-words group-data-[state=loading]/button:gp-invisible [&_p]:gp-whitespace-pre-line gp-z-1 gp-h-full gp-flex gp-items-center gp-overflow-hidden 
+        "
+        style="--size:19px;--size-tablet:19px;--size-mobile:17px;--c:var(--g-c-text-3, text-3)"
+      >
+        {{ section.settings.gg9DXXRVo79_label }}
+      </span>
+      </div>
+    
+    </a>
+  </div>
+  </gp-button>
+
+      <style id="custom-css-g9DXXRVo79">
+        button.g9DXXRVo79 {
+
+}
+      </style>
+    
+    </div>
+    </div>
+   
+    
+    </div><div
+      label="Block" tag="Col" type="component"
+      style="--jc:center;--o-mobile:0"
+      class="gGmjXCfpV6 gp-relative gp-flex gp-flex-col"
+    >
+      <div
+    
+     data-id="gkuopAyIRS"
+    role="presentation"
+    class="gp-group/image gkuopAyIRS gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto"
+    style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--op-tablet:100%;--bblr:8px;--bbrr:8px;--btlr:8px;--btrr:8px;--ta:center"
+    >
+      <div
+        class="pointer-events-auto gp-h-full gp-flex"
+        
+        class="gp-h-full gp-w-full"
+        style="--shadow:none;border-radius:inherit;--jc:center"
+      >
+        
+  <picture style="border-radius: inherit" class="gp-contents">
+  
+      <source media="(max-width: 767px)" data-srcSet="{{ "gempages_571219258252461280-34abd192-e44b-4821-bd23-18f2ddd823b3.png" | file_url }}" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTE3NCIgaGVpZ2h0PSI4NDAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZGVmcz4KICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJnLTExNzQtODQwIj4KICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSJyZ2JhKDUxLCA1MSwgNTEsIDApIiBvZmZzZXQ9IjIwJSIgLz4KICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSJyZ2JhKDUxLCA1MSwgNTEsIDApIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSJyZ2JhKDUxLCA1MSwgNTEsIDApIiBvZmZzZXQ9IjcwJSIgLz4KICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxyZWN0IHdpZHRoPSIxMTc0IiBoZWlnaHQ9Ijg0MCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMTE3NCIgaGVpZ2h0PSI4NDAiIGZpbGw9InVybCgjZy0xMTc0LTg0MCkiIC8+CiAgICA8YW5pbWF0ZSB4bGluazpocmVmPSIjciIgYXR0cmlidXRlTmFtZT0ieCIgZnJvbT0iLTExNzQiIHRvPSIxMTc0IiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgIC8+CiAgPC9zdmc+" />
+      <source media="(max-width: 1024px)" data-srcSet="{{ "gempages_571219258252461280-34abd192-e44b-4821-bd23-18f2ddd823b3.png" | file_url }}" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTE3NCIgaGVpZ2h0PSI4NDAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZGVmcz4KICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJnLTExNzQtODQwIj4KICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSJyZ2JhKDUxLCA1MSwgNTEsIDApIiBvZmZzZXQ9IjIwJSIgLz4KICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSJyZ2JhKDUxLCA1MSwgNTEsIDApIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSJyZ2JhKDUxLCA1MSwgNTEsIDApIiBvZmZzZXQ9IjcwJSIgLz4KICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxyZWN0IHdpZHRoPSIxMTc0IiBoZWlnaHQ9Ijg0MCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMTE3NCIgaGVpZ2h0PSI4NDAiIGZpbGw9InVybCgjZy0xMTc0LTg0MCkiIC8+CiAgICA8YW5pbWF0ZSB4bGluazpocmVmPSIjciIgYXR0cmlidXRlTmFtZT0ieCIgZnJvbT0iLTExNzQiIHRvPSIxMTc0IiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgIC8+CiAgPC9zdmc+" />
+      <img
+        
+        class="gp-h-full gp-max-w-full gp-flex gp_lazyload"
+        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTE3NCIgaGVpZ2h0PSI4NDAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZGVmcz4KICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJnLTExNzQtODQwIj4KICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSJyZ2JhKDUxLCA1MSwgNTEsIDApIiBvZmZzZXQ9IjIwJSIgLz4KICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSJyZ2JhKDUxLCA1MSwgNTEsIDApIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSJyZ2JhKDUxLCA1MSwgNTEsIDApIiBvZmZzZXQ9IjcwJSIgLz4KICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxyZWN0IHdpZHRoPSIxMTc0IiBoZWlnaHQ9Ijg0MCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMTE3NCIgaGVpZ2h0PSI4NDAiIGZpbGw9InVybCgjZy0xMTc0LTg0MCkiIC8+CiAgICA8YW5pbWF0ZSB4bGluazpocmVmPSIjciIgYXR0cmlidXRlTmFtZT0ieCIgZnJvbT0iLTExNzQiIHRvPSIxMTc0IiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgIC8+CiAgPC9zdmc+"
+        data-src="{{ "gempages_571219258252461280-34abd192-e44b-4821-bd23-18f2ddd823b3.png" | file_url }}"
+        width="100%"
+        alt=""
+        style="--aspect:auto;--aspect-tablet:auto;--aspect-mobile:auto;--objf:cover;--h:auto;--h-tablet:auto;--h-mobile:auto"
+      />
+    
+  </picture>
+      </div>
+  </div>
+      <style id="custom-css-gkuopAyIRS">
+        .gkuopAyIRS {
+
+}
+.gkuopAyIRS > figure > img {
+
+}
+      </style>
+    
+    </div>
+    </div>
+   
+    
+       
+      
+    <div
+      parentTag="Col" id="geDb6gCNtv" data-id="geDb6gCNtv"
+        style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--op-mobile:100%;--op-tablet:100%;--mt:0px;--mb:80px;--mt-mobile:0px;--mb-mobile:42px;--pt-mobile:0px;--cg:30px;--pc:start;--gtc:minmax(0, 6fr) minmax(0, 6fr);--gtc-mobile:minmax(0, 12fr);--w:var(--g-ct-w, 1200px);--w-tablet:1200px;--w-mobile:var(--g-ct-w, 100%);--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="geDb6gCNtv gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--jc:center;--o:1;--o-mobile:1"
+      class="g-7mqR_3-b gp-relative gp-flex gp-flex-col"
+    >
+      
+       
+      
+    <div
+      parentTag="Col" id="galZf_Cwxw" data-id="galZf_Cwxw"
+        style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--op-mobile:100%;--pl:32px;--mt-mobile:21px;--pl-mobile:0px;--cg:8px;--pc:start;--gtc:minmax(0, 12fr);--w:var(--g-ct-w, 1200px);--w-tablet:var(--g-ct-w, 100%);--w-mobile:var(--g-ct-w, 100%);--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="galZf_Cwxw gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="gfZoR1JebX gp-relative gp-flex gp-flex-col"
+    >
+      
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="g52DsoFxQw">
+    <div
+      parentTag="Col"
+        class="g52DsoFxQw "
+        style="--ta:left;--ta-mobile:center;--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--op-mobile:100%;--op-tablet:100%;--mb:16px;--mt-mobile:0px;--mb-mobile:14px;--pt-mobile:0px"
+      >
+      <div class="gp-flex" style="--jc:left;--jc-mobile:center">
+        <h2
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:left;--ta-mobile:left;--fs:normal;--ff:var(--g-font-heading, heading);--weight:600;--ls:normal;--size:40px;--size-tablet:35px;--size-mobile:24px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;--c:#242424;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >{{ section.settings.gg52DsoFxQw_text | replace: '$locationOrigin', locationOrigin }}</h2>
+      </div>
+    </div>
+    </gp-text>
+    
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="gJhWqPhK1s">
+    <div
+      parentTag="Col"
+        class="gJhWqPhK1s "
+        style="--ta:left;--ta-mobile:center;--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--op-mobile:100%;--op-tablet:100%;--mb:14px;--mt-mobile:0px;--mb-mobile:0px;--pl-mobile:0px;--pr-mobile:0px"
+      >
+      <div class="gp-flex" style="--jc:left;--jc-mobile:center">
+        <div
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:left;--ta-mobile:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--fs:normal;--ff:var(--g-font-body, body);--weight:400;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;--c:#575757;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >{{ section.settings.ggJhWqPhK1s_text | replace: '$locationOrigin', locationOrigin }}</div>
+      </div>
+    </div>
+    </gp-text>
+    
+      <style id="custom-css-gJhWqPhK1s">
+        .gJhWqPhK1s {
+
+}
+.gJhWqPhK1s p {
+
+}
+      </style>
+    <div gp-el-wrapper  class="gPvClRma44 ">
+      
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <gp-icon-list
+      uid="gPvClRma44"
+      data-id="gPvClRma44"
+      gp-data='{"position":{"desktop":"center","mobile":"baseline","tablet":"center"},"iconWidth":{"desktop":5,"mobile":4,"tablet":5}}'
+       style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--op-mobile:100%;--op-tablet:100%;--mb:16px;--pl:8px;--mb-mobile:16px;--pl-mobile:7px;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll">
+     
+      <div class="gp-flex" style="--jc:left">
+        <div
+        class="gp-inline-flex gp-flex-col "
+        style="--rg:10px;--rg-mobile:10px">
+        
+           <div
+            class="gp-icon-list-wrapper gp-flex gp-child-item-gPvClRma44"
+            style="--cg:8px;--cg-mobile:7px;--ai:center;--ai-tablet:center;--ai-mobile:baseline"
+            data-index="0"
+          >
+            <div class="gp-icon-list-icon gp-inline-flex gp-shrink-0 gp-overflow-hidden" style="--pl:0px;--pr:0px;--pt:0px;--pb:0px;--bs:none;--bw:1px 1px 1px 1px;--bc:#000000;--bg:transparent;--pos:relative;--pos-tablet:relative;--pos-mobile:relative;--top:inherit;--top-tablet:inherit;--top-mobile:inherit">
+              <span
+                class="gp-inline-flex gp-items-center gp-justify-center gp-overflow-hidden [&>svg]:!gp-h-[var(--size-desktop)] tablet:[&>svg]:!gp-h-[var(--size-tablet)] mobile:[&>svg]:!gp-h-[var(--size-mobile)] [&>svg]:!gp-w-[var(--size-desktop)] tablet:[&>svg]:!gp-w-[var(--size-tablet)] mobile:[&>svg]:!gp-w-[var(--size-mobile)]"
+                style="--c:#575757;--w:100%;--h:100%;--size-desktop:5px;--size-tablet:5px;--size-mobile:4px"
+              >
+               <svg data-id="515476861875127446" xmlns="http://www.w3.org/2000/svg" width="5" height="5" viewBox="0 0 5 5" fill="none">
+<path d="M2.5 5C2.04167 5 1.62311 4.88826 1.24432 4.66477C0.865531 4.4375 0.562501 4.13447 0.335228 3.75568C0.111743 3.37689 0 2.95833 0 2.5C0 2.03788 0.111743 1.61932 0.335228 1.24432C0.562501 0.86553 0.865531 0.564393 1.24432 0.340908C1.62311 0.113635 2.04167 0 2.5 0C2.96212 0 3.38068 0.113635 3.75568 0.340908C4.13447 0.564393 4.43561 0.86553 4.65909 1.24432C4.88636 1.61932 5 2.03788 5 2.5C5 2.95833 4.88636 3.37689 4.65909 3.75568C4.43561 4.13447 4.13447 4.4375 3.75568 4.66477C3.38068 4.88826 2.96212 5 2.5 5Z" fill="#242424"/>
+</svg>
+              </span>
+            </div>
+             <div class=" gp-text-left gp-icon-list-text" style="--fs:normal;--ff:var(--g-font-body, body);--weight:400;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;--c:#575757">
+                {{ section.settings.ggPvClRma44_childItem_0 | replace: '$locationOrigin', locationOrigin }}
+            </div>
+            </div> 
+           <div
+            class="gp-icon-list-wrapper gp-flex gp-child-item-gPvClRma44"
+            style="--cg:8px;--cg-mobile:7px;--ai:center;--ai-tablet:center;--ai-mobile:baseline"
+            data-index="1"
+          >
+            <div class="gp-icon-list-icon gp-inline-flex gp-shrink-0 gp-overflow-hidden" style="--pl:0px;--pr:0px;--pt:0px;--pb:0px;--bs:none;--bw:1px 1px 1px 1px;--bc:#000000;--bg:transparent;--pos:relative;--pos-tablet:relative;--pos-mobile:relative;--top:inherit;--top-tablet:inherit;--top-mobile:inherit">
+              <span
+                class="gp-inline-flex gp-items-center gp-justify-center gp-overflow-hidden [&>svg]:!gp-h-[var(--size-desktop)] tablet:[&>svg]:!gp-h-[var(--size-tablet)] mobile:[&>svg]:!gp-h-[var(--size-mobile)] [&>svg]:!gp-w-[var(--size-desktop)] tablet:[&>svg]:!gp-w-[var(--size-tablet)] mobile:[&>svg]:!gp-w-[var(--size-mobile)]"
+                style="--c:#575757;--w:100%;--h:100%;--size-desktop:5px;--size-tablet:5px;--size-mobile:4px"
+              >
+               <svg data-id="515476861875127446" xmlns="http://www.w3.org/2000/svg" width="5" height="5" viewBox="0 0 5 5" fill="none">
+<path d="M2.5 5C2.04167 5 1.62311 4.88826 1.24432 4.66477C0.865531 4.4375 0.562501 4.13447 0.335228 3.75568C0.111743 3.37689 0 2.95833 0 2.5C0 2.03788 0.111743 1.61932 0.335228 1.24432C0.562501 0.86553 0.865531 0.564393 1.24432 0.340908C1.62311 0.113635 2.04167 0 2.5 0C2.96212 0 3.38068 0.113635 3.75568 0.340908C4.13447 0.564393 4.43561 0.86553 4.65909 1.24432C4.88636 1.61932 5 2.03788 5 2.5C5 2.95833 4.88636 3.37689 4.65909 3.75568C4.43561 4.13447 4.13447 4.4375 3.75568 4.66477C3.38068 4.88826 2.96212 5 2.5 5Z" fill="#242424"/>
+</svg>
+              </span>
+            </div>
+             <div class=" gp-text-left gp-icon-list-text" style="--fs:normal;--ff:var(--g-font-body, body);--weight:400;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;--c:#575757">
+                {{ section.settings.ggPvClRma44_childItem_1 | replace: '$locationOrigin', locationOrigin }}
+            </div>
+            </div> 
+           <div
+            class="gp-icon-list-wrapper gp-flex gp-child-item-gPvClRma44"
+            style="--cg:8px;--cg-mobile:7px;--ai:center;--ai-tablet:center;--ai-mobile:baseline"
+            data-index="2"
+          >
+            <div class="gp-icon-list-icon gp-inline-flex gp-shrink-0 gp-overflow-hidden" style="--pl:0px;--pr:0px;--pt:0px;--pb:0px;--bs:none;--bw:1px 1px 1px 1px;--bc:#000000;--bg:transparent;--pos:relative;--pos-tablet:relative;--pos-mobile:relative;--top:inherit;--top-tablet:inherit;--top-mobile:inherit">
+              <span
+                class="gp-inline-flex gp-items-center gp-justify-center gp-overflow-hidden [&>svg]:!gp-h-[var(--size-desktop)] tablet:[&>svg]:!gp-h-[var(--size-tablet)] mobile:[&>svg]:!gp-h-[var(--size-mobile)] [&>svg]:!gp-w-[var(--size-desktop)] tablet:[&>svg]:!gp-w-[var(--size-tablet)] mobile:[&>svg]:!gp-w-[var(--size-mobile)]"
+                style="--c:#575757;--w:100%;--h:100%;--size-desktop:5px;--size-tablet:5px;--size-mobile:4px"
+              >
+               <svg data-id="515476861875127446" xmlns="http://www.w3.org/2000/svg" width="5" height="5" viewBox="0 0 5 5" fill="none">
+<path d="M2.5 5C2.04167 5 1.62311 4.88826 1.24432 4.66477C0.865531 4.4375 0.562501 4.13447 0.335228 3.75568C0.111743 3.37689 0 2.95833 0 2.5C0 2.03788 0.111743 1.61932 0.335228 1.24432C0.562501 0.86553 0.865531 0.564393 1.24432 0.340908C1.62311 0.113635 2.04167 0 2.5 0C2.96212 0 3.38068 0.113635 3.75568 0.340908C4.13447 0.564393 4.43561 0.86553 4.65909 1.24432C4.88636 1.61932 5 2.03788 5 2.5C5 2.95833 4.88636 3.37689 4.65909 3.75568C4.43561 4.13447 4.13447 4.4375 3.75568 4.66477C3.38068 4.88826 2.96212 5 2.5 5Z" fill="#242424"/>
+</svg>
+              </span>
+            </div>
+             <div class=" gp-text-left gp-icon-list-text" style="--fs:normal;--ff:var(--g-font-body, body);--weight:400;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;--c:#575757">
+                {{ section.settings.ggPvClRma44_childItem_2 | replace: '$locationOrigin', locationOrigin }}
+            </div>
+            </div>
+      </div>
+      </div>
+    </gp-icon-list>
+    <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://d2ls1pfffhvy22.cloudfront.net/assets-v2/gp-icon-list.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+  
+      </div>
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="gxY7EcAcDZ">
+    <div
+      parentTag="Col"
+        class="gxY7EcAcDZ "
+        style="--ta:left;--ta-mobile:center;--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--op-mobile:100%;--op-tablet:100%;--mb:48px;--mt-mobile:0px;--mb-mobile:28px;--pl-mobile:0px;--pr-mobile:0px"
+      >
+      <div class="gp-flex" style="--jc:left;--jc-mobile:center">
+        <div
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:left;--ta-mobile:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--fs:normal;--ff:var(--g-font-body, body);--weight:400;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;--c:#EA8302;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >{{ section.settings.ggxY7EcAcDZ_text | replace: '$locationOrigin', locationOrigin }}</div>
+      </div>
+    </div>
+    </gp-text>
+    
+      <style id="custom-css-gxY7EcAcDZ">
+        .gxY7EcAcDZ {
+
+}
+.gxY7EcAcDZ p {
+
+}
+      </style>
+    
+  <gp-button >
+  <div
+    style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--op-mobile:100%;--op-tablet:100%;--ml-mobile:0px;--mr-mobile:0px;--ta:left"
+    
+  >
+    <style>
+    .gA-THp4hhv.gp-button-base::before {
+      content: "";
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      pointer-events: none;
+      border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: #242424;
+  
+      
+      border-bottom-left-radius: 100px;
+      border-bottom-right-radius: 100px;
+      border-top-left-radius: 100px;
+      border-top-right-radius: 100px;
+      
+    }
+
+    .gA-THp4hhv:hover::before {
+      
+      
+    }
+
+    .gA-THp4hhv:hover .gp-button-icon {
+      color: undefined;
+    }
+
+     .gA-THp4hhv .gp-button-icon {
+      color: var(--g-c-text-3, text-3);
+    }
+
+    .gA-THp4hhv:hover .gp-button-price {
+      color: undefined;
+    }
+
+    .gA-THp4hhv .gp-button-price {
+      color: var(--g-c-text-3, text-3);
+    }
+
+    .gA-THp4hhv .gp-product-dot-price {
+       color: var(--g-c-text-3, text-3);
+    }
+
+    .gA-THp4hhv:hover .gp-product-dot-price {
+      color: undefined;
+    }
+  </style>
+    <a
+      href="#gFnViiAM2L" target="_self" data-id="gA-THp4hhv" aria-label="Shop Now"
+      
+      data-state="idle"
+      class="gA-THp4hhv gp-button-base gp-group/button gp-rounded-none gp-max-w-full gp-relative gp-inline-flex gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-300 disabled:gp-btn-disabled disabled:gp-opacity-30 disabled:gp-pointer-events-none gp-text-g-text-3 gp-text-center"
+      style="--hvr-bg:#8A00AD;--bg:#C564DD;--bblr:100px;--bbrr:100px;--btlr:100px;--btrr:100px;--shadow:none;--w:270px;--w-tablet:270px;--w-mobile:100%;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--pl:16px;--pr:16px;--pt:12px;--pb:12px;--pl-mobile:14px;--pr-mobile:14px;--pt-mobile:10px;--pb-mobile:10px;--c:var(--g-c-text-3, text-3);--size:19px;--size-tablet:19px;--size-mobile:17px;--fs:normal;--ff:var(--g-font-body, body);--weight:700;--ls:normal;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;--tt:uppercase"
+    >
+      
+    <div
+    class="gp-inline-flex">
+    
+      <span
+        data-gp-text
+        class="gp-content-product-button group-hover/button:!gp-text-inherit group-active/button:!gp-text-inherit  gp-button-text-only gp-break-words group-data-[state=loading]/button:gp-invisible [&_p]:gp-whitespace-pre-line gp-z-1 gp-h-full gp-flex gp-items-center gp-overflow-hidden 
+        "
+        style="--size:19px;--size-tablet:19px;--size-mobile:17px;--c:var(--g-c-text-3, text-3)"
+      >
+        {{ section.settings.ggA-THp4hhv_label }}
+      </span>
+      </div>
+    
+    </a>
+  </div>
+  </gp-button>
+
+      <style id="custom-css-gA-THp4hhv">
+        button.gA-THp4hhv {
+
+}
+      </style>
+    
+    </div>
+    </div>
+   
+    
+    </div><div
+      label="Block" tag="Col" type="component"
+      style="--jc:center;--o:0;--o-mobile:0"
+      class="g5OQsJyT2k gp-relative gp-flex gp-flex-col"
+    >
+      <div
+    
+     data-id="g1xX9dyZne"
+    role="presentation"
+    class="gp-group/image g1xX9dyZne gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto"
+    style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--op-tablet:100%;--bblr:8px;--bbrr:8px;--btlr:8px;--btrr:8px;--ta:center"
+    >
+      <div
+        class="pointer-events-auto gp-h-full gp-flex"
+        
+        class="gp-h-full gp-w-full"
+        style="--shadow:none;border-radius:inherit;--jc:center"
+      >
+        
+  <picture style="border-radius: inherit" class="gp-contents">
+  
+      <source media="(max-width: 767px)" data-srcSet="{{ "gempages_571219258252461280-c25d7828-c9ad-49b1-aad8-a1a1de3ed5e3.png" | file_url }}" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTE3NCIgaGVpZ2h0PSI4NDAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZGVmcz4KICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJnLTExNzQtODQwIj4KICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSJyZ2JhKDUxLCA1MSwgNTEsIDApIiBvZmZzZXQ9IjIwJSIgLz4KICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSJyZ2JhKDUxLCA1MSwgNTEsIDApIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSJyZ2JhKDUxLCA1MSwgNTEsIDApIiBvZmZzZXQ9IjcwJSIgLz4KICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxyZWN0IHdpZHRoPSIxMTc0IiBoZWlnaHQ9Ijg0MCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMTE3NCIgaGVpZ2h0PSI4NDAiIGZpbGw9InVybCgjZy0xMTc0LTg0MCkiIC8+CiAgICA8YW5pbWF0ZSB4bGluazpocmVmPSIjciIgYXR0cmlidXRlTmFtZT0ieCIgZnJvbT0iLTExNzQiIHRvPSIxMTc0IiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgIC8+CiAgPC9zdmc+" />
+      <source media="(max-width: 1024px)" data-srcSet="{{ "gempages_571219258252461280-c25d7828-c9ad-49b1-aad8-a1a1de3ed5e3.png" | file_url }}" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTE3NCIgaGVpZ2h0PSI4NDAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZGVmcz4KICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJnLTExNzQtODQwIj4KICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSJyZ2JhKDUxLCA1MSwgNTEsIDApIiBvZmZzZXQ9IjIwJSIgLz4KICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSJyZ2JhKDUxLCA1MSwgNTEsIDApIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSJyZ2JhKDUxLCA1MSwgNTEsIDApIiBvZmZzZXQ9IjcwJSIgLz4KICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxyZWN0IHdpZHRoPSIxMTc0IiBoZWlnaHQ9Ijg0MCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMTE3NCIgaGVpZ2h0PSI4NDAiIGZpbGw9InVybCgjZy0xMTc0LTg0MCkiIC8+CiAgICA8YW5pbWF0ZSB4bGluazpocmVmPSIjciIgYXR0cmlidXRlTmFtZT0ieCIgZnJvbT0iLTExNzQiIHRvPSIxMTc0IiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgIC8+CiAgPC9zdmc+" />
+      <img
+        
+        class="gp-h-full gp-max-w-full gp-flex gp_lazyload"
+        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTE3NCIgaGVpZ2h0PSI4NDAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZGVmcz4KICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJnLTExNzQtODQwIj4KICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSJyZ2JhKDUxLCA1MSwgNTEsIDApIiBvZmZzZXQ9IjIwJSIgLz4KICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSJyZ2JhKDUxLCA1MSwgNTEsIDApIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSJyZ2JhKDUxLCA1MSwgNTEsIDApIiBvZmZzZXQ9IjcwJSIgLz4KICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxyZWN0IHdpZHRoPSIxMTc0IiBoZWlnaHQ9Ijg0MCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMTE3NCIgaGVpZ2h0PSI4NDAiIGZpbGw9InVybCgjZy0xMTc0LTg0MCkiIC8+CiAgICA8YW5pbWF0ZSB4bGluazpocmVmPSIjciIgYXR0cmlidXRlTmFtZT0ieCIgZnJvbT0iLTExNzQiIHRvPSIxMTc0IiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgIC8+CiAgPC9zdmc+"
+        data-src="{{ "gempages_571219258252461280-c25d7828-c9ad-49b1-aad8-a1a1de3ed5e3.png" | file_url }}"
+        width="100%"
+        alt=""
+        style="--aspect:auto;--aspect-tablet:auto;--aspect-mobile:auto;--objf:cover;--h:auto;--h-tablet:auto;--h-mobile:auto"
+      />
+    
+  </picture>
+      </div>
+  </div>
+      <style id="custom-css-g1xX9dyZne">
+        .g1xX9dyZne {
+
+}
+.g1xX9dyZne > figure > img {
+
+}
+      </style>
+    
+    </div>
+    </div>
+   
+    
+       
+      
+    <div
+      parentTag="Col" id="g1LtthdPyH" data-id="g1LtthdPyH"
+        style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--op-mobile:100%;--op-tablet:100%;--mt:0px;--mb:0px;--pb:0px;--mt-mobile:0px;--pt-mobile:0px;--cg:30px;--pc:start;--gtc:minmax(0, 6fr) minmax(0, 6fr);--gtc-mobile:minmax(0, 12fr);--w:var(--g-ct-w, 1200px);--w-tablet:1200px;--w-mobile:var(--g-ct-w, 100%);--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="g1LtthdPyH gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--jc:center;--o-mobile:1"
+      class="gcXTNfshXh gp-relative gp-flex gp-flex-col"
+    >
+      
+       
+      
+    <div
+      parentTag="Col" id="gNeUixFBFV" data-id="gNeUixFBFV"
+        style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--op-mobile:100%;--pr:32px;--mt-mobile:21px;--pr-mobile:0px;--cg:8px;--pc:start;--gtc:minmax(0, 12fr);--w:var(--g-ct-w, 1200px);--w-tablet:var(--g-ct-w, 100%);--w-mobile:var(--g-ct-w, 100%);--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="gNeUixFBFV gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="gSBh3xzqge gp-relative gp-flex gp-flex-col"
+    >
+      
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="gPU6zYfe-m">
+    <div
+      parentTag="Col"
+        class="gPU6zYfe-m "
+        style="--ta:left;--ta-mobile:center;--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--op-mobile:100%;--op-tablet:100%;--mb:16px;--mt-mobile:0px;--mb-mobile:14px;--pt-mobile:0px"
+      >
+      <div class="gp-flex" style="--jc:left;--jc-mobile:center">
+        <h2
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:left;--ta-mobile:left;--fs:normal;--ff:var(--g-font-heading, heading);--weight:600;--ls:normal;--size:40px;--size-tablet:35px;--size-mobile:24px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;--c:#242424;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >{{ section.settings.ggPU6zYfe-m_text | replace: '$locationOrigin', locationOrigin }}</h2>
+      </div>
+    </div>
+    </gp-text>
+    
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="guclYu0rsD">
+    <div
+      parentTag="Col"
+        class="guclYu0rsD "
+        style="--ta:left;--ta-mobile:center;--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--op-mobile:100%;--op-tablet:100%;--mb:14px;--mt-mobile:0px;--mb-mobile:0px;--pl-mobile:0px;--pr-mobile:0px"
+      >
+      <div class="gp-flex" style="--jc:left;--jc-mobile:center">
+        <div
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:left;--ta-mobile:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--fs:normal;--ff:var(--g-font-body, body);--weight:400;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;--c:#575757;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >{{ section.settings.gguclYu0rsD_text | replace: '$locationOrigin', locationOrigin }}</div>
+      </div>
+    </div>
+    </gp-text>
+    
+      <style id="custom-css-guclYu0rsD">
+        .guclYu0rsD {
+
+}
+.guclYu0rsD p {
+
+}
+      </style>
+    <div gp-el-wrapper  class="gwNI98yAdE ">
+      
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <gp-icon-list
+      uid="gwNI98yAdE"
+      data-id="gwNI98yAdE"
+      gp-data='{"position":{"desktop":"center","mobile":"baseline","tablet":"center"},"iconWidth":{"desktop":5,"mobile":4,"tablet":5}}'
+       style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--op-mobile:100%;--op-tablet:100%;--mb:16px;--pl:8px;--mb-mobile:16px;--pl-mobile:7px;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll">
+     
+      <div class="gp-flex" style="--jc:left">
+        <div
+        class="gp-inline-flex gp-flex-col "
+        style="--rg:10px;--rg-mobile:10px">
+        
+           <div
+            class="gp-icon-list-wrapper gp-flex gp-child-item-gwNI98yAdE"
+            style="--cg:8px;--cg-mobile:7px;--ai:center;--ai-tablet:center;--ai-mobile:baseline"
+            data-index="0"
+          >
+            <div class="gp-icon-list-icon gp-inline-flex gp-shrink-0 gp-overflow-hidden" style="--pl:0px;--pr:0px;--pt:0px;--pb:0px;--bs:none;--bw:1px 1px 1px 1px;--bc:#000000;--bg:transparent;--pos:relative;--pos-tablet:relative;--pos-mobile:relative;--top:inherit;--top-tablet:inherit;--top-mobile:inherit">
+              <span
+                class="gp-inline-flex gp-items-center gp-justify-center gp-overflow-hidden [&>svg]:!gp-h-[var(--size-desktop)] tablet:[&>svg]:!gp-h-[var(--size-tablet)] mobile:[&>svg]:!gp-h-[var(--size-mobile)] [&>svg]:!gp-w-[var(--size-desktop)] tablet:[&>svg]:!gp-w-[var(--size-tablet)] mobile:[&>svg]:!gp-w-[var(--size-mobile)]"
+                style="--c:#575757;--w:100%;--h:100%;--size-desktop:5px;--size-tablet:5px;--size-mobile:4px"
+              >
+               <svg data-id="515476861875127446" xmlns="http://www.w3.org/2000/svg" width="5" height="5" viewBox="0 0 5 5" fill="none">
+<path d="M2.5 5C2.04167 5 1.62311 4.88826 1.24432 4.66477C0.865531 4.4375 0.562501 4.13447 0.335228 3.75568C0.111743 3.37689 0 2.95833 0 2.5C0 2.03788 0.111743 1.61932 0.335228 1.24432C0.562501 0.86553 0.865531 0.564393 1.24432 0.340908C1.62311 0.113635 2.04167 0 2.5 0C2.96212 0 3.38068 0.113635 3.75568 0.340908C4.13447 0.564393 4.43561 0.86553 4.65909 1.24432C4.88636 1.61932 5 2.03788 5 2.5C5 2.95833 4.88636 3.37689 4.65909 3.75568C4.43561 4.13447 4.13447 4.4375 3.75568 4.66477C3.38068 4.88826 2.96212 5 2.5 5Z" fill="#242424"/>
+</svg>
+              </span>
+            </div>
+             <div class=" gp-text-left gp-icon-list-text" style="--fs:normal;--ff:var(--g-font-body, body);--weight:400;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;--c:#575757">
+                {{ section.settings.ggwNI98yAdE_childItem_0 | replace: '$locationOrigin', locationOrigin }}
+            </div>
+            </div> 
+           <div
+            class="gp-icon-list-wrapper gp-flex gp-child-item-gwNI98yAdE"
+            style="--cg:8px;--cg-mobile:7px;--ai:center;--ai-tablet:center;--ai-mobile:baseline"
+            data-index="1"
+          >
+            <div class="gp-icon-list-icon gp-inline-flex gp-shrink-0 gp-overflow-hidden" style="--pl:0px;--pr:0px;--pt:0px;--pb:0px;--bs:none;--bw:1px 1px 1px 1px;--bc:#000000;--bg:transparent;--pos:relative;--pos-tablet:relative;--pos-mobile:relative;--top:inherit;--top-tablet:inherit;--top-mobile:inherit">
+              <span
+                class="gp-inline-flex gp-items-center gp-justify-center gp-overflow-hidden [&>svg]:!gp-h-[var(--size-desktop)] tablet:[&>svg]:!gp-h-[var(--size-tablet)] mobile:[&>svg]:!gp-h-[var(--size-mobile)] [&>svg]:!gp-w-[var(--size-desktop)] tablet:[&>svg]:!gp-w-[var(--size-tablet)] mobile:[&>svg]:!gp-w-[var(--size-mobile)]"
+                style="--c:#575757;--w:100%;--h:100%;--size-desktop:5px;--size-tablet:5px;--size-mobile:4px"
+              >
+               <svg data-id="515476861875127446" xmlns="http://www.w3.org/2000/svg" width="5" height="5" viewBox="0 0 5 5" fill="none">
+<path d="M2.5 5C2.04167 5 1.62311 4.88826 1.24432 4.66477C0.865531 4.4375 0.562501 4.13447 0.335228 3.75568C0.111743 3.37689 0 2.95833 0 2.5C0 2.03788 0.111743 1.61932 0.335228 1.24432C0.562501 0.86553 0.865531 0.564393 1.24432 0.340908C1.62311 0.113635 2.04167 0 2.5 0C2.96212 0 3.38068 0.113635 3.75568 0.340908C4.13447 0.564393 4.43561 0.86553 4.65909 1.24432C4.88636 1.61932 5 2.03788 5 2.5C5 2.95833 4.88636 3.37689 4.65909 3.75568C4.43561 4.13447 4.13447 4.4375 3.75568 4.66477C3.38068 4.88826 2.96212 5 2.5 5Z" fill="#242424"/>
+</svg>
+              </span>
+            </div>
+             <div class=" gp-text-left gp-icon-list-text" style="--fs:normal;--ff:var(--g-font-body, body);--weight:400;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;--c:#575757">
+                {{ section.settings.ggwNI98yAdE_childItem_1 | replace: '$locationOrigin', locationOrigin }}
+            </div>
+            </div> 
+           <div
+            class="gp-icon-list-wrapper gp-flex gp-child-item-gwNI98yAdE"
+            style="--cg:8px;--cg-mobile:7px;--ai:center;--ai-tablet:center;--ai-mobile:baseline"
+            data-index="2"
+          >
+            <div class="gp-icon-list-icon gp-inline-flex gp-shrink-0 gp-overflow-hidden" style="--pl:0px;--pr:0px;--pt:0px;--pb:0px;--bs:none;--bw:1px 1px 1px 1px;--bc:#000000;--bg:transparent;--pos:relative;--pos-tablet:relative;--pos-mobile:relative;--top:inherit;--top-tablet:inherit;--top-mobile:inherit">
+              <span
+                class="gp-inline-flex gp-items-center gp-justify-center gp-overflow-hidden [&>svg]:!gp-h-[var(--size-desktop)] tablet:[&>svg]:!gp-h-[var(--size-tablet)] mobile:[&>svg]:!gp-h-[var(--size-mobile)] [&>svg]:!gp-w-[var(--size-desktop)] tablet:[&>svg]:!gp-w-[var(--size-tablet)] mobile:[&>svg]:!gp-w-[var(--size-mobile)]"
+                style="--c:#575757;--w:100%;--h:100%;--size-desktop:5px;--size-tablet:5px;--size-mobile:4px"
+              >
+               <svg data-id="515476861875127446" xmlns="http://www.w3.org/2000/svg" width="5" height="5" viewBox="0 0 5 5" fill="none">
+<path d="M2.5 5C2.04167 5 1.62311 4.88826 1.24432 4.66477C0.865531 4.4375 0.562501 4.13447 0.335228 3.75568C0.111743 3.37689 0 2.95833 0 2.5C0 2.03788 0.111743 1.61932 0.335228 1.24432C0.562501 0.86553 0.865531 0.564393 1.24432 0.340908C1.62311 0.113635 2.04167 0 2.5 0C2.96212 0 3.38068 0.113635 3.75568 0.340908C4.13447 0.564393 4.43561 0.86553 4.65909 1.24432C4.88636 1.61932 5 2.03788 5 2.5C5 2.95833 4.88636 3.37689 4.65909 3.75568C4.43561 4.13447 4.13447 4.4375 3.75568 4.66477C3.38068 4.88826 2.96212 5 2.5 5Z" fill="#242424"/>
+</svg>
+              </span>
+            </div>
+             <div class=" gp-text-left gp-icon-list-text" style="--fs:normal;--ff:var(--g-font-body, body);--weight:400;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;--c:#575757">
+                {{ section.settings.ggwNI98yAdE_childItem_2 | replace: '$locationOrigin', locationOrigin }}
+            </div>
+            </div>
+      </div>
+      </div>
+    </gp-icon-list>
+    <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://d2ls1pfffhvy22.cloudfront.net/assets-v2/gp-icon-list.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+  
+      </div>
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="gnrJI7KQTO">
+    <div
+      parentTag="Col"
+        class="gnrJI7KQTO "
+        style="--ta:left;--ta-mobile:center;--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--op-mobile:100%;--op-tablet:100%;--mb:48px;--mt-mobile:0px;--mb-mobile:28px;--pl-mobile:0px;--pr-mobile:0px"
+      >
+      <div class="gp-flex" style="--jc:left;--jc-mobile:center">
+        <div
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:left;--ta-mobile:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--fs:normal;--ff:var(--g-font-body, body);--weight:400;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;--c:#EA8302;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >{{ section.settings.ggnrJI7KQTO_text | replace: '$locationOrigin', locationOrigin }}</div>
+      </div>
+    </div>
+    </gp-text>
+    
+      <style id="custom-css-gnrJI7KQTO">
+        .gnrJI7KQTO {
+
+}
+.gnrJI7KQTO p {
+
+}
+      </style>
+    
+  <gp-button >
+  <div
+    style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--op-mobile:100%;--op-tablet:100%;--mb:0px;--pb:0px;--ml-mobile:0px;--mr-mobile:0px;--ta:left"
+    
+  >
+    <style>
+    .gp17DCBbCt.gp-button-base::before {
+      content: "";
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      pointer-events: none;
+      border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: #242424;
+  
+      
+      border-bottom-left-radius: 100px;
+      border-bottom-right-radius: 100px;
+      border-top-left-radius: 100px;
+      border-top-right-radius: 100px;
+      
+    }
+
+    .gp17DCBbCt:hover::before {
+      
+      
+    }
+
+    .gp17DCBbCt:hover .gp-button-icon {
+      color: undefined;
+    }
+
+     .gp17DCBbCt .gp-button-icon {
+      color: var(--g-c-text-3, text-3);
+    }
+
+    .gp17DCBbCt:hover .gp-button-price {
+      color: undefined;
+    }
+
+    .gp17DCBbCt .gp-button-price {
+      color: var(--g-c-text-3, text-3);
+    }
+
+    .gp17DCBbCt .gp-product-dot-price {
+       color: var(--g-c-text-3, text-3);
+    }
+
+    .gp17DCBbCt:hover .gp-product-dot-price {
+      color: undefined;
+    }
+  </style>
+    <a
+      href="#gFnViiAM2L" target="_self" data-id="gp17DCBbCt" aria-label="Shop Now"
+      
+      data-state="idle"
+      class="gp17DCBbCt gp-button-base gp-group/button gp-rounded-none gp-max-w-full gp-relative gp-inline-flex gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-300 disabled:gp-btn-disabled disabled:gp-opacity-30 disabled:gp-pointer-events-none gp-text-g-text-3 gp-text-center"
+      style="--hvr-bg:#8A00AD;--bg:#C564DD;--bblr:100px;--bbrr:100px;--btlr:100px;--btrr:100px;--shadow:none;--w:270px;--w-tablet:270px;--w-mobile:100%;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--pl:16px;--pr:16px;--pt:12px;--pb:12px;--pl-mobile:14px;--pr-mobile:14px;--pt-mobile:10px;--pb-mobile:10px;--c:var(--g-c-text-3, text-3);--size:19px;--size-tablet:19px;--size-mobile:17px;--fs:normal;--ff:var(--g-font-body, body);--weight:700;--ls:normal;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;--tt:uppercase"
+    >
+      
+    <div
+    class="gp-inline-flex">
+    
+      <span
+        data-gp-text
+        class="gp-content-product-button group-hover/button:!gp-text-inherit group-active/button:!gp-text-inherit  gp-button-text-only gp-break-words group-data-[state=loading]/button:gp-invisible [&_p]:gp-whitespace-pre-line gp-z-1 gp-h-full gp-flex gp-items-center gp-overflow-hidden 
+        "
+        style="--size:19px;--size-tablet:19px;--size-mobile:17px;--c:var(--g-c-text-3, text-3)"
+      >
+        {{ section.settings.ggp17DCBbCt_label }}
+      </span>
+      </div>
+    
+    </a>
+  </div>
+  </gp-button>
+
+      <style id="custom-css-gp17DCBbCt">
+        button.gp17DCBbCt {
+
+}
+      </style>
+    
+    </div>
+    </div>
+   
+    
+    </div><div
+      label="Block" tag="Col" type="component"
+      style="--jc:center;--o-mobile:0"
+      class="gKuNR2t_r7 gp-relative gp-flex gp-flex-col"
+    >
+      <div
+    
+     data-id="gVRGxdZRCm"
+    role="presentation"
+    class="gp-group/image gVRGxdZRCm gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto"
+    style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--op-tablet:100%;--bblr:8px;--bbrr:8px;--btlr:8px;--btrr:8px;--pt:0px;--pb:0px;--ta:center"
+    >
+      <div
+        class="pointer-events-auto gp-h-full gp-flex"
+        
+        class="gp-h-full gp-w-full"
+        style="--shadow:none;border-radius:inherit;--jc:center"
+      >
+        
+  <picture style="border-radius: inherit" class="gp-contents">
+  
+      <source media="(max-width: 767px)" data-srcSet="{{ "gempages_571219258252461280-b99c81b2-0e14-416c-9e52-894927dc11ce.png" | file_url }}" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTE3NCIgaGVpZ2h0PSI4NDAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZGVmcz4KICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJnLTExNzQtODQwIj4KICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSJyZ2JhKDUxLCA1MSwgNTEsIDApIiBvZmZzZXQ9IjIwJSIgLz4KICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSJyZ2JhKDUxLCA1MSwgNTEsIDApIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSJyZ2JhKDUxLCA1MSwgNTEsIDApIiBvZmZzZXQ9IjcwJSIgLz4KICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxyZWN0IHdpZHRoPSIxMTc0IiBoZWlnaHQ9Ijg0MCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMTE3NCIgaGVpZ2h0PSI4NDAiIGZpbGw9InVybCgjZy0xMTc0LTg0MCkiIC8+CiAgICA8YW5pbWF0ZSB4bGluazpocmVmPSIjciIgYXR0cmlidXRlTmFtZT0ieCIgZnJvbT0iLTExNzQiIHRvPSIxMTc0IiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgIC8+CiAgPC9zdmc+" />
+      <source media="(max-width: 1024px)" data-srcSet="{{ "gempages_571219258252461280-b99c81b2-0e14-416c-9e52-894927dc11ce.png" | file_url }}" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTE3NCIgaGVpZ2h0PSI4NDAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZGVmcz4KICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJnLTExNzQtODQwIj4KICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSJyZ2JhKDUxLCA1MSwgNTEsIDApIiBvZmZzZXQ9IjIwJSIgLz4KICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSJyZ2JhKDUxLCA1MSwgNTEsIDApIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSJyZ2JhKDUxLCA1MSwgNTEsIDApIiBvZmZzZXQ9IjcwJSIgLz4KICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxyZWN0IHdpZHRoPSIxMTc0IiBoZWlnaHQ9Ijg0MCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMTE3NCIgaGVpZ2h0PSI4NDAiIGZpbGw9InVybCgjZy0xMTc0LTg0MCkiIC8+CiAgICA8YW5pbWF0ZSB4bGluazpocmVmPSIjciIgYXR0cmlidXRlTmFtZT0ieCIgZnJvbT0iLTExNzQiIHRvPSIxMTc0IiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgIC8+CiAgPC9zdmc+" />
+      <img
+        
+        class="gp-h-full gp-max-w-full gp-flex gp_lazyload"
+        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTE3NCIgaGVpZ2h0PSI4NDAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZGVmcz4KICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJnLTExNzQtODQwIj4KICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSJyZ2JhKDUxLCA1MSwgNTEsIDApIiBvZmZzZXQ9IjIwJSIgLz4KICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSJyZ2JhKDUxLCA1MSwgNTEsIDApIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSJyZ2JhKDUxLCA1MSwgNTEsIDApIiBvZmZzZXQ9IjcwJSIgLz4KICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxyZWN0IHdpZHRoPSIxMTc0IiBoZWlnaHQ9Ijg0MCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMTE3NCIgaGVpZ2h0PSI4NDAiIGZpbGw9InVybCgjZy0xMTc0LTg0MCkiIC8+CiAgICA8YW5pbWF0ZSB4bGluazpocmVmPSIjciIgYXR0cmlidXRlTmFtZT0ieCIgZnJvbT0iLTExNzQiIHRvPSIxMTc0IiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgIC8+CiAgPC9zdmc+"
+        data-src="{{ "gempages_571219258252461280-b99c81b2-0e14-416c-9e52-894927dc11ce.png" | file_url }}"
+        width="100%"
+        alt=""
+        style="--aspect:auto;--aspect-tablet:auto;--aspect-mobile:auto;--objf:cover;--h:auto;--h-tablet:auto;--h-mobile:auto"
+      />
+    
+  </picture>
+      </div>
+  </div>
+      <style id="custom-css-gVRGxdZRCm">
+        .gVRGxdZRCm {
+
+}
+.gVRGxdZRCm > figure > img {
+
+}
+      </style>
+    
+    </div>
+    </div>
+   
+    
+    </div>
+    </div>
+   
+    
+    </div>
+    </div>
+  
+            </section>
+           
+    
+
+
+{% schema %}
+  {
+    
+    "name": "Section 4",
+    "tag": "section",
+    "class": "gps-571219442818614424 gps gpsil",
+    "settings": [{"type":"paragraph","content":"Section design by GemPages. [Click here to start design](https://admin.shopify.com/store/1fkjyx-xd/apps/gempages-cro/app/shopify/edit?pageType=GP_STATIC&editorId=571219423893914776&sectionId=571219442818614424)"},{"type":"select","label":"Section Preload","id":"section_preload","options":[{"label":"On","value":"true"},{"label":"Off","value":"false"},{"label":"Off Lazy Script","value":"off_lazy_script"}],"default":"false"},{"type":"text","label":"Checksum","id":"checksum"},{"type":"html","id":"ggsPmVnQlZF_text","label":"ggsPmVnQlZF_text","default":"Gut Health Powerhouse"},{"type":"html","id":"ggiSuNau3sr_text","label":"ggiSuNau3sr_text","default":"<p>Kombucha is teeming with live probiotic cultures that can work wonders for gut health.</p>"},{"type":"html","id":"ggvGxzvLMoF_childItem_0","label":"ggvGxzvLMoF_childItem_0","default":"<p>Fermentation cultivates diverse beneficial bacteria</p>"},{"type":"html","id":"ggvGxzvLMoF_childItem_1","label":"ggvGxzvLMoF_childItem_1","default":"<p>Probiotics maintain a healthy gut microbiome</p>"},{"type":"html","id":"ggvGxzvLMoF_childItem_2","label":"ggvGxzvLMoF_childItem_2","default":"<p>Drinking kombucha provides natural probiotic support</p>"},{"type":"html","id":"ggY-c4woa-8_text","label":"ggY-c4woa-8_text","default":"<p>Kombucha brims with gut-friendly probiotics</p>"},{"type":"html","id":"gg9DXXRVo79_label","label":"gg9DXXRVo79_label","default":"Shop Now"},{"type":"html","id":"gg52DsoFxQw_text","label":"gg52DsoFxQw_text","default":"Antioxidant-Rich Refreshment"},{"type":"html","id":"ggJhWqPhK1s_text","label":"ggJhWqPhK1s_text","default":"<p>Beyond the gut-friendly probiotics, kombucha also contains an abundance of antioxidants.</p>"},{"type":"html","id":"ggPvClRma44_childItem_0","label":"ggPvClRma44_childItem_0","default":"<p>Fermentation enhances the tea's polyphenols</p>"},{"type":"html","id":"ggPvClRma44_childItem_1","label":"ggPvClRma44_childItem_1","default":"<p>Antioxidants protect against oxidative stress</p>"},{"type":"html","id":"ggPvClRma44_childItem_2","label":"ggPvClRma44_childItem_2","default":"<p>This drink delivers an antioxidant boost</p>"},{"type":"html","id":"ggxY7EcAcDZ_text","label":"ggxY7EcAcDZ_text","default":"<p>Kombucha is packed with potent antioxidants.</p>"},{"type":"html","id":"ggA-THp4hhv_label","label":"ggA-THp4hhv_label","default":"Shop Now"},{"type":"html","id":"ggPU6zYfe-m_text","label":"ggPU6zYfe-m_text","default":"Natural Energy and Detox Support"},{"type":"html","id":"gguclYu0rsD_text","label":"gguclYu0rsD_text","default":"<p>Kombucha's unique blend of organic acids, B vitamins, and caffeine from the tea provides a gentle, steady energy boost.</p>"},{"type":"html","id":"ggwNI98yAdE_childItem_0","label":"ggwNI98yAdE_childItem_0","default":"<p>Its probiotics and acids may aid natural detoxification</p>"},{"type":"html","id":"ggwNI98yAdE_childItem_1","label":"ggwNI98yAdE_childItem_1","default":"<p>This drink is a healthier option than sugary beverages</p>"},{"type":"html","id":"ggwNI98yAdE_childItem_2","label":"ggwNI98yAdE_childItem_2","default":"<p>Drinking kombucha can increase daily vitality</p>"},{"type":"html","id":"ggnrJI7KQTO_text","label":"ggnrJI7KQTO_text","default":"<p>Kombucha's nutrients provide a gentle energy boost.</p>"},{"type":"html","id":"ggp17DCBbCt_label","label":"ggp17DCBbCt_label","default":"Shop Now"}],
+    "blocks": [{"type": "@app"}],
+    "locales": {}
+  }
+{% endschema %}

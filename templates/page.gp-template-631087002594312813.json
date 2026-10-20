@@ -1,0 +1,63 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "gp_section_631087002661421677": {
+      "settings": {
+        "checksum": "f63fea001bfc5d12f1a14fc48ed9ce59283cfd11fbf6dbc8679aa2b29eed4c34_1_1_1_0__1",
+        "gg8Vh3U-VqT_text": "<p><span style=\"background-color:rgba(28, 28, 28, 0);color:rgba(255,255,255,0.68);font-size:16px;\">Email: ufficio@oasiormonale.com</span></p>",
+        "gg8fOMUilhX_text": "<p><a href=\"https://www.iubenda.com/privacy-policy/12323298\"><span style=\"background-color:rgb(28,28,28);color:rgb(252,225,154);font-size:11px;\"><u>Privacy Policy |&nbsp;Cookie Policy | </u></span><span style=\"color:rgb(252,225,154);font-size:11px;\"><u>Disclaimer</u></span></a></p>",
+        "ggEQhWFsCvb_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0922/5004/6807/files/gempages_571219258252461280-ddf26636-4c16-478a-94a1-8f7b9a10a05d.png",
+        "ggl6Q1BGEHz_childItem_0": "<p>Ufficio Supporto</p>",
+        "ggoiXAxkO7X_text": "<p><span style=\"background-color:rgb(28,28,28);color:rgb(218,218,218);font-size:14px;\">Oasi Ormonale è il </span><strong>primo protocollo in Italia</strong><span style=\"background-color:rgb(28,28,28);color:rgb(218,218,218);font-size:14px;\">&nbsp;specializzato nel benessere ormonale, </span><strong>creato da donne, per donne.</strong></p>",
+        "ggsOriEpJw5_text": "<p><span style=\"background-color:rgba(28, 28, 28, 0);color:rgb(243,243,243);font-size:16px;\">Oasi Ormonale ®&nbsp;– Tutti i diritti riservati</span></p>",
+        "section_preload": "true"
+      },
+      "type": "gp-section-631087002661421677"
+    },
+    "gp_section_631087002661487213": {
+      "settings": {
+        "checksum": "1953b0f935860bb9a3ade4ed3c13cd34daea96e3741a6a799c227b865fc53f67_1_1_1_0__1",
+        "gg8mutTMkO3_background_desktop_image_src": "https://cdn.shopify.com/s/files/1/0922/5004/6807/files/gempages_571219258252461280-e754c646-8191-455c-9abb-5ac879fd2b06.webp",
+        "section_preload": "true"
+      },
+      "type": "gp-section-631087002661487213"
+    },
+    "gp_section_631087002661552749": {
+      "settings": {
+        "checksum": "c65b34e1ef702b41b9147f0ba434453733ca02ef284b9846b7c27a841198b404_1_1_1_0__1",
+        "gg-R84WLBRr_text": "CHI SIAMO",
+        "ggAL3kXiyhT_text": "CHI NON SIAMO",
+        "ggBbSHE1C6q_background_desktop_image_src": "https://cdn.shopify.com/s/files/1/0922/5004/6807/files/gempages_571219258252461280-dd6c9f69-ce9a-4a88-89f9-e87a863b083f.webp",
+        "ggGCpqQRh4e_text": "<p>Quelli che ti vendono integratori miracolosi e frasette motivazionali.</p><p>Noi tutte ne abbiamo già abbastanza&nbsp; fuffa-guru della nutrizione: a loro lasciamo le false promesse e il terrorismo psicologico sul cibo.</p><p>Noi preferiamo il tuo benessere e felicità.</p>",
+        "ggxIOFm_TOw_text": "<p>La prima realtà, in Italia, interamente incentrata sul Benessere Ormonale Femminile.</p><p>Il Protocollo Oasi Ormonale e il Percorso Formativo Ormonale sono creati da Dott.sse specializzate, che prima di tutto, sono Donne che hanno vissuto i tuoi stessi problemi e deciso di aiutare altre Donne a sconfiggere il problema alla radice: lo squilibrio ormonale..</p>",
+        "section_preload": "true"
+      },
+      "type": "gp-section-631087002661552749"
+    },
+    "gp_section_631087002661618285": {
+      "settings": {
+        "checksum": "12e5fdb6265354a205265f6f93dccbfc61c2d73c5e1d373b0f1cd0d5926c7243_1_1_1_0__1",
+        "gg3A6wOdkEz_background_desktop_image_src": "https://cdn.shopify.com/s/files/1/0922/5004/6807/files/gempages_571219258252461280-dd6c9f69-ce9a-4a88-89f9-e87a863b083f.webp",
+        "ggHvdWWIhyN_text": "HAI APPENA MESSO PIEDI NELLA TUA OASI ORMONALE",
+        "gggcAG5RmCt_text": "CONGRATULAZIONI",
+        "section_preload": "true"
+      },
+      "type": "gp-section-631087002661618285"
+    }
+  },
+  "order": [
+    "gp_section_631087002661618285",
+    "gp_section_631087002661487213",
+    "gp_section_631087002661552749",
+    "gp_section_631087002661421677"
+  ],
+  "layout": "theme.gempages.blank"
+}
