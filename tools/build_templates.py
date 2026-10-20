@@ -166,7 +166,7 @@ class Page:
 
     def write(self, path):
         data = {"sections": self.sections, "order": self.order}
-        Path(ROOT / path).write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        Path(ROOT / path).write_text(HEADER_NOTE + json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
 def build_home():
