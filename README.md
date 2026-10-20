@@ -44,6 +44,18 @@ Da quel momento il ramo `brand/nuova-identita` è il tema live: ogni push su que
 
 Le pagine GemPages non rifatte (Sensualità, Celebrities, quiz, TYP e le altre) non cambiano.
 
+## Lavorare sul codice
+
+Prima di ogni push, dalla radice della repo:
+
+```
+python3 tools/validate_templates.py
+```
+
+Controlla i template contro gli schemi delle sezioni e i limiti che Shopify applica al caricamento. Shopify rifiuta in silenzio un file che non li rispetta (per esempio un nome di blocco oltre i 25 caratteri): il file resta fuori dal tema e con lui i template che lo usano. Theme Check non segnala questi casi.
+
+Shopify scrive sul ramo i propri commit ("Update from Shopify for theme ..."), per esempio quando si salva dall'editor del tema. Prima di pushare conviene fare `git pull --rebase origin brand/nuova-identita`.
+
 ## GemPages
 
 Le pagine GemPages hanno font e colori scritti dentro i file (`gp-section-*`, `*.gp-template-*`, `*.gem-*`). Le quattro pagine ricostruite non usano più GemPages. Se si ripubblica una di quelle pagine dall'editor di GemPages, GemPages può rigenerare il suo template e cancellare la versione nativa: per modificarle si usa l'editor del tema.
