@@ -9,74 +9,78 @@
  */
 {
   "sections": {
-    "hero": {
-      "type": "oasi-page-hero",
+    "gp_global_section_591092676917461672-1": {
+      "type": "gp-global-section-591092676917461672",
       "settings": {
-        "eyebrow": "I nostri brand",
-        "heading": "I nostri brand proprietari",
-        "text": "<p>Ti presentiamo i progetti con cui stiamo aiutando migliaia di donne a ritrovare <strong>Salute</strong>, <strong>Bellezza</strong>, B<strong>enessere</strong>.</p>",
-        "image": "shopify://shop_images/gempages_571219258252461280-e9c87d6e-a11c-431c-bbd5-d707ed594f94.jpg"
+        "section_preload": "false",
+        "checksum": "",
+        "ggj43eRnQnT_text": "Navigazione rapida",
+        "ggt66MKpypD_label": "Home",
+        "gg89Czjfy2h_label": "I Nostri Brand",
+        "ggEiWL_4Vkl_label": "Chi Siamo",
+        "gg6cAz5qcRW_text": "Risorse",
+        "ggVx9gIK7qg_label": "Lavora con noi",
+        "ggq_NLf63o1_label": "Contattaci via email",
+        "ggsXQzUYyfv_text": "Legale",
+        "ggX2Wf0WlZq_label": "Privacy Policy",
+        "ggsKAvFG3Lh_label": "Cookie Policy",
+        "ggIPNBXcDiS_label": "Termini e Condizioni",
+        "gglNKFWI2Va_srcSet_desktop_src_728777627": "https://cdn.shopify.com/s/files/1/0922/5004/6807/files/gempages_571219258252461280-d7ce851e-0c44-4d34-aaa9-34ddd775b51e.png",
+        "ggSGWNtKEwb_text_428721502": "Il 1° Protocollo in Italia Specializzato nel Benessere Ormonale",
+        "ggypewUmpks_text_547674795": "I risultati conseguibili dipendono da fattori individuali (condizioni fisiche, salute, costanza, alimentazione, predisposizione personale) e non sono in alcun modo garantiti. Ai sensi degli artt. 1176 e 2222 c.c., il rapporto si configura come obbligazione di mezzi e non di risultato: il titolare si impegna a fornire metodologie e strumenti con la diligenza richiesta, senza assumere alcun obbligo in ordine all'esito finale. Le informazioni divulgate hanno carattere informativo e non sostituiscono il parere di un medico o di altro professionista sanitario abilitato. Si invita l'utente a consultare il proprio medico curante prima di intraprendere qualsiasi percorso. Le comunicazioni promozionali sono rese nel rispetto del D.Lgs. 206/2005 (Codice del Consumo) e del D.Lgs. 145/2007 in materia di pubblicità. Le immagini di confronto e le rappresentazioni visive presenti su questo sito hanno finalità illustrative. Non costituiscono prova, garanzia o promessa di risultato, ma una mera proiezione indicativa.",
+        "ggcF30HUJp__text": "Copyright © 2026 Oasi Ormonale | Tutti i diritti riservati"
       }
     },
-    "protocol": {
-      "type": "oasi-split",
+    "gp_section_586691149989872513": {
+      "type": "gp-section-586691149989872513",
       "settings": {
-        "tone": "white",
-        "image": "shopify://shop_images/LandingNew4.jpg",
-        "image_side": "left",
-        "eyebrow": "Brand 01",
-        "heading": "Protocollo Oasi Ormonale",
-        "subheading": "Il primo protocollo in Italia specializzato nel benessere ormonale.",
-        "body": "<p>Non menù prestampati, ma un approccio <strong>personalizzato</strong>, <strong>naturale</strong> e <strong>multidisciplinare</strong> al servizio della tua salute, della tua bellezza e del tuo benessere.<br>Un approccio unico che non si limita a darti regole nutrizionali standard e divieti, ma:</p>",
-        "list_style": "check",
-        "outro": "<p>L’obiettivo? Aiutarti a ritrovare bellezza, salute e benessere, dandoti il supporto di un team specialistico completo.</p>",
-        "outro_style": "text",
-        "button_label": "Protocollo Oasi Ormonale",
-        "button_url": "/pages/oasi-ormonale"
-      },
-      "blocks": {
-        "protocol_1": {
-          "type": "item",
-          "settings": {
-            "text": "<p>Parte dalla tua storia clinica e personale</p>"
-          }
-        },
-        "protocol_2": {
-          "type": "item",
-          "settings": {
-            "text": "<p>Analizza la tua situazione ormonale e il tuo legame col cibo</p>"
-          }
-        },
-        "protocol_3": {
-          "type": "item",
-          "settings": {
-            "text": "<p>Costruisce un percorso naturale e multidisciplinare che si evolve con te, basato sul farti ritrovare equilibrio ormonale</p>"
-          }
-        }
-      },
-      "block_order": [
-        "protocol_1",
-        "protocol_2",
-        "protocol_3"
-      ]
+        "checksum": "8d9c419d76e1faf3061128119a4d6236d4b68d2d327ba9c22c78b2bf38064d4e_1_1_1_0__1",
+        "ggtEPg21BZZ_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0922/5004/6807/files/LandingNew4.jpg",
+        "ggknbTpa4bj_text": "protocollo oasi ormonale",
+        "ggtPvBreIA-_text": "Il primo protocollo in Italia specializzato nel benessere ormonale.",
+        "ggmHL-EPx-F_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0922/5004/6807/files/gempages_571219258252461280-ee00d802-9946-49af-89cb-900027c2e45c.webp",
+        "ggmHL-EPx-F_srcSet_mobile_src": "https://cdn.shopify.com/s/files/1/0922/5004/6807/files/LandingNew4.jpg",
+        "ggqDNFkBFwu_text": "Non menù prestampati, ma un approccio <strong>personalizzato</strong>, <strong>naturale</strong> e <strong>multidisciplinare</strong> al servizio della tua salute, della tua bellezza e del tuo benessere.<br>Un approccio unico che non si limita a darti regole nutrizionali standard e divieti, ma:",
+        "ggoNX3BMPKd_childItem_0": "<p>Parte dalla tua storia clinica e personale;</p>",
+        "ggoNX3BMPKd_childItem_1": "<p>Analizza la tua situazione ormonale e il tuo legame col cibo;</p>",
+        "ggoNX3BMPKd_childItem_2": "<p>Costruisce un percorso naturale e multidisciplinare che si evolve con te, basato sul farti ritrovare equilibrio ormonale.</p>",
+        "ggDOTUbnyJ9_text": "L’obiettivo? Aiutarti a ritrovare bellezza, salute e benessere, dandoti il supporto di un team specialistico completo.",
+        "ggp40mV0HZp_label": "<p>protocollo oasi ormonale</p>"
+      }
     },
-    "leonessa": {
-      "type": "oasi-split",
+    "gp_section_586691149990134657": {
+      "type": "gp-section-586691149990134657",
       "settings": {
-        "tone": "soft",
-        "image": "shopify://shop_images/Snella.png",
-        "image_side": "right",
-        "eyebrow": "Brand 02",
-        "heading": "Progetto leonessa",
-        "subheading": "Il primo percorso di allenamento ormonale in Italia.",
-        "body": "<p>Non la solita schedina di allenamento “standard”, e neanche il solito “dimagrisci velocemente”.</p><p>Ma un programma costruito su misura per il corpo femminile: parte dal tuo ciclo, dalla tua “firma ormonale” e integra alimentazione e allenamento.</p><p>L’obiettivo? Aiutarti ad ottenere forza, tonicità e sensualità che restano nel tempo perché rispettano la tua biologia e il tuo equilibrio ormonale.</p>",
-        "button_label": "Scopri Progetto Leonessa"
+        "section_preload": "true",
+        "checksum": "5cad9adbc038af5dd641349868250e7754846ed816c40ab3cc11ce0a1bace231_1_1_1_0__1",
+        "ggbCLFKKpgP_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0922/5004/6807/files/gempages_571219258252461280-2ef090f0-60c7-4ecc-8135-ae7a3885f3c9.png",
+        "ggoHysvNWAD_label": "<p>Chi siamo</p>",
+        "ggxIzIt3tU__label": "<p>i Nostri Brand</p>",
+        "ggAhRqJvlmw_label": "<p>lavora con noi</p>",
+        "ggvzVrofcz-_background_desktop_image_src": "https://cdn.shopify.com/s/files/1/0922/5004/6807/files/gempages_571219258252461280-e9c87d6e-a11c-431c-bbd5-d707ed594f94.jpg",
+        "ggEhDqGUFVQ_text": "i nostri brand proprietari",
+        "ggxmisnvFl4_text": "Ti presentiamo i progetti con cui stiamo aiutando migliaia di donne a ritrovare <span style=\"color:#FCE19A;\"><strong>Salute</strong></span>, <span style=\"color:#FCE19A;\"><strong>Bellezza</strong></span>, <span style=\"color:#FCE19A;\">B<strong>enessere</strong></span>."
+      }
+    },
+    "gp_section_586691149990331265": {
+      "type": "gp-section-586691149990331265",
+      "settings": {
+        "checksum": "8d6e0cbf9780e8ca2bcb09a7651e88d2bae0aae83d8e09f4771ab93640f88e75_1_1_1_0__1",
+        "ggQWfstJj0Q_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0922/5004/6807/files/Snella.png",
+        "ggY4knyK01F_text": "Progetto leonessa",
+        "ggmHj8KkKOQ_text": "Il primo percorso di allenamento ormonale in Italia.",
+        "gg3OPniYRTW_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0922/5004/6807/files/gempages_571219258252461280-ee00d802-9946-49af-89cb-900027c2e45c.webp",
+        "gg3OPniYRTW_srcSet_mobile_src": "https://cdn.shopify.com/s/files/1/0922/5004/6807/files/Donna_fitness.png",
+        "ggY66W3N5SE_text": "Non la solita schedina di allenamento “standard”, e neanche il solito “dimagrisci velocemente”.<br><br>Ma un programma costruito su misura per il corpo femminile: parte dal tuo ciclo, dalla tua “firma ormonale” e integra alimentazione e &nbsp;allenamento.&nbsp;<br><br>L’obiettivo? Aiutarti ad ottenere forza, tonicità e sensualità che restano nel tempo perché rispettano la tua biologia e il tuo equilibrio ormonale.",
+        "ggNU9DrWuND_label": "<p>scopri progetto leonessa</p>"
       }
     }
   },
   "order": [
-    "hero",
-    "protocol",
-    "leonessa"
-  ]
+    "gp_section_586691149990134657",
+    "gp_section_586691149989872513",
+    "gp_section_586691149990331265",
+    "gp_global_section_591092676917461672-1"
+  ],
+  "layout": "theme.gempages.blank"
 }
