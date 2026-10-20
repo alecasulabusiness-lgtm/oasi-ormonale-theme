@@ -1,0 +1,29 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "oasi-hero",
+      "settings": {
+        "eyebrow": "Il 1° Protocollo in Italia Specializzato nel Benessere Ormonale",
+        "heading": "Ritrova bellezza, energia e salute, partendo dal tuo benessere ormonale",
+        "text": "<p>Il protocollo per ritrovare <strong>equilibrio</strong>, <strong>vitalità</strong> e <strong>sicurezza</strong> del proprio corpo. Sviluppato da figure qualificate nel benessere femminile.</p>",
+        "primary_label": "Scopri Oasi Ormonale",
+        "primary_url": "/pages/oasi-ormonale",
+        "secondary_label": "Come funziona",
+        "secondary_url": "/#protocollo",
+        "image": "shopify://shop_images/gempages_571219258252461280-255e193e-fc14-4863-93fa-890f0f2b81e5.jpg"
+      }
+    }
+  },
+  "order": [
+    "hero"
+  ]
+}
