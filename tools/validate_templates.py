@@ -60,8 +60,21 @@ def check_value(setting, value, where, errors):
             errors.append(f"{where}: {setting['id']} (text) non può andare a capo")
 
 
+def check_schemas(errors):
+    """Limiti che Shopify applica al caricamento di una sezione e che Theme Check non segnala."""
+    for path in sorted((ROOT / "sections").glob("oasi-*.liquid")):
+        schema = schema_of(path.stem)
+        names = [("nome della sezione", schema.get("name", ""))]
+        names += [("nome del preset", p.get("name", "")) for p in schema.get("presets", [])]
+        names += [(f"nome del blocco '{b['type']}'", b.get("name", "")) for b in schema.get("blocks", [])]
+        for kind, value in names:
+            if len(value) > 25:
+                errors.append(f"{path.name}: {kind} lungo {len(value)} caratteri, massimo 25: {value!r}")
+
+
 def main():
     errors, counts = [], {}
+    check_schemas(errors)
     for path in TEMPLATES:
         data = load(path)
         for sid, sec in data["sections"].items():
