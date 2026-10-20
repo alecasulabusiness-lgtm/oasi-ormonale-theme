@@ -1,6 +1,6 @@
 # Migrazione delle pagine alla nuova identità
 
-Le quattro pagine del sito e la cornice comune (header, footer) sono state ricostruite con sezioni native del tema, nello stile approvato (palette ufficiale borgogna, rosa e crema, con taglio clinico e premium). Tutte le altre pagine GemPages sono rimaste come erano.
+Home, Chi siamo, Lavora con noi e la cornice comune (header, footer) sono state ricostruite con sezioni native del tema, nello stile approvato (palette ufficiale borgogna, rosa e crema, con taglio clinico e premium). Tutte le altre pagine GemPages sono rimaste come erano.
 
 ## Cosa è stato rifatto
 
@@ -8,13 +8,12 @@ Le quattro pagine del sito e la cornice comune (header, footer) sono state ricos
 | --- | --- | --- |
 | Home | `templates/index.json` | `/` |
 | Chi siamo | `templates/page.gp-template-586581486656815819.json` | `/pages/chi-siamo` |
-| I nostri brand | `templates/page.gp-template-586691149922567041.json` | `/pages/i-nostri-brand` |
 | Lavora con noi | `templates/page.gp-template-586694286104331137.json` | `/pages/lavora-con-noi` |
 | Header e footer | `sections/header-group.json`, `sections/footer-group.json` | tutte le pagine che usano il layout del tema |
 
-I tre template delle pagine interne hanno mantenuto il nome GemPages: così ogni pagina conserva il template assegnato e nello store non cambia niente. Il contenuto però è nativo, senza `gp-section-*` e senza il layout `theme.gempages.blank`.
+I due template delle pagine interne hanno mantenuto il nome GemPages: così ogni pagina conserva il template assegnato e nello store non cambia niente. Il contenuto però è nativo, senza `gp-section-*` e senza il layout `theme.gempages.blank`.
 
-Header e footer nuovi valgono per tutte le pagine che usano il layout del tema (`layout/theme.liquid`): le quattro ricostruite, più prodotto, carrello, blog, ricerca e Contatti. Le pagine GemPages con layout `theme.gempages.blank` (landing, quiz, TYP) non li mostrano e tengono il loro header e il loro footer.
+Header e footer nuovi valgono per tutte le pagine che usano il layout del tema (`layout/theme.liquid`): le tre ricostruite, più prodotto, carrello, blog, ricerca e Contatti. Le pagine GemPages con layout `theme.gempages.blank` (landing, quiz, TYP) non li mostrano e tengono il loro header e il loro footer.
 
 ## Cosa non è stato toccato
 
@@ -75,19 +74,19 @@ I titoli dei ruoli e dei valori erano scritti in maiuscolo continuo: ora hanno l
 
 | Dove | Destinazione |
 | --- | --- |
-| Header: Chi siamo, I nostri brand, Lavora con noi | `/pages/chi-siamo`, `/pages/i-nostri-brand`, `/pages/lavora-con-noi` |
+| Header: Chi siamo, Lavora con noi | `/pages/chi-siamo`, `/pages/lavora-con-noi` |
 | Pulsanti "Scopri Oasi Ormonale" | `/pages/oasi-ormonale` |
 | Home, pulsante del hero | `/#protocollo` (la sezione dei protocolli, nella stessa pagina) |
 | Pulsanti WhatsApp | `https://wa.me/+393296912328` |
 | Lavora con noi: "Scopri le posizioni aperte" | `/pages/lavora-con-noi#posizioni-aperte` |
-| Lavora con noi: "Candidati ora" | form Typeform `medici`, `ixHaHSYX`, `gp3Pbk6b`, come nell'originale |
-| Footer: Termini e Condizioni | `/pages/termini-e-condizioni` |
+| Lavora con noi: "Candidati ora", team clinico | form Typeform `medici`, `ixHaHSYX`, `gp3Pbk6b`, come nell'originale |
+| Lavora con noi: "Candidati ora", marketing e vendite | form Typeform `EN8ghdhI` (Sales), `g19z7KgH` (Copywriters), `cS695Y16` (Advertiser). Scelti dal titolo del form: non stavano nel template originale |
 
 ## Da sapere
 
-1. **Termini e Condizioni.** Nel footer originale il link portava a Contatti. Ora porta a `/pages/termini-e-condizioni` (la pagina "Termini & Condizioni" esiste ed è pubblicata). Esiste anche "Termini & Condizioni - 2026/2027" (`/pages/termini-and-condizioni-2026-2027`): se è quella la versione in vigore, il link va cambiato nell'editor del footer.
-2. **Progetto Leonessa.** Il pulsante originale portava a `/pages/progettoleonessa`, che dà 404 anche sul sito attuale. Nella pagina I nostri brand il pulsante è senza link e quindi non compare. Quando la pagina esiste, basta incollare il link nel campo "Pulsante, link" della sezione.
-3. **Posizioni aperte.** Il sito attuale mostra quattro ruoli (Medico, Nutrizione, Fitness trainer, Endocrinologhe). Nelle impostazioni GemPages ce ne sono altri quattro che non venivano stampati: non li ho portati.
+1. **Pagina I nostri brand rimossa.** Template cancellato dal tema, link tolti da header e footer. Nello store la pagina è stata messa in bozza e `/pages/i-nostri-brand` rimanda alla home. Per ripristinarla basta ripubblicarla da Pagine e togliere il reindirizzamento (Negozio online > Navigazione > Reindirizzamenti URL). Il Progetto Leonessa non ha più una pagina: il link a `/pages/progettoleonessa` dava comunque 404.
+2. **Termini e Condizioni tolti dal sito.** Non compaiono più nel footer. Restano Privacy Policy e Cookie Policy (iubenda). Le pagine "Termini & Condizioni" nello store sono ancora pubblicate e raggiungibili dall'indirizzo diretto.
+3. **Posizioni aperte.** Quattro ruoli clinici (Medico, Nutrizione, Fitness trainer, Endocrinologhe) e quattro di marketing e vendite (Consulente commerciale, Copywriter direct response, Social media manager, Media buyer). I testi dei ruoli di marketing sono quelli delle impostazioni GemPages. Social media manager non ha un form Typeform dedicato: il pulsante non compare finché non si incolla il link nel campo "Pulsante, link" della card.
 4. **Video.** I quattro video YouTube di Chi siamo e della home partono al click, senza caricare YouTube prima.
 5. **Foto.** Le foto sono quelle già nei File di Shopify, con una tinta borgogna applicata dal CSS: nessun file è stato modificato.
 6. **Header senza ricerca e senza carrello.** L'header nativo di prima li aveva. Lo store ha un solo prodotto attivo ("TEST") e le pagine di vendita sono GemPages, quindi oggi non servono. Se un giorno si usano le pagine prodotto del tema, vanno aggiunti all'header.

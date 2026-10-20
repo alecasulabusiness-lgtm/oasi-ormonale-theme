@@ -12,7 +12,6 @@ ROOT = Path(__file__).resolve().parent.parent
 TEMPLATES = [
     "templates/index.json",
     "templates/page.gp-template-586581486656815819.json",
-    "templates/page.gp-template-586691149922567041.json",
     "templates/page.gp-template-586694286104331137.json",
     "sections/header-group.json",
     "sections/footer-group.json",

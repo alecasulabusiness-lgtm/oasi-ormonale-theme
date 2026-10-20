@@ -24,13 +24,6 @@
         "link_2": {
           "type": "link",
           "settings": {
-            "label": "I nostri brand",
-            "url": "/pages/i-nostri-brand"
-          }
-        },
-        "link_3": {
-          "type": "link",
-          "settings": {
             "label": "Lavora con noi",
             "url": "/pages/lavora-con-noi"
           }
@@ -38,8 +31,7 @@
       },
       "block_order": [
         "link_1",
-        "link_2",
-        "link_3"
+        "link_2"
       ],
       "settings": {
         "cta_label": "Scopri Oasi Ormonale",

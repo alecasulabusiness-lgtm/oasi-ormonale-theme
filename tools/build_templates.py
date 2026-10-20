@@ -1,4 +1,4 @@
-"""Costruisce i template nativi di home, Chi siamo, I nostri brand e Lavora con noi,
+"""Costruisce i template nativi di home, Chi siamo e Lavora con noi,
 più i gruppi header e footer, partendo dai testi dei template GemPages originali.
 
 I testi si leggono dalla versione del tema salvata nel ramo `main` (copia del tema live al 20/10/2026),
@@ -427,44 +427,6 @@ def build_chi_siamo():
     p.write("templates/page.gp-template-586581486656815819.json")
 
 
-def build_brand():
-    t = Tpl("page.gp-template-586691149922567041")
-    p = Page()
-    p.add("hero", "oasi-page-hero", {
-        "eyebrow": "I nostri brand",
-        "heading": cap(plain(t.get("90134657", "ggEhDqGUFVQ_text"))),
-        "text": rich(t.get("90134657", "ggxmisnvFl4_text")),
-        "image": img(t.get("90134657", "ggvzVrofcz-_background_desktop_image_src")),
-    })
-    items = [strip_end(plain(t.get("89872513", k))) for k in sorted(t.keys("89872513", "ggoNX3BMPKd_childItem_"))]
-    expect(len(items) == 3, "brand: attesi 3 punti del protocollo")
-    body = paras(t.get("89872513", "ggqDNFkBFwu_text"))
-    p.add("protocol", "oasi-split", {
-        "tone": "white",
-        "image": img(t.get("89872513", "ggtEPg21BZZ_srcSet_desktop_src")), "image_side": "left",
-        "eyebrow": "Brand 01",
-        "heading": cap(plain(t.get("89872513", "ggknbTpa4bj_text"))).replace("oasi ormonale", "Oasi Ormonale"),
-        "subheading": plain(t.get("89872513", "ggtPvBreIA-_text")),
-        "body": rich(body),
-        "list_style": "check",
-        "outro": rich(t.get("89872513", "ggDOTUbnyJ9_text")),
-        "outro_style": "text",
-        "button_label": "Protocollo Oasi Ormonale", "button_url": PROTOCOLLO,
-    }, [("item", {"text": rich([i])}) for i in items])
-    p.add("leonessa", "oasi-split", {
-        "tone": "soft",
-        "image": img(t.get("90331265", "ggQWfstJj0Q_srcSet_desktop_src")), "image_side": "right",
-        "eyebrow": "Brand 02",
-        "heading": cap(plain(t.get("90331265", "ggY4knyK01F_text"))),
-        "subheading": plain(t.get("90331265", "ggmHj8KkKOQ_text")),
-        "body": rich(t.get("90331265", "ggY66W3N5SE_text")),
-        # /pages/progettoleonessa dà 404 anche sul sito attuale: il pulsante resta senza link e non viene mostrato.
-        # Quando la pagina esiste basta incollare il link nell'editor del tema.
-        "button_label": "Scopri Progetto Leonessa", "button_url": "",
-    })
-    p.write("templates/page.gp-template-586691149922567041.json")
-
-
 def build_lavora():
     t = Tpl("page.gp-template-586694286104331137")
     p = Page()
@@ -484,7 +446,7 @@ def build_lavora():
         "button_label": "Scopri le posizioni aperte", "button_url": ANCHOR,
     })
 
-    # posizioni aperte: solo le quattro che il sito mostra oggi (le altre quattro stanno nelle impostazioni ma non vengono stampate)
+    # posizioni aperte: team clinico, poi marketing e vendite (queste ultime stanno nelle impostazioni GemPages ma il sito attuale non le stampa)
     pos = [
         ("ggqWGAkCyM5_text", "ggGG3S9Or58_text", "https://oasiormonale.typeform.com/medici"),
         ("ggc4jHEXXpL_text", "ggLa3IoypIK_text", "https://oasiormonale.typeform.com/to/ixHaHSYX"),
@@ -505,8 +467,27 @@ def build_lavora():
         "anchor": "posizioni-aperte",
         "heading": cap(plain(t.get("21771649", "ggqyqK4Co5B_text")).lower()),
         "intro": plain(t.get("21771649", "ggA2aMIWSMr_text")),
-        "padding_top": 96, "padding_bottom": 112,
+        "padding_top": 96, "padding_bottom": 56,
     }, cards)
+
+    # Link di candidatura: non stanno nel template originale. Sono i form Typeform di Oasi Ormonale scelti dal titolo.
+    # Social media manager non ha un form dedicato: senza link il pulsante non compare.
+    mkt = [
+        ("gg2NEveP-sU_text", "gg_u6iz2DC7_text", "Vendite", "https://oasiormonale.typeform.com/to/EN8ghdhI"),
+        ("ggplv5Q0Tg7_text", "gg5_Fbh7Ejc_text", "Marketing", "https://oasiormonale.typeform.com/to/g19z7KgH"),
+        ("ggcXIX59jXv_text", "ggOhBO2VXod_text", "Comunicazione", ""),
+        ("ggHCIRPvH0q_text", "ggakGEFqjIO_text", "Marketing", "https://oasiormonale.typeform.com/to/cS695Y16"),
+    ]
+    mkt_cards = []
+    for tk, dk, tag, url in mkt:
+        title = " ".join(plain(x) for x in re.split(r"<br\s*/?>", t.get("21771649", tk)))
+        mkt_cards.append(("card", {"tag": tag, "title": cap(title.lower()), "text": rich(t.get("21771649", dk)),
+                                   "button_label": "Candidati ora", "button_url": url}))
+    p.add("positions_marketing", "oasi-cards", {
+        "tone": "light", "card_style": "palette", "show_numbers": True, "show_shapes": True,
+        "heading": cap(plain(t.get("21771649", "gg150PlM363_text")).lower()).replace(" & ", " e "),
+        "padding_top": 24, "padding_bottom": 112,
+    }, mkt_cards)
 
     cultura = paras(t.get("21968257", "ggqDNFkBFwu_text"))
     cult_items = [rich(t.get("21968257", k)) for k in sorted(t.keys("21968257", "ggoNX3BMPKd_childItem_"))]
@@ -576,10 +557,9 @@ def build_groups():
                 "type": "oasi-header",
                 "blocks": {
                     "link_1": {"type": "link", "settings": {"label": "Chi siamo", "url": "/pages/chi-siamo"}},
-                    "link_2": {"type": "link", "settings": {"label": "I nostri brand", "url": "/pages/i-nostri-brand"}},
-                    "link_3": {"type": "link", "settings": {"label": "Lavora con noi", "url": "/pages/lavora-con-noi"}},
+                    "link_2": {"type": "link", "settings": {"label": "Lavora con noi", "url": "/pages/lavora-con-noi"}},
                 },
-                "block_order": ["link_1", "link_2", "link_3"],
+                "block_order": ["link_1", "link_2"],
                 "settings": {"cta_label": "Scopri Oasi Ormonale", "cta_url": PROTOCOLLO},
             }
         },
@@ -595,8 +575,7 @@ def build_groups():
                     "col_1": {"type": "column", "settings": {
                         "title": "Navigazione rapida",
                         "label_1": "Home", "url_1": "/",
-                        "label_2": "I Nostri Brand", "url_2": "/pages/i-nostri-brand",
-                        "label_3": "Chi Siamo", "url_3": "/pages/chi-siamo"}},
+                        "label_2": "Chi Siamo", "url_2": "/pages/chi-siamo"}},
                     "col_2": {"type": "column", "settings": {
                         "title": "Risorse",
                         "label_1": "Lavora con noi", "url_1": "/pages/lavora-con-noi",
@@ -604,8 +583,7 @@ def build_groups():
                     "col_3": {"type": "column", "settings": {
                         "title": "Legale",
                         "label_1": "Privacy Policy", "url_1": "https://www.iubenda.com/privacy-policy/12323298",
-                        "label_2": "Cookie Policy", "url_2": "https://www.iubenda.com/privacy-policy/12323298/cookie-policy",
-                        "label_3": "Termini e Condizioni", "url_3": "/pages/termini-e-condizioni"}},
+                        "label_2": "Cookie Policy", "url_2": "https://www.iubenda.com/privacy-policy/12323298/cookie-policy"}},
                 },
                 "block_order": ["col_1", "col_2", "col_3"],
                 "settings": {
@@ -626,10 +604,9 @@ def main():
     collect_videos()
     build_home()
     build_chi_siamo()
-    build_brand()
     build_lavora()
     build_groups()
-    print("template scritti: index, chi-siamo, i-nostri-brand, lavora-con-noi, header-group, footer-group")
+    print("template scritti: index, chi-siamo, lavora-con-noi, header-group, footer-group")
     print("\nCorrezioni ai testi originali:")
     for where, old, new in CORREZIONI:
         print(f"  [{where}] '{old}' -> '{new}'")

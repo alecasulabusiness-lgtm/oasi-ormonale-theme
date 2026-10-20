@@ -20,10 +20,8 @@
             "title": "Navigazione rapida",
             "label_1": "Home",
             "url_1": "/",
-            "label_2": "I Nostri Brand",
-            "url_2": "/pages/i-nostri-brand",
-            "label_3": "Chi Siamo",
-            "url_3": "/pages/chi-siamo"
+            "label_2": "Chi Siamo",
+            "url_2": "/pages/chi-siamo"
           }
         },
         "col_2": {
@@ -43,9 +41,7 @@
             "label_1": "Privacy Policy",
             "url_1": "https://www.iubenda.com/privacy-policy/12323298",
             "label_2": "Cookie Policy",
-            "url_2": "https://www.iubenda.com/privacy-policy/12323298/cookie-policy",
-            "label_3": "Termini e Condizioni",
-            "url_3": "/pages/termini-e-condizioni"
+            "url_2": "https://www.iubenda.com/privacy-policy/12323298/cookie-policy"
           }
         }
       },
