@@ -9,11 +9,11 @@
  */
 {
   "current": {
-    "logo": "shopify://shop_images/Oasi_Ormonale.png",
-    "logo_inverse": "shopify://shop_images/Oasi_Ormonale.png",
-    "logo_height": 24,
-    "logo_height_mobile": 12,
-    "favicon": "shopify://shop_images/Oasi_Ormonale_fav.png",
+    "logo": "shopify://shop_images/oasi-logo-black.png",
+    "logo_inverse": "shopify://shop_images/oasi-logo-white.png",
+    "logo_height": 56,
+    "logo_height_mobile": 40,
+    "favicon": "shopify://shop_images/oasi-favicon.png",
     "type_body_font": "inter_n4",
     "type_subheading_font": "inter_n5",
     "type_heading_font": "inter_n7",

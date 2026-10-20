@@ -23,7 +23,17 @@ Collega solo `brand/nuova-identita`. Con `main` collegato, le modifiche fatte ne
 
 ## Struttura
 
-Le cartelle del tema stanno alla radice (`assets`, `blocks`, `config`, `layout`, `locales`, `sections`, `snippets`, `templates`), come richiede Shopify. `AGENTS.md` è la guida al tema che arriva con Horizon. Shopify ignora le cartelle fuori dalla struttura del tema, quindi `docs/` non entra nel tema.
+Le cartelle del tema stanno alla radice (`assets`, `blocks`, `config`, `layout`, `locales`, `sections`, `snippets`, `templates`), come richiede Shopify. `AGENTS.md` è la guida al tema che arriva con Horizon. Shopify ignora le cartelle fuori dalla struttura del tema, quindi `docs/`, `brand/` e `tools/` non entrano nel tema.
+
+| Cartella | Contenuto |
+| --- | --- |
+| `docs/` | Esportazione, identità attuale, brand identity 2026 con i contrasti della palette |
+| `brand/` | Guidelines in PDF e logo in vettoriale e PNG, bianco e nero |
+| `tools/` | `apply_logo.py` (mette il logo nuovo nel tema), `extract_logo.py` (estrae il logo dal PDF) |
+
+## Stato del ramo `brand/nuova-identita`
+
+Fatto: logo nuovo in bianco e nero (header, footer, header nativo, favicon). Da decidere: palette e font, in bianco e nero oppure con borgogna e rosa. Dettagli in [docs/brand-identity.md](docs/brand-identity.md).
 
 ## GemPages
 
