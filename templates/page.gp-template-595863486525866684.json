@@ -10,31 +10,31 @@
 {
   "sections": {
     "gp_section_595863486609818300": {
+      "type": "gp-section-595863486609818300",
       "settings": {
+        "section_preload": "true",
         "checksum": "dc2ada4501149b9a145df7363c3c70b8a92a12140130d292ed776ac8731f7ad9_1_1_1_0__1",
-        "ggArry7m2rP_text": "<span style=\"color:rgb(207,0,0);\">CHI NON SIAMO</span>",
         "ggHDS7ZL_KC_text": "<span style=\"color:rgb(189,163,96);\"><strong><u>CONGRATULAZIONI!</u></strong></span>",
-        "ggPj1hhmarv_text": "La prima realtà, in Italia, interamente incentrata sul Benessere Ormonale.<br><br>Il servizi di Oasi Ormonale sono creati da Dott.sse specializzate che, prima di tutto, sono Donne che hanno vissuto quello che ha vissuto e/o sta vivendo il target.",
-        "ggRRj-ztmUp_text": "Se il tuo profilo sarà idoneo con i requisiti che stiamo cercando, verrai ricontattato/a nelle prossime 72 ore",
         "ggfi27zwczG_text": "<span style=\"color:rgb(255,255,255);\"><strong>HAI APPENA aperto la tua porta per entrare in OASI ORMONALE</strong></span>",
+        "ggRRj-ztmUp_text": "Se il tuo profilo sarà idoneo con i requisiti che stiamo cercando, verrai ricontattato/a nelle prossime 72 ore",
         "ggqh0BBkqfg_text": "<span style=\"color:rgb(189,163,96);\">CHI SIAMO</span>",
-        "ggtssD4ydHr_text": "Non siamo quelli che vendono integratori miracolosi e frasette motivazionali.<br>&nbsp;<br>Ne abbiamo già abbastanza di fuffaroli e guru sul web... a loro lasciamo le false promesse e il terrorismo psicologico sul cibo.",
-        "section_preload": "true"
-      },
-      "type": "gp-section-595863486609818300"
+        "ggPj1hhmarv_text": "La prima realtà, in Italia, interamente incentrata sul Benessere Ormonale.<br><br>Il servizi di Oasi Ormonale sono creati da Dott.sse specializzate che, prima di tutto, sono Donne che hanno vissuto quello che ha vissuto e/o sta vivendo il target.",
+        "ggArry7m2rP_text": "<span style=\"color:rgb(207,0,0);\">CHI NON SIAMO</span>",
+        "ggtssD4ydHr_text": "Non siamo quelli che vendono integratori miracolosi e frasette motivazionali.<br>&nbsp;<br>Ne abbiamo già abbastanza di fuffaroli e guru sul web... a loro lasciamo le false promesse e il terrorismo psicologico sul cibo."
+      }
     },
     "gp_section_595864621152207633": {
+      "type": "gp-section-595864621152207633",
       "settings": {
         "checksum": "01164edce9a1bf0d8d84cd943b29da52e3f50fbccabb70433e3d0217719beeb6_1_1_1_0__1",
-        "gg1aQ66u14u_childItem_0": "<p>Ufficio Supporto</p>",
-        "ggN44qpsLJD_label": "<p><u>Cookie Policy</u></p>",
-        "ggQcHEZ7d_j_text": "<strong>Email: </strong>ufficio@oasiormonale.com",
-        "ggjbq0maMjp_text": "*This Website is not a part of Facebook or Facebook Inc. Additionally, this site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK Inc.<br><br>Questo sito non fa parte del sito Facebook o Facebook Inc. Inoltre, questo sito NON è approvato da Facebook in alcun modo. FACEBOOK è un marchio registrato di FACEBOOK, Inc.",
-        "ggoFAazZHZ__label": "<p><u>Privacy Policy</u></p>",
         "ggsanDutqPU_text": "Oasi Ormonale è il primo protocollo in Italia specializzato nel benessere ormonale, creato da donne, per donne.",
-        "ggttXDOvo5M_text": "Copyright © 2025 Oasi Ormonale | Tutti i diritti riservati"
-      },
-      "type": "gp-section-595864621152207633"
+        "gg1aQ66u14u_childItem_0": "<p>Ufficio Supporto</p>",
+        "ggQcHEZ7d_j_text": "<strong>Email: </strong>ufficio@oasiormonale.com",
+        "ggttXDOvo5M_text": "Copyright © 2025 Oasi Ormonale | Tutti i diritti riservati",
+        "ggoFAazZHZ__label": "<p><u>Privacy Policy</u></p>",
+        "ggN44qpsLJD_label": "<p><u>Cookie Policy</u></p>",
+        "ggjbq0maMjp_text": "*This Website is not a part of Facebook or Facebook Inc. Additionally, this site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK Inc.<br><br>Questo sito non fa parte del sito Facebook o Facebook Inc. Inoltre, questo sito NON è approvato da Facebook in alcun modo. FACEBOOK è un marchio registrato di FACEBOOK, Inc."
+      }
     }
   },
   "order": [
