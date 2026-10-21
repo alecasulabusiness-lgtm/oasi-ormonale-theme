@@ -1,0 +1,426 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "oasi-hero",
+      "settings": {
+        "eyebrow": "Il 1° Protocollo in Italia Specializzato nel Benessere Ormonale",
+        "heading": "Ritrova bellezza, energia e salute, partendo dal tuo benessere ormonale",
+        "text": "<p>Il protocollo per ritrovare <strong>equilibrio<\/strong>, <strong>vitalità<\/strong> e <strong>sicurezza<\/strong> del proprio corpo. Sviluppato da figure qualificate nel benessere femminile.<\/p>",
+        "primary_label": "Scopri Oasi Ormonale",
+        "primary_url": "\/pages\/oasi-ormonale",
+        "secondary_label": "Come funziona",
+        "secondary_url": "\/#protocollo",
+        "image": "shopify:\/\/shop_images\/gempages_571219258252461280-255e193e-fc14-4863-93fa-890f0f2b81e5.jpg"
+      }
+    },
+    "team_strip": {
+      "type": "oasi-chips",
+      "settings": {
+        "label": "Professioniste del Benessere Ormonale",
+        "padding_top": 72,
+        "padding_bottom": 24
+      },
+      "blocks": {
+        "team_strip_1": {
+          "type": "chip",
+          "settings": {
+            "text": "Biologhe Nutrizioniste Specializzate in Benessere Ormonale"
+          }
+        },
+        "team_strip_2": {
+          "type": "chip",
+          "settings": {
+            "text": "Chef"
+          }
+        },
+        "team_strip_3": {
+          "type": "chip",
+          "settings": {
+            "text": "Medici Specialisti"
+          }
+        },
+        "team_strip_4": {
+          "type": "chip",
+          "settings": {
+            "text": "Chinesiologhe specializzate in scienze motorie"
+          }
+        },
+        "team_strip_5": {
+          "type": "chip",
+          "settings": {
+            "text": "Professioniste abilitate in allenamento femminile"
+          }
+        }
+      },
+      "block_order": [
+        "team_strip_1",
+        "team_strip_2",
+        "team_strip_3",
+        "team_strip_4",
+        "team_strip_5"
+      ]
+    },
+    "method": {
+      "type": "oasi-method",
+      "settings": {
+        "label": "Il metodo",
+        "heading": "L'equilibrio ormonale è una cosa complessa.",
+        "heading_fade": "Gli approcci nutrizionali tradizionali lo ignorano.",
+        "anchor": "metodo",
+        "image": "shopify:\/\/shop_images\/gempages_571219258252461280-67e8c136-4a90-45d7-85f2-16e037a30054.jpg",
+        "card_title": "Perché alcune donne mangiano di tutto e sono in forma, mentre tu ti vedi gonfia, ti senti pesante anche con un'insalata?",
+        "card_intro": "Perché ogni donna reagisce al cibo in modo completamente diverso… E tutto dipende dai nostri ormoni femminili. I tuoi ormoni decidono:",
+        "side_label": "Cosa fanno gli approcci tradizionali",
+        "side_text": "Riducono l’alimentazione a schemi e numeri copia e incolla: un foglio uguale per tutte, calorie contate e liste di alimenti da dimenticare.",
+        "side_centre": "Noi lo mettiamo al centro di tutto.",
+        "button_label": "Scopri Oasi Ormonale",
+        "button_url": "\/pages\/oasi-ormonale"
+      },
+      "blocks": {
+        "method_1": {
+          "type": "chip",
+          "settings": {
+            "text": "se ingrassi o dimagrisci"
+          }
+        },
+        "method_2": {
+          "type": "chip",
+          "settings": {
+            "text": "se ti senti energica o spossata"
+          }
+        },
+        "method_3": {
+          "type": "chip",
+          "settings": {
+            "text": "se dormi bene o male"
+          }
+        },
+        "method_4": {
+          "type": "chip",
+          "settings": {
+            "text": "se ti gonfi o ti senti leggera"
+          }
+        }
+      },
+      "block_order": [
+        "method_1",
+        "method_2",
+        "method_3",
+        "method_4"
+      ]
+    },
+    "approach": {
+      "type": "oasi-split",
+      "settings": {
+        "tone": "white",
+        "image": "shopify:\/\/shop_images\/gempages_571219258252461280-999d0652-d7c9-4819-a5ae-6d2defc21ae8.jpg",
+        "image_side": "left",
+        "eyebrow": "Il nostro approccio",
+        "heading": "Basta schemi rigidi e divieti punitivi.",
+        "body": "<p>Oasi Ormonale nasce per opporsi ad un approccio malsano e dannoso alla nutrizione e al dimagrimento.<\/p>",
+        "list_style": "numbered",
+        "outro": "<p><strong>Mettiamo TE al centro.<\/strong> Il tuo corpo, la tua storia, il tuo benessere ed equilibrio ormonale e di vita.<\/p>",
+        "button_label": "Scopri Oasi Ormonale",
+        "button_url": "https:\/\/wa.me\/+393296912328",
+        "padding_top": 96,
+        "padding_bottom": 96
+      },
+      "blocks": {
+        "approach_1": {
+          "type": "item",
+          "settings": {
+            "text": "<p>Per noi, ogni donna è unica.<br>Il suo corpo è unico.<br>I suoi ormoni sono unici.<br><strong>E il suo percorso verso il benessere deve essere altrettanto unico.<\/strong><\/p>"
+          }
+        },
+        "approach_2": {
+          "type": "item",
+          "settings": {
+            "text": "<p>Ti sosteniamo nel darti consapevolezza. Non divieti.<\/p>"
+          }
+        },
+        "approach_3": {
+          "type": "item",
+          "settings": {
+            "text": "<p>Lavoriamo per darti un approccio scientifico e sostenibile, eliminando la costante paura di sbagliare.<\/p>"
+          }
+        },
+        "approach_4": {
+          "type": "item",
+          "settings": {
+            "text": "<p>Ti rendiamo indipendente verso il tuo benessere. Non dipendente da schemi e liste da seguire.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "approach_1",
+        "approach_2",
+        "approach_3",
+        "approach_4"
+      ]
+    },
+    "statement": {
+      "type": "oasi-statement",
+      "settings": {
+        "tone": "light",
+        "kicker": "Il risultato? Funziona per qualcuna. Per la maggioranza, fallisce inevitabilmente.",
+        "heading_before": "Oasi Ormonale nasce per",
+        "highlight": "liberare le donne",
+        "heading_after": "dal “terrorismo nutrizionale”,",
+        "text": "<p>fornendo un approccio<\/p>"
+      },
+      "blocks": {
+        "statement_1": {
+          "type": "pill",
+          "settings": {
+            "text": "Funzionante"
+          }
+        },
+        "statement_2": {
+          "type": "pill",
+          "settings": {
+            "text": "Personalizzato"
+          }
+        },
+        "statement_3": {
+          "type": "pill",
+          "settings": {
+            "text": "Sostenibile"
+          }
+        },
+        "statement_4": {
+          "type": "pill",
+          "settings": {
+            "text": "Scientifico"
+          }
+        }
+      },
+      "block_order": [
+        "statement_1",
+        "statement_2",
+        "statement_3",
+        "statement_4"
+      ]
+    },
+    "protocol": {
+      "type": "oasi-cards",
+      "settings": {
+        "tone": "light",
+        "card_style": "palette",
+        "show_numbers": true,
+        "show_shapes": true,
+        "anchor": "protocollo",
+        "label": "Il protocollo",
+        "heading": "Come funzionano i nostri protocolli",
+        "intro": "pensati per la TUA Oasi Ormonale?",
+        "padding_top": 40,
+        "padding_bottom": 112
+      },
+      "blocks": {
+        "protocol_1": {
+          "type": "card",
+          "settings": {
+            "tag": "Analisi",
+            "title": "Analisi completa",
+            "text": "<p>Partiamo dalla tua storia, esigenze e risultati desiderati.<\/p><p>Ogni dettaglio conta per creare il quadro completo del tuo squilibrio attuale.<\/p>"
+          }
+        },
+        "protocol_2": {
+          "type": "card",
+          "settings": {
+            "tag": "Strategia",
+            "title": "Strategia alimentare",
+            "text": "<p>Non un piano alimentare standardizzato.<\/p><p>Una guida completa e dettagliata che spiega quali alimenti supportano l'equilibrio ormonale specifico di ogni donna.<\/p><p>Un accompagnamento che copre ogni aspetto del percorso, dal primo giorno in poi.<\/p>"
+          }
+        },
+        "protocol_3": {
+          "type": "card",
+          "settings": {
+            "tag": "Supporto",
+            "title": "Supporto specialistico",
+            "text": "<p>Un supporto costante e qualificato.<br>Non risposte automatiche o generiche, ma un dialogo continuo con professioniste specializzate nel benessere ormonale che forniscono indicazioni specifiche per ogni situazione.<\/p>"
+          }
+        },
+        "protocol_4": {
+          "type": "card",
+          "settings": {
+            "tag": "Risultati",
+            "title": "Risultati sostenibili",
+            "text": "<p>L'obiettivo è sviluppare consapevolezza e autonomia. Non dipendenza da schemi esterni, ma comprensione profonda del proprio corpo per mantenere l'equilibrio nel tempo.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "protocol_1",
+        "protocol_2",
+        "protocol_3",
+        "protocol_4"
+      ]
+    },
+    "specialists": {
+      "type": "oasi-team",
+      "settings": {
+        "anchor": "specialiste",
+        "label": "Le specialiste",
+        "heading": "Le specialiste che ti seguiranno?",
+        "lead": "<p>Non solo figure esperte, ma donne che hanno già affrontato il percorso prima di te e che comprendono perfettamente la tua situazione.<\/p>",
+        "body": "<p>In Oasi Ormonale, verrai seguita da una squadra di Professioniste del Benessere Ormonale.<\/p><p>Ma le stesse figure professionali, prima ancora di essere specialiste, sono Donne che hanno passato, subito e sperimentato sulla loro pelle i problemi che tu affronti oggi.<br>La loro autorità e competenza nasce anche dalle cicatrici e non unicamente dai diplomi appesi al muro.<\/p><p>Tra le Professioniste del Benessere Ormonale che ti guideranno, troverai:<\/p>",
+        "button_label": "Conosci le professioniste",
+        "button_url": "https:\/\/wa.me\/+393296912328"
+      },
+      "blocks": {
+        "specialists_1": {
+          "type": "role",
+          "settings": {
+            "text": "Biologhe Nutrizioniste Specializzate in Benessere Ormonale"
+          }
+        },
+        "specialists_2": {
+          "type": "role",
+          "settings": {
+            "text": "Chef"
+          }
+        },
+        "specialists_3": {
+          "type": "role",
+          "settings": {
+            "text": "Medici Specialisti"
+          }
+        },
+        "specialists_4": {
+          "type": "role",
+          "settings": {
+            "text": "Chinesiologhe specializzate in scienze motorie"
+          }
+        },
+        "specialists_5": {
+          "type": "role",
+          "settings": {
+            "text": "Professioniste abilitate in allenamento femminile"
+          }
+        }
+      },
+      "block_order": [
+        "specialists_1",
+        "specialists_2",
+        "specialists_3",
+        "specialists_4",
+        "specialists_5"
+      ]
+    },
+    "stories": {
+      "type": "oasi-videos",
+      "settings": {
+        "tone": "light",
+        "label": "Le storie",
+        "heading": "Per gli altri sono pazienti,",
+        "heading_fade": "per noi sono leonesse:",
+        "intro": "E ci piace celebrare le loro vittorie. Eccone alcune:",
+        "padding_top": 112,
+        "padding_bottom": 96
+      },
+      "blocks": {
+        "stories_1": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/R0xIBtepwII",
+            "quote": "Da stanca e senza energie a rinata",
+            "who": "Monica ce l'ha fatta!"
+          }
+        },
+        "stories_2": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/rMPCQhE_7qM",
+            "quote": "Meno 6 kg e di nuovo taglia 42",
+            "who": "Cristina svela perché Oasi non è una dieta qualunque!"
+          }
+        },
+        "stories_3": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/7_Y4otQyJuc",
+            "quote": "Mi hanno sempre detto che all’endometriosi non c’è soluzione. Oasi mi ha aiutata!"
+          }
+        },
+        "stories_4": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/tv0aJ0pn9Qk",
+            "quote": "-7 kg, -14 cm in vita e -13 cm sui fianchi, senza patire la fame",
+            "who": "Il percorso di Antonella"
+          }
+        }
+      },
+      "block_order": [
+        "stories_1",
+        "stories_2",
+        "stories_3",
+        "stories_4"
+      ]
+    },
+    "guarantee": {
+      "type": "oasi-split",
+      "settings": {
+        "tone": "soft",
+        "image": "shopify:\/\/shop_images\/gempages_571219258252461280-54ba34d5-4927-446b-b865-682f6406b48c.jpg",
+        "image_side": "right",
+        "image_badge": "100% soddisfatta o rimborsata",
+        "eyebrow": "La garanzia",
+        "kicker": "Oasi Ormonale, NON ti promette (false) trasformazioni immediate.",
+        "heading": "Ti accompagna verso un benessere duraturo",
+        "subheading": "e te lo mettiamo per iscritto con la nostra garanzia 100% soddisfatta o rimborsata.",
+        "body": "<p>Il tuo percorso verso l'equilibrio ormonale merita sicurezza e supporto.<\/p><p>Mentre altri ti lasciano da sola con diete generiche e speranze, noi mettiamo il nostro impegno per iscritto.<\/p>",
+        "list_style": "check",
+        "outro": "<p>Perché quando si parla di salute, non c'è niente di meglio che supporto e comprensione, da Donne come te. Perché, chi può capirti meglio di una Donna?<\/p>",
+        "outro_style": "text",
+        "button_label": "Scopri Oasi Ormonale",
+        "button_url": "https:\/\/wa.me\/+393296912328"
+      },
+      "blocks": {
+        "guarantee_1": {
+          "type": "item",
+          "settings": {
+            "text": "<p>Se segui il protocollo e il tuo corpo non risponde come dovrebbe, noi ci prendiamo cura della situazione.<\/p>"
+          }
+        },
+        "guarantee_2": {
+          "type": "item",
+          "settings": {
+            "text": "<p>Non ti abbandoniamo mai. Ti sosteniamo fino al risultato.<\/p>"
+          }
+        },
+        "guarantee_3": {
+          "type": "item",
+          "settings": {
+            "text": "<p>Non ci sentirai mai dire \"dipende dalla tua forza di volontà.\"<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "guarantee_1",
+        "guarantee_2",
+        "guarantee_3"
+      ]
+    }
+  },
+  "order": [
+    "hero",
+    "team_strip",
+    "method",
+    "approach",
+    "statement",
+    "protocol",
+    "specialists",
+    "stories",
+    "guarantee"
+  ]
+}
