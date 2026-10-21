@@ -7,11 +7,13 @@ Home, Chi siamo, Lavora con noi e la cornice comune (header, footer) sono state 
 | Pagina | Template | Come si arriva |
 | --- | --- | --- |
 | Home | `templates/index.json` | `/` |
-| Chi siamo | `templates/page.gp-template-586581486656815819.json` | `/pages/chi-siamo` |
-| Lavora con noi | `templates/page.gp-template-586694286104331137.json` | `/pages/lavora-con-noi` |
+| Chi siamo | `templates/page.oasi-chi-siamo.json` | `/pages/chi-siamo` |
+| Lavora con noi | `templates/page.oasi-lavora-con-noi.json` | `/pages/lavora-con-noi` |
 | Header e footer | `sections/header-group.json`, `sections/footer-group.json` | tutte le pagine che usano il layout del tema |
 
-I due template delle pagine interne hanno mantenuto il nome GemPages: così ogni pagina conserva il template assegnato e nello store non cambia niente. Il contenuto però è nativo, senza `gp-section-*` e senza il layout `theme.gempages.blank`.
+Le due pagine interne usano template con nome proprio (`page.oasi-*`), assegnati alle pagine dall'admin (campo "Template" della pagina, oppure `templateSuffix` via API). Il contenuto è nativo, senza `gp-section-*` e senza il layout `theme.gempages.blank`.
+
+**Perché non restano sui template GemPages.** Le pagine nascono da GemPages, che possiede i file `page.gp-template-*`. Quando il tema è stato pubblicato, GemPages ha riscritto nel tema tutti i suoi template (circa 40 pagine, in due minuti) e ha cancellato le versioni native di Chi siamo e Lavora con noi. Con un nome diverso e la pagina riassegnata, GemPages non li tocca più. L'effetto contrario resta possibile: se qualcuno ripubblica una di queste pagine dall'editor di GemPages, GemPages riassegna la pagina al suo template e torna il vecchio design. Le modifiche si fanno dall'editor del tema.
 
 Header e footer nuovi valgono per tutte le pagine che usano il layout del tema (`layout/theme.liquid`): le tre ricostruite, più prodotto, carrello, blog, ricerca e Contatti. Le pagine GemPages con layout `theme.gempages.blank` (landing, quiz, TYP) non li mostrano e tengono il loro header e il loro footer.
 
