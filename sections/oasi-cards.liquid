@@ -28,7 +28,7 @@
           {%- endif -%}
         </div>
 
-        <ul class="oasi-cards__grid">
+        <ul class="oasi-cards__grid" tabindex="0"{% if section.settings.heading != blank %} aria-label="{{ section.settings.heading | strip_html | escape }}"{% endif %}>
           {%- for block in section.blocks -%}
             <li class="oasi-card" {{ block.shopify_attributes }}>
               <div>

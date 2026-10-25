@@ -20,7 +20,7 @@
           <p class="oasi-muted oasi-videos__intro">{{ section.settings.intro }}</p>
         {%- endif -%}
 
-        <ul class="oasi-videos__grid">
+        <ul class="oasi-videos__grid" tabindex="0"{% if section.settings.heading != blank %} aria-label="{{ section.settings.heading | strip_html | escape }}"{% endif %}>
           {%- for block in section.blocks -%}
             {%- liquid
               assign video_url = block.settings.video_url

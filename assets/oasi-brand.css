@@ -169,7 +169,7 @@ body { background: var(--oasi-cream); }
   padding: 12px 24px 24px; border-radius: var(--oasi-r-md); background: var(--oasi-burgundy); color: var(--oasi-cream);
 }
 .oasi-menu__panel a { display: block; padding: 14px 0; border-bottom: 1px solid rgba(246, 237, 228, .2); font: 400 13px/1.2 var(--oasi-display); letter-spacing: .14em; text-transform: uppercase; text-decoration: none; }
-.oasi-menu__panel .oasi-btn { margin-top: 20px; border-bottom: 0; }
+.oasi-menu__panel .oasi-btn { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 20px; padding: 0 8px 0 22px; border-bottom: 0; letter-spacing: .08em; }
 @media (max-width: 860px) {
   .oasi-nav, .oasi-header__cta { display: none; }
   .oasi-menu { display: block; }
@@ -354,3 +354,130 @@ body { background: var(--oasi-cream); }
 .oasi-videos__grid > li { display: flex; }
 .oasi-videos__grid .oasi-video { flex: 1; display: flex; flex-direction: column; }
 .oasi-split__outro--text { font-family: var(--oasi-text); font-weight: 400; font-size: 1.1rem; line-height: 1.6; letter-spacing: 0; }
+
+/* ---------- Impaginazione: ancoraggi, desktop largo, mobile ---------- */
+/* I link a un ancoraggio (#protocollo, #posizioni-aperte) non finiscono sotto l'header fisso. */
+.oasi[id] { scroll-margin-top: 96px; }
+
+@media (hover: hover) {
+  .oasi-card, .oasi-video { transition: transform .25s ease, box-shadow .25s ease; }
+  .oasi-card:hover, .oasi-video:hover { transform: translateY(-4px); box-shadow: 0 18px 40px -22px rgba(75, 28, 34, .45); }
+}
+.oasi-cards__grid:focus-visible, .oasi-videos__grid:focus-visible { outline: 2px solid var(--oasi-wine); outline-offset: 4px; border-radius: 12px; }
+
+@media (min-width: 1600px) {
+  :root { --oasi-max: 1320px; --oasi-gutter: 88px; }
+  .oasi-box, .oasi-header__inner { max-width: 1480px; }
+  .oasi-hero__inner { max-width: 1400px; }
+}
+
+/* Tablet e telefono */
+@media (max-width: 900px) {
+  .oasi-split__media { min-height: 0; aspect-ratio: 4 / 3.4; }
+  .oasi-hero__media { aspect-ratio: 4 / 4.2; min-height: 0; max-width: 520px; margin-inline: 0; }
+}
+
+@media (max-width: 700px) {
+  :root { --oasi-gutter: 20px; --oasi-r-xl: 28px; --oasi-r-lg: 24px; --oasi-r-md: 18px; --header-height: 70px; }
+  .oasi { font-size: 17px; line-height: 1.58; }
+  .oasi :where(h1) { font-size: clamp(2.05rem, 9vw, 2.5rem); line-height: 1.08; }
+  .oasi :where(h2) { font-size: clamp(1.8rem, 7.6vw, 2.2rem); line-height: 1.12; }
+  .oasi :where(h3) { font-size: 1.3rem; }
+  .oasi-split__copy h2 { margin-top: 20px; font-size: clamp(1.75rem, 7.4vw, 2.1rem); }
+  .oasi-statement h2 { font-size: clamp(1.6rem, 6.8vw, 2rem); }
+  .oasi-label + h2 { margin-top: 20px; }
+  .oasi-kicker, .oasi-lead { font-size: 1.08rem; }
+  .oasi-shell { padding: 10px 10px 0; }
+  .oasi-shell--light { padding: 0; }
+  .oasi-s { padding-top: calc(var(--oasi-pt, 80px) * .5); padding-bottom: calc(var(--oasi-pb, 80px) * .5); }
+
+  /* Header */
+  .oasi-header__inner { padding: 8px 20px; }
+  .oasi-header__logo img { height: 54px; }
+  .oasi-menu summary { width: 46px; height: 46px; }
+  .oasi-menu__panel { width: min(340px, calc(100vw - 40px)); }
+
+  /* Hero */
+  .oasi-hero__inner { padding: 36px 22px 24px; gap: 28px; }
+  .oasi-hero__inner--single { padding: 40px 22px 44px; }
+  .oasi-hero .oasi-label { margin-bottom: 22px; }
+  .oasi-hero__text { margin-top: 18px; font-size: 1.06rem; }
+  .oasi-hero__media { aspect-ratio: 5 / 5.2; max-width: none; }
+  .oasi-journey { left: 12px; right: 12px; bottom: 12px; padding: 14px 16px 16px; }
+  .oasi-journey__title { margin-bottom: 10px; }
+  .oasi-journey__steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; font-size: 12.5px; }
+  .oasi-actions { margin-top: 28px; gap: 10px; }
+  .oasi-actions .oasi-btn { width: 100%; justify-content: space-between; }
+  .oasi-hero .oasi-textlink {
+    width: 100%; text-align: center; padding: 14px 20px; border: 1px solid rgba(246, 237, 228, .4); border-radius: 999px;
+  }
+
+  /* Pulsanti e chip */
+  .oasi-btn { min-height: 54px; padding-left: 24px; font-size: 12.5px; }
+  .oasi-chips { gap: 8px; margin-top: 20px; }
+  .oasi-chip { padding: 10px 18px; font-size: 15px; }
+
+  /* Metodo */
+  .oasi-method__head h2 { margin-top: 20px; }
+  .oasi-method__grid { gap: 12px; margin-top: 32px; }
+  .oasi-method__image { min-height: 0; }
+  .oasi-method__image .oasi-media__over { padding: 170px 20px 22px; }
+  .oasi-method__image h3 { font-size: 1.3rem; margin-bottom: 16px; }
+  .oasi-method__side { padding: 26px 22px; gap: 28px; }
+  .oasi-method__side .oasi-label { margin-bottom: 20px; }
+  .oasi-method__centre { font-size: 1.7rem; margin-bottom: 22px; }
+
+  /* Testo con immagine */
+  .oasi-split__inner { gap: 26px; }
+  .oasi-split__media { aspect-ratio: 1 / 1; max-height: 440px; }
+  .oasi-split__body { margin-top: 20px; }
+  .oasi-split__sub { margin-top: 18px; font-size: 1.1rem; }
+  .oasi-list { margin-top: 24px; }
+  .oasi-list__item { gap: 16px; padding: 16px 0; }
+  .oasi-list__num { width: 24px; }
+  .oasi-split__outro { margin-top: 24px; font-size: 1.35rem; }
+  .oasi-badge { left: 12px; bottom: 12px; padding: 12px 18px; font-size: 11px; }
+
+  /* Frase centrale */
+  .oasi-statement .oasi-kicker { margin-bottom: 18px; font-size: 1.05rem; }
+  .oasi-statement__text { margin-top: 20px; font-size: 1.1rem; }
+  .oasi-pills { gap: 8px; margin-top: 22px; }
+  .oasi-pill { padding: 10px 18px; font-size: 12px; }
+
+  /* Card e video: file orizzontali che scorrono, per non allungare la pagina */
+  .oasi-cards__head h2 { margin-top: 20px; }
+  .oasi-cards__head p.oasi-muted { margin-top: 14px; font-size: 1.1rem; }
+  .oasi-cards__grid, .oasi-videos__grid {
+    display: flex; gap: 12px; margin-top: 32px; margin-inline: calc(var(--oasi-gutter) * -1);
+    padding: 2px var(--oasi-gutter) 10px; scroll-padding-inline: var(--oasi-gutter);
+    overflow-x: auto; scroll-snap-type: x mandatory; overscroll-behavior-x: contain;
+    scrollbar-width: none; -webkit-overflow-scrolling: touch;
+  }
+  .oasi-cards__grid::-webkit-scrollbar, .oasi-videos__grid::-webkit-scrollbar { display: none; }
+  .oasi-cards__grid > .oasi-card, .oasi-videos__grid > li { flex: 0 0 min(82%, 340px); scroll-snap-align: start; }
+  .oasi-card { min-height: 0; gap: 28px; padding: 24px 22px 26px; }
+  .oasi-card h3 { font-size: 1.4rem; margin-bottom: 12px; }
+  .oasi-card .oasi-rich { margin-bottom: 22px; }
+  .oasi-card .oasi-btn { width: auto; }
+  .oasi-shape { width: 46px; height: 46px; border-width: 9px; }
+  .oasi-videos__intro { margin-top: 14px; font-size: 1.08rem; }
+  .oasi-video figcaption { padding: 18px 20px 22px; }
+  .oasi-video__quote { font-size: 1.15rem; }
+  .oasi-card:hover, .oasi-video:hover { transform: none; box-shadow: none; }
+
+  /* Specialiste */
+  .oasi-team .oasi-label { margin-bottom: 20px; }
+  .oasi-team__list { padding: 4px 20px; }
+  .oasi-team__list li { padding: 15px 0; font-size: 1.02rem; }
+
+  /* Footer */
+  .oasi-footer { padding: 10px; }
+  .oasi-footer__box { padding: 44px 22px 32px; }
+  .oasi-footer__brand img { height: 78px; }
+  .oasi-footer__tag { margin-top: 20px; }
+  .oasi-footer__top { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 20px; align-items: start; }
+  .oasi-footer__col h4 { letter-spacing: .12em; white-space: nowrap; }
+  .oasi-footer__brand { grid-column: 1 / -1; }
+  .oasi-footer__legal { margin-top: 36px; padding-top: 24px; }
+  .oasi-footer__legal p { font-size: .8rem; line-height: 1.65; }
+}
