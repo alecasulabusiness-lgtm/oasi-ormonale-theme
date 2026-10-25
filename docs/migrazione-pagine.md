@@ -19,7 +19,7 @@ Header e footer nuovi valgono per tutte le pagine che usano il layout del tema (
 
 ## Cosa non è stato toccato
 
-- Tutte le altre pagine GemPages: Sensualità e le sue varianti, Celebrities, Quiz, VSL, TYP, Termini e condizioni, Protocollo Menopausa e le altre.
+- Tutte le altre pagine GemPages: Sensualità e le sue varianti, Celebrities, Quiz, VSL, TYP, Protocollo Menopausa e le altre.
 - Prodotti, carrello, checkout, email transazionali, blog.
 - Le impostazioni Brand di Shopify (logo e colori usati da checkout ed email). Vanno aggiornate dall'admin, in Impostazioni > Brand.
 
@@ -87,8 +87,22 @@ I titoli dei ruoli e dei valori erano scritti in maiuscolo continuo: ora hanno l
 ## Da sapere
 
 1. **Pagina I nostri brand rimossa.** Template cancellato dal tema, link tolti da header e footer. Nello store la pagina è stata messa in bozza e `/pages/i-nostri-brand` rimanda alla home. Per ripristinarla basta ripubblicarla da Pagine e togliere il reindirizzamento (Negozio online > Navigazione > Reindirizzamenti URL). Il Progetto Leonessa non ha più una pagina: il link a `/pages/progettoleonessa` dava comunque 404.
-2. **Termini e Condizioni tolti dal sito.** Non compaiono più nel footer. Restano Privacy Policy e Cookie Policy (iubenda). Le pagine "Termini & Condizioni" nello store sono ancora pubblicate e raggiungibili dall'indirizzo diretto.
+2. **Termini e Condizioni tolti dal sito.** Non compaiono più nel footer. Restano Privacy Policy e Cookie Policy (iubenda). La vecchia pagina "Termini & Condizioni", che citava Hormonal Holding OU, è in bozza e il suo indirizzo rimanda ai termini 2026/2027, con i relativi file GemPages cancellati dal tema. Quella pagina dei termini 2026/2027 resta raggiungibile dall'indirizzo diretto.
 3. **Posizioni aperte.** Quattro ruoli clinici (Medico, Nutrizione, Fitness trainer, Endocrinologhe) e quattro di marketing e vendite (Consulente commerciale, Copywriter direct response, Social media manager, Media buyer). I testi dei ruoli di marketing sono quelli delle impostazioni GemPages. Social media manager non ha un form Typeform dedicato: il pulsante non compare finché non si incolla il link nel campo "Pulsante, link" della card.
 4. **Video.** I quattro video YouTube di Chi siamo e della home partono al click, senza caricare YouTube prima.
 5. **Foto.** Le foto sono quelle già nei File di Shopify, con una tinta borgogna applicata dal CSS: nessun file è stato modificato.
 6. **Header senza ricerca e senza carrello.** L'header nativo di prima li aveva. Lo store ha un solo prodotto attivo ("TEST") e le pagine di vendita sono GemPages, quindi oggi non servono. Se un giorno si usano le pagine prodotto del tema, vanno aggiunti all'header.
+7. **Hormonal Holding OU.** Nel tema e nelle pagine del negozio non c'è più nessun riferimento. Restano due testi che si cambiano solo dall'admin (Impostazioni > Normative), perché l'API non ha il permesso di scriverli: la policy "Contatti" (riga "Indirizzo fisico") e l'informativa sulla privacy (ultimo paragrafo, con l'indirizzo di Tallinn e il numero di telefono vuoto). L'informativa indica anche il titolare del trattamento: va completata con i dati della società attuale.
+
+## Layout mobile e desktop
+
+Tutta l'impaginazione responsive sta in fondo a `assets/oasi-brand.css`, nel blocco "Impaginazione: ancoraggi, desktop largo, mobile". I testi non sono stati toccati.
+
+| Soglia | Cosa cambia |
+| --- | --- |
+| Sopra 1600px | Contenuto più largo e margini più ampi, per non lasciare grandi vuoti ai lati |
+| Fino a 900px | Foto con proporzioni ridotte, hero e blocchi con immagine meno alti |
+| Fino a 700px | Titoli e spaziature più piccoli, hero compatto con pulsanti a tutta larghezza, passaggi del percorso su quattro colonne, card e video come caroselli a scorrimento orizzontale, footer su due colonne |
+| Menu a tendina | Il pulsante resta su una riga anche a 320px |
+
+Altre scelte: gli ancoraggi (`#protocollo`, `#posizioni-aperte`) si fermano sotto l'header fisso grazie a `scroll-margin-top`; i caroselli hanno `tabindex` e `aria-label`, quindi si scorrono anche con la tastiera; al passaggio del mouse le card si sollevano appena (solo dove esiste un mouse).
