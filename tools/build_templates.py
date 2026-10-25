@@ -20,7 +20,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 BASE_BRANCH = "main"
 WA = "https://wa.me/+393296912328"
-PROTOCOLLO = "/pages/oasi-ormonale"
+PROTOCOLLO = WA  # tutti i pulsanti di contatto vanno su WhatsApp; restano fuori le candidature (Typeform) e i link alle posizioni aperte
 HEADER_NOTE = """/*
  * ------------------------------------------------------------
  * IMPORTANT: The contents of this file are auto-generated.

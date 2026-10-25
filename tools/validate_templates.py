@@ -45,7 +45,9 @@ def check_value(setting, value, where, errors):
         if not isinstance(value, bool):
             errors.append(f"{where}: {setting['id']} deve essere vero o falso")
     elif t == "richtext":
-        if not (isinstance(value, str) and value.startswith("<p>") and value.endswith("</p>")):
+        if value == "":
+            pass  # l'editor di Shopify salva i richtext vuoti come stringa vuota
+        elif not (isinstance(value, str) and value.startswith("<p>") and value.endswith("</p>")):
             errors.append(f"{where}: {setting['id']} (richtext) deve essere racchiuso in <p>…</p>")
         elif re.search(r"<(?!/?(?:p|br|strong|em|u|a|ul|ol|li)\b)[a-z]", value):
             errors.append(f"{where}: {setting['id']} contiene tag non ammessi nel richtext")
