@@ -38,68 +38,62 @@
       class="gviJ0tdwq3 gp-custom-code">
       <div>
     <style>
-  html, body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;        /* elimina la scrollbar verticale della pagina */
-  }
-  .ghl-iframe-wrap {
-    position: fixed;          /* esce dal flusso GHL: niente breakout 100vw */
-    inset: 0;                 /* top/right/bottom/left = 0 */
-    width: 100%;
-    height: 100dvh;           /* dvh: gestisce la barra del browser su mobile */
-    overflow: hidden;
-  }
-  .ghl-iframe-wrap iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    display: block;
-  }
+  html, body { margin: 0; padding: 0; overflow: hidden; }
+  .oo-quiz-wrap { position: fixed; inset: 0; width: 100%; height: 100dvh; overflow: hidden; z-index: 2147483647; background: #f6ede4; }
+  .oo-quiz-wrap iframe { width: 100% !important; height: 100% !important; max-width: none !important; max-height: none !important; min-height: 0 !important; aspect-ratio: auto !important; border: none; display: block; }
 </style>
 
-<div class="ghl-iframe-wrap">
-  <iframe id="ghlFrame" allowfullscreen></iframe>
+<div class="oo-quiz-wrap">
+  <iframe id="ooQuiz" title="Test squilibrio ormonale" allowfullscreen
+          allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
 </div>
 
 <script>
 (function() {
-  // URL PUBBLICATO del funnel (NON /v2/preview/...)
-  var baseUrl = 'https://landing.oasiormonale.com/quiz';
+  var wrap = document.querySelector('.oo-quiz-wrap');
+  if (wrap && wrap.parentNode !== document.body) document.body.appendChild(wrap);
+
+  var baseUrl = 'https://site.oasiormonale.com/quiz';
+  var origineQuiz = new URL(baseUrl).origin;
   function getCookie(name) {
     var m = document.cookie.match('(^|;)\\s*' + name + '\\s*=\\s*([^;]+)');
     return m ? decodeURIComponent(m.pop()) : '';
   }
-  function getParam(name) {
-    return new URLSearchParams(window.location.search).get(name) || '';
-  }
+  function getParam(name) { return new URLSearchParams(window.location.search).get(name) || ''; }
+
+  window.addEventListener('message', function(e) {
+    if (e.origin !== origineQuiz) return;
+    var d = e.data;
+    if (!d || d.oo !== 'vai' || typeof d.url !== 'string') return;
+    try {
+      var dest = new URL(d.url, window.location.href);
+      var stessoSito = dest.origin === window.location.origin || /(^|\.)oasiormonale\.com$/.test(dest.hostname);
+      if (stessoSito && dest.protocol.indexOf('http') === 0) window.location.href = dest.href;
+    } catch (err) {}
+  });
+
   function buildAndLoad() {
-    // fbclid: dall'URL, oppure recuperato da localStorage
     var fbclid = getParam('fbclid');
-    if (fbclid) {
-      try { localStorage.setItem('oo_fbclid', fbclid); } catch (e) {}
-    } else {
-      try { fbclid = localStorage.getItem('oo_fbclid') || ''; } catch (e) {}
-    }
-    var fbp = getCookie('_fbp');
-    var fbc = getCookie('_fbc');
+    if (fbclid) { try { localStorage.setItem('oo_fbclid', fbclid); } catch (e) {} }
+    else { try { fbclid = localStorage.getItem('oo_fbclid') || ''; } catch (e) {} }
+    var gclid = getParam('gclid');
+    if (gclid) { try { localStorage.setItem('oo_gclid', gclid); } catch (e) {} }
+    else { try { gclid = localStorage.getItem('oo_gclid') || ''; } catch (e) {} }
+    var fbp = getCookie('_fbp'), fbc = getCookie('_fbc');
     var params = new URLSearchParams(window.location.search);
     if (fbclid && !params.get('fbclid')) params.set('fbclid', fbclid);
+    if (gclid && !params.get('gclid')) params.set('gclid', gclid);
     if (fbp) params.set('fbp', fbp);
     if (fbc) params.set('fbc', fbc);
     params.set('page_url', window.location.href);
-    var finalUrl = baseUrl + '?' + params.toString();
-    console.log('[GHL Embed] Iframe src:', finalUrl);
-    document.getElementById('ghlFrame').setAttribute('src', finalUrl);
+    if (document.referrer) params.set('ref', document.referrer);
+    document.getElementById('ooQuiz').setAttribute('src', baseUrl + '?' + params.toString());
   }
-  // Aspetta che il Meta Pixel scriva _fbp (max ~2s), poi carica comunque
+
   var waited = 0;
   var iv = setInterval(function() {
     waited += 150;
-    if (getCookie('_fbp') || waited >= 2000) {
-      clearInterval(iv);
-      buildAndLoad();
-    }
+    if (getCookie('_fbp') || waited >= 2000) { clearInterval(iv); buildAndLoad(); }
   }, 150);
 })();
 </script>
