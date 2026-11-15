@@ -56,3 +56,10 @@
   }
 {% endstyle %}
 {{ 'oasi-brand.css' | asset_url | stylesheet_tag }}
+{%- capture oasi_legal -%}{%- render 'oasi-legal-page' -%}{%- endcapture -%}
+{%- if oasi_legal != blank -%}
+  {%- comment -%} Il vecchio footer che GemPages tiene dentro la pagina Termini: resta solo quello del tema. {%- endcomment -%}
+  {% style %}
+    #shopify-section-gp_section_620926296372871839 { display: none; }
+  {% endstyle %}
+{%- endif -%}

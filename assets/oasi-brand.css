@@ -320,6 +320,7 @@ body { background: var(--oasi-cream); }
 .oasi-footer__legal { max-width: var(--oasi-max); margin: 64px auto 0; padding-top: 32px; border-top: 1px solid var(--oasi-brown); }
 .oasi-footer__legal p { max-width: 1000px; font-size: .875rem; line-height: 1.7; color: var(--oasi-blush); }
 .oasi-footer__legal p + p { margin-top: 24px; }
+.oasi-footer--legal .oasi-footer__top { grid-template-columns: minmax(0, 1fr); }
 @media (max-width: 900px) { .oasi-footer__top { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } .oasi-footer__brand { grid-column: 1 / -1; } }
 @media (max-width: 520px) { .oasi-footer__top { grid-template-columns: minmax(0, 1fr); } }
 

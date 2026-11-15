@@ -1,0 +1,10 @@
+{%- comment -%}
+  Pagine di solo testo legale: niente header, niente link verso altre pagine, un solo footer.
+  Scrive 1 per queste pagine e niente per le altre. Per riceverlo:
+  {%- capture oasi_legal -%}{%- render 'oasi-legal-page' -%}{%- endcapture -%}
+  Chi lo usa: layout/theme.liquid (nasconde l'header), sections/oasi-footer.liquid (toglie le colonne di link),
+  snippets/oasi-head.liquid (nasconde il vecchio footer GemPages).
+  Per aggiungere una pagina basta scrivere il suo indirizzo (handle) nell'elenco.
+{%- endcomment -%}
+{%- assign legal_handles = 'termini-and-condizioni-2026-2027' | split: ',' -%}
+{%- if request.page_type == 'page' and legal_handles contains page.handle -%}1{%- endif -%}

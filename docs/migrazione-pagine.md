@@ -94,6 +94,18 @@ I titoli dei ruoli e dei valori erano scritti in maiuscolo continuo: ora hanno l
 6. **Header senza ricerca e senza carrello.** L'header nativo di prima li aveva. Lo store ha un solo prodotto attivo ("TEST") e le pagine di vendita sono GemPages, quindi oggi non servono. Se un giorno si usano le pagine prodotto del tema, vanno aggiunti all'header.
 7. **Hormonal Holding OU.** Nel tema e nelle pagine del negozio non c'è più nessun riferimento. Restano due testi che si cambiano solo dall'admin (Impostazioni > Normative), perché l'API non ha il permesso di scriverli: la policy "Contatti" (riga "Indirizzo fisico") e l'informativa sulla privacy (ultimo paragrafo, con l'indirizzo di Tallinn e il numero di telefono vuoto). L'informativa indica anche il titolare del trattamento: va completata con i dati della società attuale.
 
+## Pagina Termini e condizioni (solo testo legale)
+
+`/pages/termini-and-condizioni-2026-2027` è una pagina GemPages e il testo si modifica da GemPages. Nel tema c'è una regola che la isola dal resto del sito:
+
+- nessun header, quindi nessun link a Chi siamo, Lavora con noi o al pulsante WhatsApp;
+- un solo footer, quello nuovo, senza le colonne di link (resta il logo, la frase, le avvertenze legali e il copyright);
+- il footer vecchio che GemPages tiene dentro la pagina viene nascosto con una regola CSS (`#shopify-section-gp_section_620926296372871839`, in `snippets/oasi-head.liquid`).
+
+La regola vale per gli indirizzi elencati in `snippets/oasi-legal-page.liquid`. Per trattare allo stesso modo un'altra pagina basta aggiungere il suo handle all'elenco. È scritta nel tema e non nel template GemPages per un motivo: GemPages riscrive i suoi template a ogni pubblicazione (l'ha già fatto una volta togliendo il layout vuoto da questa pagina), e una correzione dentro quel file andrebbe persa.
+
+Due casi in cui il risultato cambia: se la pagina viene ricreata in GemPages, il footer vecchio avrà un altro identificativo e ricomparirà finché non si aggiorna la riga CSS; se dall'editor di GemPages si nascondono header e footer del tema, la pagina mostra solo il footer vecchio di GemPages (senza header e senza link verso altre pagine).
+
 ## Layout mobile e desktop
 
 Tutta l'impaginazione responsive sta in fondo a `assets/oasi-brand.css`, nel blocco "Impaginazione: ancoraggi, desktop largo, mobile". I testi non sono stati toccati.

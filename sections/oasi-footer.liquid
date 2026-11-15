@@ -1,4 +1,5 @@
-<footer class="oasi oasi-footer" role="contentinfo">
+{%- capture oasi_legal -%}{%- render 'oasi-legal-page' -%}{%- endcapture -%}
+<footer class="oasi oasi-footer{% if oasi_legal != blank %} oasi-footer--legal{% endif %}" role="contentinfo">
   <div class="oasi-box oasi-dark oasi-footer__box">
     <div class="oasi-footer__top">
       <div class="oasi-footer__brand">
@@ -9,7 +10,7 @@
       </div>
 
       {%- for block in section.blocks -%}
-        {%- if block.type == 'column' -%}
+        {%- if block.type == 'column' and oasi_legal == blank -%}
           <nav class="oasi-footer__col" aria-label="{{ block.settings.title | escape }}" {{ block.shopify_attributes }}>
             <h4>{{ block.settings.title }}</h4>
             {%- for i in (1..4) -%}
