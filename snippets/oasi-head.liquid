@@ -60,6 +60,6 @@
 {%- if oasi_legal != blank -%}
   {%- comment -%} Il vecchio footer che GemPages tiene dentro la pagina Termini: resta solo quello del tema. Nei template JSON Shopify chiama il contenitore shopify-section-template--NUMERO__gp_section_..., quindi il selettore guarda la fine dell'id. {%- endcomment -%}
   {% style %}
-    [id$="__gp_section_620926296372871839"] { display: none; }
+    [id$="__gp_section_620926296372871839"], .gps-620926296372871839 { display: none !important; }
   {% endstyle %}
 {%- endif -%}
