@@ -100,7 +100,7 @@ I titoli dei ruoli e dei valori erano scritti in maiuscolo continuo: ora hanno l
 
 - nessun header, quindi nessun link a Chi siamo, Lavora con noi o al pulsante WhatsApp;
 - un solo footer, quello nuovo, senza le colonne di link (resta il logo, la frase, le avvertenze legali e il copyright);
-- il footer vecchio che GemPages tiene dentro la pagina viene nascosto con una regola CSS (`#shopify-section-gp_section_620926296372871839`, in `snippets/oasi-head.liquid`).
+- il footer vecchio che GemPages tiene dentro la pagina viene nascosto con una regola CSS (selettore `[id$="__gp_section_620926296372871839"]`, in `snippets/oasi-head.liquid`).
 
 La regola vale per gli indirizzi elencati in `snippets/oasi-legal-page.liquid`. Per trattare allo stesso modo un'altra pagina basta aggiungere il suo handle all'elenco. È scritta nel tema e non nel template GemPages per un motivo: GemPages riscrive i suoi template a ogni pubblicazione (l'ha già fatto una volta togliendo il layout vuoto da questa pagina), e una correzione dentro quel file andrebbe persa.
 
