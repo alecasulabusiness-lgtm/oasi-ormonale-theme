@@ -3,7 +3,9 @@
   "sections": {
     "main": {
       "type": "oasi-legal-content",
-      "settings": {}
+      "settings": {
+        "terms_text": true
+      }
     },
     "footer": {
       "type": "oasi-footer",

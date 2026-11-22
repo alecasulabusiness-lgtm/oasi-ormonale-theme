@@ -96,7 +96,7 @@ I titoli dei ruoli e dei valori erano scritti in maiuscolo continuo: ora hanno l
 
 ## Pagina Termini e condizioni (solo testo legale)
 
-Dal 22 novembre 2026 (versione OASI-ORMONALE-TOS-V3) `/pages/termini-and-condizioni-2026-2027` è una pagina nativa: il testo è il contenuto della pagina Shopify e si modifica da Negozio online > Pagine. Usa il template `page.oasi-legale` con il layout `theme.oasi-legal`, che non ha header né footer del gruppo: nessun link verso il resto del sito e un solo footer (quello nuovo, senza colonne di link). Storico delle versioni ed elenco delle modifiche: `docs/termini/README.md`.
+Dal 22 novembre 2026 (versione OASI-ORMONALE-TOS-V3) `/pages/termini-and-condizioni-2026-2027` è una pagina nativa: il testo sta in `snippets/oasi-termini-testo.liquid`, e se un giorno si incolla un testo nel contenuto della pagina Shopify la pagina mostra quello. Usa il template `page.oasi-legale` con il layout `theme.oasi-legal`, che non ha header né footer del gruppo: nessun link verso il resto del sito e un solo footer (quello nuovo, senza colonne di link). Storico delle versioni ed elenco delle modifiche: `docs/termini/README.md`.
 
 La pagina non va ripubblicata da GemPages: GemPages la riassegnerebbe al suo vecchio template e tornerebbe il testo V2 con il doppio footer.
 

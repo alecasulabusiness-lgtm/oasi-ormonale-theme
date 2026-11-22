@@ -4,7 +4,11 @@ La pagina `/pages/termini-and-condizioni-2026-2027` mostra i Termini e condizion
 
 ## Dove sta il testo
 
-Dalla versione V3 il testo è il contenuto della pagina Shopify: Negozio online > Pagine > "Termini & Condizioni - 2026/2027". Si modifica da lì, come una normale pagina.
+Dalla versione V3 il testo in vigore sta nel tema, in `snippets/oasi-termini-testo.liquid`, e arriva sul sito con il resto del tema. La pagina Shopify "Termini & Condizioni - 2026/2027" ha il contenuto vuoto: in questo caso la sezione mostra il testo del tema.
+
+Per cambiare il testo ci sono due strade:
+1. aggiornare `snippets/oasi-termini-testo.liquid` (data e numero di versione in testa) e salvare una copia della nuova versione qui;
+2. incollare il testo completo nel contenuto della pagina, da Negozio online > Pagine: appena il contenuto non è vuoto, la pagina mostra quello al posto del testo del tema.
 
 La pagina usa il template `page.oasi-legale` (sezioni `oasi-legal-content` e `oasi-footer` senza colonne di link) con il layout `theme.oasi-legal`. Il layout non ha header né footer del gruppo: chi apre i Termini non trova link verso il resto del sito, e c'è un solo footer.
 
@@ -17,9 +21,9 @@ Per tornare alla versione GemPages, in caso di emergenza: assegnare alla pagina 
 | Versione | Data | File | Note |
 | --- | --- | --- | --- |
 | OASI-ORMONALE-TOS-V2 | 9 settembre 2026 | `OASI-ORMONALE-TOS-V2-2026-09-09.txt` | Testo estratto dalla pagina GemPages pubblicata, in ordine di pagina, refusi compresi |
-| OASI-ORMONALE-TOS-V3 | 22 novembre 2026 | `OASI-ORMONALE-TOS-V3-2026-11-22.html` | Corpo HTML pubblicato nella pagina Shopify |
+| OASI-ORMONALE-TOS-V3 | 22 novembre 2026 | `OASI-ORMONALE-TOS-V3-2026-11-22.html` | Testo pubblicato, identico a `snippets/oasi-termini-testo.liquid` |
 
-Ogni volta che il testo cambia: aggiornare data e numero di versione in testa alla pagina e salvare qui una copia della nuova versione.
+Ogni volta che il testo cambia: aggiornare data e numero di versione in testa e salvare qui una copia della nuova versione.
 
 ## Modifiche dalla V2 alla V3
 

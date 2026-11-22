@@ -1,18 +1,32 @@
 {% comment %}
   Section contract.
-  Testo di una pagina legale: mostra il contenuto della pagina Shopify (page.content), con la tipografia del brand.
-  Il testo si modifica da Negozio online > Pagine, aprendo la pagina. Usata dal template page.oasi-legale.
+  Testo di una pagina legale, con la tipografia del brand. Mostra il contenuto della pagina Shopify (page.content);
+  se è vuoto e l'opzione è attiva, mostra il testo dei Termini salvato nel tema (snippets/oasi-termini-testo.liquid).
+  Usata dal template page.oasi-legale.
   @example
   <!-- Pagina "Termini & Condizioni - 2026/2027" con template oasi-legale -->
 {% endcomment %}
 <div class="oasi oasi-legal">
   <article class="oasi-legal__doc">
-    {{ page.content }}
+    {%- if page.content != blank -%}
+      {{ page.content }}
+    {%- elsif section.settings.terms_text -%}
+      {%- render 'oasi-termini-testo' -%}
+    {%- endif -%}
   </article>
 </div>
 
 {% schema %}
 {
-  "name": "Oasi: testo legale"
+  "name": "Oasi: testo legale",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "terms_text",
+      "label": "Testo dei Termini dal tema",
+      "info": "Usato solo se il contenuto della pagina è vuoto. Il testo sta in snippets/oasi-termini-testo.liquid.",
+      "default": false
+    }
+  ]
 }
 {% endschema %}
