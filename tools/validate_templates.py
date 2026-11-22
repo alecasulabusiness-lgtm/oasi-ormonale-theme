@@ -13,6 +13,7 @@ TEMPLATES = [
     "templates/index.json",
     "templates/page.oasi-chi-siamo.json",
     "templates/page.oasi-lavora-con-noi.json",
+    "templates/page.oasi-legale.json",
     "sections/header-group.json",
     "sections/footer-group.json",
 ]

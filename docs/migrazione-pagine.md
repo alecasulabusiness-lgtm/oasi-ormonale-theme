@@ -96,15 +96,11 @@ I titoli dei ruoli e dei valori erano scritti in maiuscolo continuo: ora hanno l
 
 ## Pagina Termini e condizioni (solo testo legale)
 
-`/pages/termini-and-condizioni-2026-2027` è una pagina GemPages e il testo si modifica da GemPages. Nel tema c'è una regola che la isola dal resto del sito:
+Dal 22 novembre 2026 (versione OASI-ORMONALE-TOS-V3) `/pages/termini-and-condizioni-2026-2027` è una pagina nativa: il testo è il contenuto della pagina Shopify e si modifica da Negozio online > Pagine. Usa il template `page.oasi-legale` con il layout `theme.oasi-legal`, che non ha header né footer del gruppo: nessun link verso il resto del sito e un solo footer (quello nuovo, senza colonne di link). Storico delle versioni ed elenco delle modifiche: `docs/termini/README.md`.
 
-- nessun header, quindi nessun link a Chi siamo, Lavora con noi o al pulsante WhatsApp;
-- un solo footer, quello nuovo, senza le colonne di link (resta il logo, la frase, le avvertenze legali e il copyright);
-- il footer vecchio che GemPages tiene dentro la pagina viene nascosto con una regola CSS (selettore `[id$="__gp_section_620926296372871839"]`, in `snippets/oasi-head.liquid`).
+La pagina non va ripubblicata da GemPages: GemPages la riassegnerebbe al suo vecchio template e tornerebbe il testo V2 con il doppio footer.
 
-La regola vale per gli indirizzi elencati in `snippets/oasi-legal-page.liquid`. Per trattare allo stesso modo un'altra pagina basta aggiungere il suo handle all'elenco. È scritta nel tema e non nel template GemPages per un motivo: GemPages riscrive i suoi template a ogni pubblicazione (l'ha già fatto una volta togliendo il layout vuoto da questa pagina), e una correzione dentro quel file andrebbe persa.
-
-Due casi in cui il risultato cambia: se la pagina viene ricreata in GemPages, il footer vecchio avrà un altro identificativo e ricomparirà finché non si aggiorna la riga CSS; se dall'editor di GemPages si nascondono header e footer del tema, la pagina mostra solo il footer vecchio di GemPages (senza header e senza link verso altre pagine).
+Le regole scritte prima per isolare la versione GemPages restano come rete di sicurezza: `snippets/oasi-legal-page.liquid` riconosce la pagina dall'indirizzo, `layout/theme.liquid` toglie l'header, `sections/oasi-footer.liquid` toglie le colonne di link e `snippets/oasi-head.liquid` nasconde il footer GemPages (selettori `[id$="__gp_section_620926296372871839"]` e `.gps-620926296372871839`).
 
 ## Layout mobile e desktop
 
